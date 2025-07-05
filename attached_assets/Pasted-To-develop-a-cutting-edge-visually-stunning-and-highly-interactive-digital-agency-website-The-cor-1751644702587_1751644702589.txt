@@ -1,0 +1,131 @@
+To develop a cutting-edge, visually stunning, and highly interactive digital agency website. The core philosophy is to create an "alive" website where animations are not just decorative but integral to the user experience, providing seamless transitions, fluid interactions, and a strong sense of depth and modernity.
+
+Core Technologies & Principles:
+
+Frontend Framework: React (using create-react-app or similar, NOT Vite; NO TypeScript, only JSX files).
+
+Package Manager: NPM.
+
+3D Rendering: Extensive and intelligent application of Three.js via React Three Fiber for all 3D elements, interactive backgrounds, and transforming components.
+
+Advanced Animations:
+
+GSAP (GreenSock Animation Platform) and ScrollTrigger: For powerful, precise, timeline-based animations, especially for scroll-based effects, complex sequencing, and property interpolation.
+
+React Spring / Framer Motion: For physics-based, declarative, and fluid component transitions, micro-interactions, and responsive animations.
+
+Styling: Styled Components or Emotion for scoped, maintainable, and dynamically themeable CSS.
+
+Color Scheme: Predominantly black (#000000) for dark sections and white (#FFFFFF) for light sections. Vibrant gradient accents (primarily teal-to-green and green-to-blue) will be used for interactive elements and visual highlights.
+
+Typography: Modern, clean sans-serif fonts throughout, ensuring excellent readability and a contemporary aesthetic.
+
+Global Responsiveness: The entire website, including all animations and 3D elements, must be fully responsive and optimized for seamless display and performance across all device sizes (desktop, tablet, mobile). Animations should gracefully adapt or simplify on smaller screens if necessary for performance.
+
+Performance Optimization: Given the heavy animation and 3D usage, rigorous optimization is paramount (e.g., lazy loading, efficient 3D asset management, debouncing/throttling events).
+
+Meticulous Alignment & Harmony: Every element, across all sections, must be perfectly aligned and spaced. The overall visual composition should feel harmonious, professional, and uncluttered, avoiding any "congested" areas. The design should look cohesive and premium as a whole website.
+
+No Backend: All content and functionality will be client-side.
+
+Global Animation Directive (Dynamic Page/Section Transitions):
+
+Initial State: All sections of the website will initially have a deep dark (black or very dark gray) background.
+
+Animated Transition to White: For specific sections designated to feature a lighter theme (e.g., "Our Approach", "Services", or other relevant content areas), when the user navigates to or scrolls into that particular section, its entire background should slowly, smoothly, and elegantly animate from black to white.
+
+Crucially, this is a continuous, fluid, and proper animated transition of the background color across the whole section area – it is not a hard partition, split screen, or an abrupt jump. The transition should feel organic and unforced, as if the light is slowly spreading across the new content. This will be achieved by animating the backgroundColor property of the main section container using GSAP or React Spring.
+
+Detailed Sections & Animation Breakdown:
+
+Hero Section (Home Page):
+
+Background: A captivating, fully mouse-interactive 3D background. This is not a static image, but a dynamically generated 3D scene (e.g., a subtle particle system reacting to cursor movement, morphing abstract geometry, or dynamic lighting) that actively responds to mouse position, creating an immersive first impression.
+
+Main Heading: "Exceptional Digital Solutions" – Large, prominent, and elegantly styled.
+
+Call-to-Action Button: "Let's Talk" (or similar CTA) – Styled in a modern, gradient fashion with a smooth, engaging hover effect.
+
+Navbar: Sleek, minimalist design with the "UM" logo on the left and a "LET'S TALK" button with a chat bubble icon on the right. All navigation links (SERVICES, OUR APPROACH, PROJECTS, ABOUT US, BLOG) will feature smooth, subtle hover effects.
+
+About Us Section:
+
+Dynamic Text Highlighting: The primary body text will feature an advanced, word-by-word highlighting effect.
+
+On Scroll Down: Words will sequentially highlight (e.g., subtle gray to vibrant accent color/gradient) with a non-direct, smooth animation, including a slight delay or stagger for a fluid "wave" effect across the text.
+
+On Scroll Up: The highlighting will smoothly reverse and un-highlight, also with a non-direct, animated transition, returning words to their original color, creating a visual "rewind". This requires precise GSAP ScrollTrigger control.
+
+Integrated 3D Element: An abstract, evolving 3D element (e.g., a flowing organic shape, or a network of interconnected nodes/lines) will be rendered using React Three Fiber within this section. This 3D element's transformations (morphing, growth, connection shifts) will be synchronized with the user's scroll depth and the text highlighting, making it a dynamic visual narrative that evolves with the text, symbolizing concepts like growth or collaboration.
+
+Services Section:
+
+Core Concept: An interactive 3D morphing grid where each service is represented by a dynamically transforming abstract 3D element.
+
+Initial State: A minimalist grid of subtle, abstract 3D shapes (geometric forms, fluid blobs) with inherent gradient accents.
+
+Hover Interaction: When hovered, each abstract 3D element will perform a sophisticated, smooth morphing or unfolding animation into a distinct, stylized visual representation of the service (e.g., a cube unfurling into screens for "Web Development"). Concurrently, the service title and a concise description will animate smoothly into view (fade-in/slide-up).
+
+Click Interaction: Clicking a transformed service element will trigger an expansive, immersive 3D animation, potentially expanding to fill a larger screen area or smoothly transitioning the entire section to a dedicated service detail view with a compelling 3D effect (e.g., a "zoom into" the element or a "portal" transition).
+
+Responsiveness: The 3D grid layout must be fully responsive, adapting element size and column count across devices.
+
+Client Testimonial Section:
+
+Design: Clean, modern layout for client quotes.
+
+Animation: Implement a smooth, elegant carousel or slider for testimonials, featuring subtle, fluid transition animations between slides.
+
+Portfolio Section:
+
+Layout: A modern grid or masonry layout for project showcase.
+
+Project Cards: Each project card will have engaging and modern hover effects (e.g., subtle image zoom, sophisticated overlay animation, slight 3D tilt). Clicking a card should lead to a detailed project page or modal.
+
+Team Section:
+
+Section Introduction: Top-centered "• OUR TEAM" tag. Below that, a large, bold heading: "We've joined forces to turn bold ideas into reality" (with "forces" italicized). Beneath the heading, a prominent "CAREER HUB" button with a gradient background and briefcase icon.
+
+Horizontally Scrollable Cards: A horizontally scrollable row of team member cards, ensuring smooth scrolling.
+
+Default Card Appearance: Rounded rectangular cards displaying grayscale (black and white) portraits, name (bold), and role. A small green plus icon in a white circle at the top-right.
+
+Advanced Hover Effect: When hovering over a grayscale portrait card, a new, translucent white-colored, rounded rectangular card will smoothly animate into view, overlaying the lower portion of the original card. This overlay will contain additional descriptive text about the team member. The original portrait remains visible underneath, potentially slightly dimmed. The appearance/disappearance of this overlay must be incredibly smooth (e.g., a fluid fade-in with a slight slide-up).
+
+Our Approach Section:
+
+Overall Layout & Enhanced Space: Top-centered "TECHNOLOGY" tag above a large "Our approach" heading. Crucially, ensure generous, balanced spacing around and between elements to prevent congestion.
+
+Modern Accordion Bars with Overlap: A vertical stack of sleek, white, rounded rectangular bars. They visually overlap each other slightly to create depth, mimicking stacked folders. Each bar has a distinct, partially visible gradient tab (teal-to-green) on the left and a plus icon (+) on the right.
+
+Dynamic Expansion & Meticulous Internal Alignment: Bars smoothly expand downwards to reveal content. Only one bar open at a time; expanding a new one collapses the previous. All internal elements within the expanded bar (multi-column layouts, text blocks, icons, buttons) must be meticulously aligned and spaced for impeccable readability and professional presentation.
+
+Dynamic Abstract Background: The background of this section will incorporate subtle, abstract 3D elements or animated graphic patterns (e.g., slow-moving translucent geometric forms, light streaks, or faint particle networks) rendered with React Three Fiber, providing visual depth and dynamism without cluttering the main content.
+
+Social Impact / Charity Work Section (Pakistan):
+
+Exact Replication: This section must be an exact visual replica of the provided image (image_73ed42.jpg), with the key change being "Pakistan" instead of "Ukraine".
+
+Background: Dark, featuring a large, abstract gradient shape (green to blue) flowing from the left, and numerous faint, small, scattered glowing particles (static dots).
+
+Central Heading: Massive, bold text, "We donate and engage in charity work for Pakistan", with a static gradient.
+
+Floating Elements: Strategically positioned, rounded-corner image cards (replicating the specific images in the reference) with social interaction icons below them. These cards, along with a central branded callout card (with a gradient heart icon and "@um.str" text), will exhibit gentle floating or subtle parallax animations to feel dynamic.
+
+Let's Discuss Your Project (Contact) Section:
+
+Exact Replication: This section must be an exact visual replica of the provided image (image_7447b5.jpg), ensuring everything is modernized and animated where indicated.
+
+Massive Gradient Heading: "LET'S DISCUSS YOUR PROJECT" will be in exceptionally large, multi-line, bold typography with a static, vibrant green-to-blue gradient. No complex text animations; the gradient is the primary effect.
+
+Prominent Circular CTA: A large, circular, gradient-filled (green) button with a small icon and "LET'S DISCUSS" text, positioned as seen in the image.
+
+Email Contact Button: A rounded, gradient-filled (green) button displaying "team@unknown.marketing" with an email icon, positioned precisely as shown.
+
+Atmospheric Background: Dark background with subtle, blurry, large, dark circular/blob-like shapes and faint, scattered light particles (static elements, no complex interaction).
+
+Modernized Links: "MENU" and "OUR SOCIAL" sections with clean, vertically aligned text links and icons. Basic, clean hover effects for navigation and social links (e.g., subtle color change, slight scale) are acceptable, but no complex 3D or liquid animations as per the image.
+
+Global Footer: "©2025 UM. All rights reserved.", "Terms of use", "Privacy Policy".
+
+Sticky Cookie Consent: The exact cookie consent banner with "ACCEPT" button will be present at the very bottom of the screen, persistently visible.

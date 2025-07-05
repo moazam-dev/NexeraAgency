@@ -1,0 +1,47 @@
+X. Social Impact / Charity Work Section:
+Overall Layout: This will be a captivating, full-width section with a predominantly dark background, designed to visually engage the user with its central message and strategically placed floating visual elements, replicating the provided image precisely.
+
+Background Visuals:
+
+The background will feature a large, prominent, abstract gradient shape that subtly emanates from the left side of the section, smoothly transitioning from a vibrant green to a deep blue. This gradient should have a soft, almost organic, blurred feel, appearing like a glowing aura.
+
+Scattered across the darker areas of the background, and subtly within the gradient, there will be numerous faint, small, glowing particle effects (like tiny, static dots or bokeh lights), adding depth and a modern, atmospheric texture to the overall scene.
+
+Central Heading & Tag:
+
+A small, rounded, dark tag with white text reading "• UM STORE" will be centrally positioned directly above the main heading.
+
+The core message, "We donate and engage in charity work for Pakistan", will be displayed in large, bold typography, centrally aligned within the section. The text should appear primarily in white or a very light gray, with subtle hints of blue or purple tones that might pick up from the background gradient, mirroring the visual style in the image.
+
+Floating Image Cards:
+
+Several distinct, rounded-corner image cards will be strategically positioned around the central heading, appearing to "float" within the section's space. These cards should have a subtle, soft drop shadow to enhance their perceived elevation and floating appearance.
+
+Specific Card Content (replace images with relevant Pakistan-themed imagery):
+
+One card displaying a group photo of people.
+
+Another card featuring two individuals.
+
+A card showcasing a white tote bag with a custom design.
+
+A card presenting a gift box with products and packing material.
+
+Interactive Elements on Cards: Below each image, small, clear icons for "heart" (like), "speech bubble" (comment), and "paper plane" (share) should be visibly placed, suggesting social media engagement. These icons should have basic, clean hover effects (e.g., slight color change or subtle scale).
+
+Subtle Animation for Cards: The cards should exhibit gentle floating or subtle parallax effects as the user scrolls or interacts with the page, making them feel dynamic and alive within the 3D space, mimicking a serene, almost weightless presence.
+
+Central Brand Callout Card:
+
+A distinct, square card with rounded corners will be prominently placed within the section, acting as a branded callout.
+
+This card will feature a gradient-filled heart icon (green to blue), the text "@um.str" below it, and a descriptive line "UM Store, patriotic clothes & candles". This card should also participate in the subtle floating animation effect.
+
+Global Elements: Ensure the persistent top navigation bar (UM logo, menu items, "LET'S TALK" button) remains visible at the top, and the cookie consent banner remains at the bottom of the viewport, consistent with the rest of the website's design.
+
+
+
+
+
+
+

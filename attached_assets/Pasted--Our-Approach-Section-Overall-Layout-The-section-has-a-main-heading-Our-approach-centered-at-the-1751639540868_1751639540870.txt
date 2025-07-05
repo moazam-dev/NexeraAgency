@@ -1,0 +1,28 @@
+ Our Approach Section:
+Overall Layout: The section has a main heading "Our approach" centered at the top. Below this, there are large, visually distinct, white folder-shaped containers stacked vertically.
+
+Distinct Folder-Shaped Containers with Overlap:
+
+Each container is designed to clearly resemble a physical folder, with a distinct "tab" portion and a main body.
+
+Crucially, these folders should visually overlap each other. When closed, each folder should slightly overlap the top edge of the folder directly below it, creating a sense of depth and a neatly stacked appearance, mimicking real-world folders.
+
+The folders will feature a gradient-filled tab (smooth transition from teal to green) that further enhances their 3D, layered appearance. On the left side of each folder, there's a small tag, such as "TECHNOLOGY" for the overall section, and individual week indicators like "[01] WEEK" and "[02] WEEK" for each folder.
+
+Accordion Functionality:
+
+Initially, all folders should appear closed, with only their headings visible. For example, a closed folder would show "[01] WEEK" on the left and "Onboarding" as the heading on the right.
+
+When a user clicks on a closed folder's heading, it should smoothly open downwards, expanding its body to reveal detailed content within. The opening animation should feel natural and fluid, as if a physical folder is unfolding.
+
+Precise Element Alignment within Open Folder:
+
+When a folder is open, all its internal elements (text, bullet points, image/video thumbnail, icons, and buttons) must be properly and meticulously aligned.
+
+For the "Onboarding" example, the left internal file-like structure (with "New project" and list items) should be perfectly aligned with the content block on the right.
+
+The main text block, "Result" heading, detailed result text, and the three distinct icons ("Selecting Specialists," "Communication Standards," "Project Management") with their labels, as well as the "BOOK A FREE STRATEGY CALL" button, should all maintain impeccable visual alignment and spacing, ensuring a clean and professional presentation.
+
+Only one folder should be open at a time; opening a new folder should automatically close the currently open one with a smooth animation, ensuring the overlap effect adjusts correctly during transitions.
+
+The "week" labels ([01] WEEK, [02] WEEK) should be visually integrated as shown.

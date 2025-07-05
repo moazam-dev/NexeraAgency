@@ -1,0 +1,190 @@
+Project: Modern 3D Digital Agency Website (React + NPM)
+Objective: To create a visually stunning, highly interactive, and fully animated digital agency website using React, showcasing a modern aesthetic with a primary black and white color scheme, dynamic page transitions, and a strong emphasis on 3D elements and smooth user experience. No backend or TypeScript will be used.
+
+Core Technologies:
+React (via create-react-app or similar, but not Vite): For building the component-based UI.
+
+NPM: For package management.
+
+Three.js / React Three Fiber: For all 3D elements, interactive backgrounds, and potentially 3D service cards.
+
+GSAP (GreenSock Animation Platform) / ScrollTrigger: For advanced scroll-based animations, text effects, and general timeline orchestration.
+
+React Spring / Framer Motion: For physics-based and declarative animations, especially for individual component transitions and interactions.
+
+Styled Components / Emotion: For scoped and maintainable CSS, facilitating dynamic styling and theme changes.
+
+Global Styling & Theming:
+Primary Color Scheme: Dominantly black (#000000) and white (#FFFFFF). The basic website background should be dark (black or a very dark gray).
+
+Accent Colors: Subtle use of vibrant gradients (e.g., a teal-to-green gradient) for highlight elements like buttons, active states, and 3D card accents.
+
+Typography: Modern, clean sans-serif fonts for headings and body text.
+
+Page Transitions (Black to White):
+
+Implement a smooth, slow, and elegant transition from a dark background to a white background when navigating to specific pages (e.g., "Our Approach," "Services" if they have distinct content sections that benefit from a lighter theme). This should not be a "toggle" but a fluid change as the new page mounts and its content becomes visible. This can be achieved by animating the backgroundColor of the main container or body element using GSAP or React Spring.
+
+Sections & Features Breakdown:
+1. Hero Section (Home Page):
+Background Effect:
+
+A captivating, fully mouse-interactive 3D background effect. This should not just be a static image or video, but a dynamically generated 3D scene that reacts to mouse movement.
+
+Possible Implementations:
+
+Particle System: A subtle, flowing particle system that responds to mouse position (e.g., particles repelling or attracting the cursor, or creating a ripple effect).
+
+Abstract Geometry: A morphing or deforming abstract 3D shape that subtly shifts its form based on mouse coordinates.
+
+Light/Shadow Interaction: Dynamic lighting within a dark 3D scene that casts interactive shadows or highlights based on mouse position.
+
+Utilize React Three Fiber for rendering and Three.js for the 3D scene logic.
+
+Main Heading: "Exceptional Digital Solutions" (large, prominent, elegant font).
+
+Button: "Let's Talk" (or similar CTA), styled in a modern, slightly glossy or gradient style.
+
+Navbar:
+
+Fully modernized, sleek, and minimalist design.
+
+It should feature a stylized "UM" logo on the far left.
+
+Navigation links should include "SERVICES", "OUR APPROACH", "PROJECTS", "ABOUT US", and "BLOG".
+
+On the far right, there should be a "LET'S TALK" button with a small chat bubble icon next to it, enclosed in a rounded dark button with a light border.
+
+Smooth hover effects and active state indicators.
+
+2. About Us Section:
+Body Text Effect:
+
+The main body text in this section should dynamically change color word by word as the user scrolls.
+
+On Scroll Down: As the user scrolls down, words in the paragraph should sequentially highlight (e.g., change from gray to a vibrant accent color, or a subtle gradient). The highlight should "move forward" as more of the text comes into view.
+
+On Scroll Up: When the user scrolls back up, the highlighting should reverse, smoothly returning words to their original color, effectively "un-highlighting" word by word.
+
+This will require splitting the text into individual words and using GSAP ScrollTrigger to animate the color property of each word based on its position in the viewport.
+
+3. Services Section:
+Fully Animated 3D Service Cards:
+
+Each service (e.g., "Web Development," "SEO," "PPC," "UI/UX Design") should be represented by a distinct 3D card.
+
+Interaction:
+
+Hover Effect: When a user hovers over a card, it should lift slightly, rotate subtly, or have an internal 3D element animate (e.g., a small icon or abstract shape rotating or changing form).
+
+Click Effect: Upon clicking, the card could expand slightly or trigger a more pronounced 3D animation before revealing more detailed service information (e.g., a modal, or navigating to a dedicated service page).
+
+These cards should have a modern, minimalist design, potentially with subtle transparencies or frosted glass effects in 3D.
+
+Utilize React Three Fiber for the 3D models and interactions, and React Spring or Framer Motion for smooth animation transitions.
+
+4. Client Testimonial Section:
+Design: Clean, modern layout for displaying client quotes and names.
+
+Animation: Smooth carousel or slider for testimonials, with subtle transition animations between slides.
+
+Could include client logos.
+
+5. Portfolio Section:
+Layout: A grid or masonry layout for showcasing past projects.
+
+Project Cards: Each project card should have an engaging hover effect (e.g., image zoom, overlay animation, subtle 3D tilt).
+
+Clicking a project card should potentially lead to a detailed project page or a modal with more information and images.
+
+6. Team Section:
+Layout: A horizontally scrollable row of grayscale portraits of team members presented in rounded rectangular cards with white borders.
+
+Team Member Cards: Each card displays a team member's portrait, their name in a large font, and their role in a smaller font below it.
+
+For example, cards for "Roman Kravets - Co-founder & Head of growth", "Victor Terekhovskyi - Co-founder & COO", "Dmytro Zabolotnyi - Senior Graphic Designer", and "Kate Terekhovsaya - Middle PPC Specialist" should be present.
+
+There is a small green plus icon in a circle at the top right corner of each card.
+
+Some cards might also contain a short descriptive paragraph about the team member, like "The team's cornerstone, always there to lift everyone towards success. Ad co-founder and COO of UM, his passion lies in keeping the team driven and eager for new achievements."
+
+Hover Effect: When hovering over a team member's card, a subtle animation should occur (e.g., a slight scale-up, a border highlight, or a very subtle 3D tilt). The + icon could also animate.
+
+Click Effect: Clicking a card could expand to show more details about the team member or open a contact option.
+
+7. Our Approach Section:
+Overall Layout: The section has a main heading "Our approach" centered at the top. Below this, there are large, visually distinct, white folder-shaped containers stacked vertically.
+
+Folder-Shaped Containers:
+
+Each container represents a step in the approach. On the left side of each folder, there's a small tag, such as "TECHNOLOGY" for the overall section, and individual week indicators like "[01] WEEK" and "[02] WEEK" for each folder.
+
+The folders have a gradient-filled tab that gives them a 3D, layered appearance. The gradient is a smooth transition from a teal to a green color.
+
+Accordion Functionality:
+
+Initially, all folders should appear closed, with only their headings visible. For example, a closed folder would show "[01] WEEK" on the left and "Onboarding" as the heading on the right.
+
+When a user clicks on a closed folder's heading, it should smoothly open downwards, revealing detailed content within.
+
+Example of Open Folder Content (for "Onboarding"):
+
+The open folder's main content area will be wide and white.
+
+On the left side, there's an internal file-like structure with "New project" at the top, and a list of items below it such as "Presentation", "Briefing", "Accesses", "Roadmap", "Deadlines", "Reporting", "Documentation", and "Monitoring". This section also includes a small preview window showing a dark screen with "Brief" text.
+
+On the right side of the open folder, there is a main text block explaining "Onboarding": "We conduct a briefing with you and assess the project's scope. If both parties are ready to proceed after the briefing, all necessary accesses are provided to us. The team begins setting up the project system."
+
+Below this main text, there's a "Result" heading.
+
+Further down, the result details: "The project's goals, expectations, target audience and key performance indicators (KPIs) are clear. Necessary tools and systems are configured, accesses are provided and the team is ready to start working. After a week of adaptation we know the next steps to achieve the project's goals ensuring your confidence in further progress."
+
+At the bottom of the content section, there are three distinct icons with labels below them: "Selecting Specialists", "Communication Standards", and "Project Management".
+
+Finally, a button "BOOK A FREE STRATEGY CALL" is present at the very bottom of the open content.
+
+Only one folder should be open at a time; opening a new folder should automatically close the currently open one with a smooth animation.
+
+The "week" labels ([01] WEEK, [02] WEEK) should be visually integrated as shown.
+
+8. Contact / Let's Discuss Your Project Section:
+Layout: The page is split into two main vertical sections.
+
+Left Section: Features a large, prominent heading "LET'S DISCUSS YOUR PROJECT" in a bold, modern font, displayed in a gradient that shifts from green to blue. Below this, there is a prominent button with an email address: "team@unknown.marketing".
+
+Right Section: Contains two columns:
+
+"MENU" Column: Lists navigation links: "SERVICES", "OUR APPROACH", "PROJECTS", "ABOUT US", "BLOG".
+
+"OUR SOCIAL" Column: Lists social media platforms with their respective icons and names: "INSTAGRAM", "TELEGRAM", "LINKEDIN".
+
+The background of this section should be a dark gradient, moving from dark to a lighter, somewhat greenish tone on the left.
+
+9. FAQ Section:
+Layout: On the left side, there's a circular grayscale profile picture of "Veronika," with text below it: "Meet Veronika, Leader of the PPC Team. Feel free to text her and get all that you need." Below this text, there's a "ASK A QUESTION" button with a chat bubble icon.
+
+FAQ List: On the right side, there's a large "FAQ" heading. Below this, there is a list of expandable FAQ items (accordion style). Each item has a question on the left and a plus (+) icon on the right, which presumably expands to show the answer.
+
+Examples of questions: "When will we see the first sales?", "How do you measure the success of advertising campaigns?", "How often will I receive reports on campaign".
+
+Global Enhancements & Considerations:
+Performance Optimization: Given the emphasis on 3D and animations, ensure efficient rendering and performance.
+
+Lazy loading for images and non-critical components.
+
+Optimized 3D assets.
+
+Debouncing/throttling mouse events for interactive backgrounds.
+
+Responsiveness: The entire website must be fully responsive and optimized for various screen sizes (desktop, tablet, mobile). Animations should adapt or be simplified on smaller devices if performance becomes an issue.
+
+Accessibility: Ensure basic accessibility standards are met (keyboard navigation, ARIA attributes where appropriate).
+
+Code Structure: Organize React components logically into src/components, src/pages, src/assets, src/styles etc. Use functional components and Hooks.
+
+Error Handling: Basic error boundaries for robust application.
+
+Loading States: Implement subtle loading indicators for any content that might take time to load.
+
+Cookie Consent Banner: Include a small, dark, rounded cookie consent banner at the bottom of the screen. It should state: "We use cookies to improve website and ensure you get the best experience. Learn more" with an "ACCEPT" button on the right. This banner should be sticky and present on all pages.
+

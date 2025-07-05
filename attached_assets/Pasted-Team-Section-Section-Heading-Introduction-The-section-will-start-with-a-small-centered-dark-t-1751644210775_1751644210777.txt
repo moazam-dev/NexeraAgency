@@ -1,0 +1,43 @@
+Team Section:
+Section Heading & Introduction:
+
+The section will start with a small, centered, dark tag displaying white text: "• OUR TEAM".
+
+Below this tag, a prominent, large, and bold heading will declare: "We've joined forces to turn bold ideas into reality". The word "forces" must be specifically rendered in italics within this bold heading.
+
+Positioned directly below the main heading, a distinct "CAREER HUB" button will be present. This button should have a gradient (transitioning from green to a blue/teal hue) background and feature a small briefcase icon to its right. The button should be clearly clickable, leading to a career opportunities page or section.
+
+Horizontally Scrollable Team Member Cards:
+
+The core of this section is a horizontally scrollable row of team member cards, which smoothly reveal more personnel as the user scrolls. The scroll behavior should be fluid and intuitive.
+
+Default Card Appearance: Each team member is initially presented in a distinct, vertically oriented, rounded rectangular card. Their photo will be in a grayscale (black and white) palette, creating a unified and modern look. Below the portrait, the team member's name (e.g., "Dmytro Zabolotnyi", "Kate Terekhovskaya", "Vladyslav Chornenkyi", "Yevhen Subota") will be displayed in bold, clear text, with their role (e.g., "Senior Graphic Designer", "Middle PPC Specialist") in slightly smaller text directly below their name. A small green plus icon in a white circle will be prominently positioned at the top-right corner of each grayscale portrait card.
+
+Advanced Hover Effect (Overlaying Detail Card):
+
+When the user hovers over any team member's grayscale portrait card, a new, translucent white-colored, rounded rectangular card will smoothly animate into view, overlaying the lower portion of the original portrait card.
+
+This overlay card will contain additional, descriptive text about the team member (e.g., "She's the heart of our PPC team, always ready to lend her expertise and knowledge. Approachable and kind, she makes..."). The text inside this overlay should be black on the white background.
+
+The original grayscale portrait card should remain visible underneath this overlay, providing context. The animation for the appearance and disappearance of this overlay card should be incredibly smooth and fluid (e.g., a subtle fade-in accompanied by a slight slide-up, or a gentle scale-up), making the interaction feel seamless and modern.
+
+Click Effect: Clicking a card (either the initial portrait or the hover overlay) could expand to show even more comprehensive details about the team member in a dedicated modal or navigate to a full profile page.
+
+
+
+
+
+
+
+
+
+
+
+
+Video
+
+Deep Research
+
+Canvas
+
+Gemini can make mistakes, so double-check it

@@ -1,0 +1,41 @@
+ntact / Let's Discuss Your Project Section:
+
+Overall Design: This section will replicate the precise layout and visual elements seen in the provided images, serving as a clean, direct, and impactful call-to-action. The background will be predominantly dark.
+
+Massive Gradient Heading (Left Section):
+
+The core message, "LET'S DISCUSS YOUR PROJECT", will be displayed in exceptionally large, multi-line, and bold typography, designed to be visually massive and dominate the left portion of the screen.
+
+This text will feature a static, striking gradient that smoothly transitions from a vibrant green to a blue hue, precisely as depicted in the image. No complex text animations (like character-by-character reveals) are required; the gradient itself is the primary visual effect.
+
+Email Contact Button:
+
+Below the massive text, a horizontally oriented, rounded button will display the email address: "team@unknown.marketing".
+
+This button will have an integrated email icon and be filled with a distinct green gradient, matching the visual style of the circular button and other interactive elements. It should be distinct and clearly clickable.
+
+Static but Atmospheric Background:
+
+The background of this entire section will be a deep dark color (black or very dark gray).
+
+It will feature subtle, blurry, large, dark circular or blob-like shapes scattered sparsely in the background. These shapes add a sense of depth and visual texture without being animated or distracting.
+
+Additionally, very small, faint, scattered light particles (like tiny, static dots or subtle bokeh effects) will be present across the dark background, contributing to a modern, atmospheric feel without complex interaction or mouse reactivity.
+
+Clean Navigation & Social Links (Right Section):
+
+The right side of the screen will clearly present "MENU" and "OUR SOCIAL" as static, bold headings.
+
+Menu Links:
+
+Below "MENU", a clean, vertically aligned list of links will include: "SERVICES", "OUR APPROACH", "PROJECTS", "ABOUT US", "BLOG". These links should be simple, crisp text, designed for clear readability on the dark background.
+
+Basic, standard hover effects (e.g., a subtle color change to white or a thin underline appearing) are acceptable for interactivity, but no complex 3D or liquid animations.
+
+Social Links:
+
+Below "OUR SOCIAL", a vertically aligned list of social media platforms will be displayed with their respective icons: "INSTAGRAM", "TELEGRAM", "LINKEDIN".
+
+The icons and corresponding text should be clear and modern. Basic hover effects (e.g., a subtle highlight or slight scale) for interactivity, matching the simplicity of the menu links.
+
+Footer Elements: Ensure the bottom of the section includes the "©2025 UM. All rights reserved." copyright text on the left, and "Terms of use" and "Privacy Policy" on the right. The sticky cookie consent banner must also be present at the very bottom of the screen.

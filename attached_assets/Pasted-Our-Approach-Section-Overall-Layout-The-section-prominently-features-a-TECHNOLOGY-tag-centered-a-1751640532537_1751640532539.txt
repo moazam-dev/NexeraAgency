@@ -1,0 +1,30 @@
+Our Approach Section:
+Overall Layout: The section prominently features a "TECHNOLOGY" tag centered above a large, bold heading "Our approach". Below this, there is a vertically stacked series of clean, rounded rectangular containers, each representing a distinct step in the process (e.g., "Onboarding", "Exploration", "Implementation").
+
+Modern Accordion Bars with Overlap:
+
+Each step is presented as a sleek, white, rounded rectangular bar. These bars should visually overlap each other slightly, creating a subtle layered effect that adds depth and a modern, tactile feel, as if they are stacked elements. The rounded corners should be pronounced and smooth.
+
+On the left edge of each bar, a subtle gradient-filled tab (transitioning from teal to green) is partially visible. This tab provides a distinct visual accent and indicates an active or selectable element. When a bar is active or expanded, this gradient tab should become more prominent.
+
+Each bar displays the main heading for that step (e.g., "Onboarding," "Exploration," "Implementation") on the left side, using a bold and clear sans-serif font. A prominent plus icon (+) is positioned on the far right, aligned with the heading, signaling its expandable nature.
+
+Dynamic Expansion & Precise Content Display:
+
+Initially, all bars appear closed, showing only their main heading and the plus icon.
+
+When a user clicks on a bar, it should smoothly expand downwards to reveal its detailed content. The expansion animation should be fluid and elegant, making the content appear seamlessly within the white bar's expanded area. The plus icon should animate (e.g., rotate to a minus sign) to indicate the open state.
+
+Meticulous Internal Content Alignment: When a bar is open, all its internal elements must be properly and meticulously aligned and laid out for optimal readability and visual appeal.
+
+For the "Onboarding" example, the expanded content should feature a multi-column layout. On the left, an internal file-like structure (e.g., "New project" with a list of items like "Presentation," "Briefing," "Accesses," "Roadmap," "Deadlines," "Reporting," "Documentation," and "Monitoring," potentially with a small content preview window).
+
+On the right, a detailed text block explaining the step (e.g., "We conduct a briefing..."), followed by a clearly defined "Result" heading and a detailed description of outcomes.
+
+Below this, a set of three distinct icons with associated labels (e.g., "Selecting Specialists," "Communication Standards," "Project Management") should be perfectly aligned horizontally with appropriate spacing.
+
+A prominent "BOOK A FREE STRATEGY CALL" button should be present at the very bottom of the expanded content area, all contained within the sleek, white, rounded container.
+
+Only one bar should be open at a time; expanding a new bar should automatically and smoothly collapse the previously open one, ensuring the overlap effect adjusts correctly during transitions.
+
+Subtle Interactivity: Implement a subtle hover effect on the closed bars (e.g., a slight shadow, a very subtle scale-up, or a highlight on the plus icon/gradient tab) to indicate interactivity before clicking.
