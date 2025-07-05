@@ -10,6 +10,8 @@ import FAQ from "@/components/FAQ";
 import SocialImpact from "@/components/SocialImpact";
 import Contact from "@/components/Contact";
 import CookieConsent from "@/components/CookieConsent";
+import SpecializationCards from "@/components/industires"
+
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <Team />
       <Portfolio />
       <Testimonials />
+      <SpecializationCards />
       <FAQ />
       <SocialImpact />
       <Contact />
