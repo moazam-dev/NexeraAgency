@@ -1,4 +1,12 @@
+import React, { useState, useEffect } from 'react'; // Import useEffect
 import { motion } from "framer-motion";
+
+// Define a type for your project objects for better type safety (optional, but good practice)
+interface Project {
+  image: string;
+  title: string;
+  description: string;
+}
 
 const projects: Project[] = [
   {
@@ -32,7 +40,7 @@ const projects: Project[] = [
     description: "Developing strong and memorable brand visuals that resonate with your target audience.",
   },
   {
-    image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/336930214/original/edaa674c176e4a0af22958a4917797e85bc2dcec/do-website-ui-design-and-mobile-app-ui-ux-design-ui-ux-design-in-figma.png",
+    image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/336930214/original/edaa674c176e4a0af22958a4917797e85bc2dcec/do-website-ui-design-and-mobile-app-ui-ux-design-ui-ux-design-in-figma.png",
     title: "Website UI/UX Redesign",
     description: "Modernizing interfaces for improved usability and a fresh, contemporary look.",
   },
@@ -43,17 +51,31 @@ const projects: Project[] = [
   },
 ];
 
-export default function Portfolio() {
+const Portfolio = ({ isLightThemeActive }) => { // Accept the prop
+  // Removed the 'hasBeenLight' state and its useEffect,
+  // so the theme will now directly follow 'isLightThemeActive'.
+
+  // The component's theme will be active only if isLightThemeActive is true.
+  const currentThemeActive = isLightThemeActive;
+
   return (
-    <section className="bg-black py-20 px-4">
+    <section className={`py-20 px-4 font-inter transition-colors duration-1000 ease-in-out
+      ${currentThemeActive ? 'bg-white text-gray-900' : 'bg-black text-white'}
+    `}>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight text-center mb-0.7">
+        <h2 className={`text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight text-center mb-0.7 transition-colors duration-300
+          ${currentThemeActive ? 'text-gray-900' : 'text-white'}
+        `}>
           OUR PORTFOLIO
         </h2>
-        <p className="text-xl text-gray-300 text-center mb-12 mt-0">
-          Discover our latest projects and see how we bring <span className="bg-[#2e2e2e] text-white italic px-2 py-0 rounded-xl inline-block ">
+        <p className={`text-xl text-center mb-12 mt-0 transition-colors duration-300
+          ${currentThemeActive ? 'text-gray-700' : 'text-gray-300'}
+        `}>
+          Discover our latest projects and see how we bring <span className={`italic px-2 py-0 rounded-xl inline-block transition-colors duration-300
+            ${currentThemeActive ? 'bg-gray-200 text-gray-900' : 'bg-[#2e2e2e] text-white'}
+          `}>
             ideas to life.
-        </span>
+          </span>
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-6 place-items-center">
@@ -70,11 +92,16 @@ export default function Portfolio() {
                 src={item.image}
                 alt={item.title}
                 className="w-full h-[440px] object-cover"
+                onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "https://placehold.co/400x440/cccccc/333333?text=Image+Error"; }}
               />
-              <h3 className="text-white text-xl font-bold mt-4">
+              <h3 className={`text-xl font-bold mt-4 transition-colors duration-300
+                ${currentThemeActive ? 'text-gray-900' : 'text-white'}
+              `}>
                 {item.title}
               </h3>
-              <p className="text-gray-300 text-sm mt-2">
+              <p className={`text-sm mt-2 transition-colors duration-300
+                ${currentThemeActive ? 'text-gray-700' : 'text-gray-300'}
+              `}>
                 {item.description}
               </p>
             </motion.div>
@@ -83,4 +110,6 @@ export default function Portfolio() {
       </div>
     </section>
   );
-}
+};
+
+export default Portfolio;

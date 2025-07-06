@@ -1,3 +1,4 @@
+// industries.tsx (SpecializationCards)
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -40,7 +41,7 @@ const specializations = [
   }
 ];
 
-const SpecializationCards = () => {
+const SpecializationCards = ({ isLightThemeActive }) => { // Accept the prop
   const [hoveredCardId, setHoveredCardId] = useState(null);
   const [clickedCardId, setClickedCardId] = useState(null);
 
@@ -48,12 +49,20 @@ const SpecializationCards = () => {
     setClickedCardId(prevId => (prevId === id ? null : id));
   };
 
+  // The component's theme will be active only if isLightThemeActive is true.
+  // It will revert to dark if isLightThemeActive is false.
+  const currentThemeActive = isLightThemeActive;
+
   return (
-    <section className="py-20 px-6 bg-white font-inter">
+    <section className={`py-20 px-6 font-inter transition-colors duration-1000 ease-in-out
+      ${currentThemeActive ? 'bg-white text-gray-900' : 'bg-black text-white'}
+    `}>
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-left mb-16">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900">
+          <h2 className={`text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight
+            ${currentThemeActive ? 'text-gray-900' : 'text-white'}
+          `}>
             We are specializing for
           </h2>
         </div>
@@ -64,12 +73,15 @@ const SpecializationCards = () => {
             <div
               key={card.id}
               className={`
-                relative rounded-xl overflow-hidden shadow-lg border border-gray-200
+                relative rounded-xl overflow-hidden shadow-lg border
                 transition-all duration-500 ease-in-out
-                ${clickedCardId === card.id ? 'w-full lg:w-[65%] min-h-[550px] lg:min-h-[650px]' : // Adjusted min-height for clicked card
-                   clickedCardId ? 'w-[calc(33.33%-1rem)] lg:w-[calc(17.5%-1rem)] opacity-50' : 
-                   'w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] min-h-[380px] lg:min-h-[480px]'} {/* Adjusted min-height for default cards */}
+                ${clickedCardId === card.id
+                  ? 'w-full min-h-[550px] md:min-h-[650px] lg:w-[65%] lg:min-h-[650px]' // Expanded card: full width on mobile, 65% on desktop
+                  : clickedCardId
+                    ? 'w-[calc(50%-0.75rem)] sm:w-[calc(33.33%-1rem)] lg:w-[calc(17.5%-1rem)] opacity-50' // Other cards when one is clicked: smaller on mobile, even smaller on desktop
+                    : 'w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.33%-1rem)] min-h-[380px] lg:min-h-[480px]'} // Default cards: full width on mobile, 50% on tablet, 33.33% on desktop
                 ${hoveredCardId === card.id && !clickedCardId ? 'group' : ''}
+                ${currentThemeActive ? 'border-gray-300' : 'border-gray-200'}
               `}
               onMouseEnter={() => setHoveredCardId(card.id)}
               onMouseLeave={() => setHoveredCardId(null)}
@@ -83,12 +95,17 @@ const SpecializationCards = () => {
                 style={{ backgroundImage: `url(${card.image})` }}
                 onError={(e) => { e.target.onerror = null; e.target.style.backgroundImage = 'none'; e.target.style.backgroundColor = '#ccc'; }}
               >
-                <div className="absolute inset-0 bg-black/50"></div> {/* Dark overlay */}
+                {/* Overlay changes based on light theme */}
+                <div className={`absolute inset-0
+                  ${currentThemeActive ? 'bg-white/40' : 'bg-black/50'}
+                `}></div>
               </div>
 
               {/* Card Content */}
               <div className={`relative z-10 p-8 flex flex-col h-full justify-between
-                ${(hoveredCardId === card.id && !clickedCardId) || clickedCardId === card.id ? 'text-white' : 'text-gray-900'}
+                ${(hoveredCardId === card.id && !clickedCardId) || clickedCardId === card.id
+                    ? 'text-white' // Text is white when image is visible
+                    : currentThemeActive ? 'text-gray-900' : 'text-white'} // Text changes based on theme when image is not visible
                 transition-colors duration-300
               `}>
                 {/* Top section: Cases and Arrow */}
@@ -115,8 +132,8 @@ const SpecializationCards = () => {
                 <div className="flex items-center space-x-3 mt-auto pt-4">
                     {/* Removed img tag for user icon */}
                     <div>
-                        <p className="font-semibold text-lg">{card.author}</p>
-                        <p className="text-sm opacity-75">{card.role}</p>
+                        <p className={`font-semibold text-lg ${currentThemeActive ? 'text-gray-900' : 'text-white'}`}>{card.author}</p>
+                        <p className={`text-sm ${currentThemeActive ? 'text-gray-700' : 'opacity-75'}`}>{card.role}</p>
                     </div>
                 </div>
               </div>

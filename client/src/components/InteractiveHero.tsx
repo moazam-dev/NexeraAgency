@@ -122,7 +122,7 @@ export default function InteractiveHero() {
   }, [x, y]);
 
   return (
-    <section className="relative min-h-screen bg-black text-white overflow-hidden">
+    <section className="relative min-h-screen bg-black text-white overflow-hidden mt-5">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"

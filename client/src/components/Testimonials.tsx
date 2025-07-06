@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react'; // Import useRef
+// Testimonials.tsx
+import React, { useState, useRef, forwardRef } from 'react'; // Import useRef and forwardRef
 import { Quote, Star, ArrowRight } from "lucide-react";
 
 // Testimonials data
@@ -54,7 +55,7 @@ const testimonials = [
 ];
 
 // Star Rating Component
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, isLightThemeActive }) => {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
@@ -62,13 +63,14 @@ const StarRating = ({ rating }) => {
     } else if (i - 0.5 === rating) {
       stars.push(<Star key={i} className="h-5 w-5 fill-yellow-200 text-yellow-400" />);
     } else {
-      stars.push(<Star key={i} className="h-5 w-5 text-gray-300" />);
+      // Adjust empty star color based on theme
+      stars.push(<Star key={i} className={`h-5 w-5 ${isLightThemeActive ? 'text-gray-400' : 'text-gray-300'}`} />);
     }
   }
   return <div className="flex">{stars}</div>;
 };
 
-export default function Testimonials() {
+const Testimonials = forwardRef(({ isLightThemeActive }, ref) => {
   const scrollContainerRef = useRef(null);
 
   const scrollRight = () => {
@@ -80,7 +82,7 @@ export default function Testimonials() {
         const computedStyle = window.getComputedStyle(firstCard);
         const marginRight = parseFloat(computedStyle.marginRight); // Get dynamic margin
         const scrollAmount = cardWidth + marginRight;
-        
+
         scrollContainerRef.current.scrollBy({
           left: scrollAmount,
           behavior: 'smooth'
@@ -90,13 +92,22 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-32 bg-white text-gray-800 font-inter overflow-hidden">
+    <section
+      ref={ref} // Attach the ref passed from Home.tsx
+      className={`py-32 font-inter overflow-hidden transition-colors duration-1000 ease-in-out
+        ${isLightThemeActive ? 'bg-white text-gray-900' : 'bg-black text-white'}
+      `}
+    >
       <div className="max-w-full mx-auto px-6">
         {/* Testimonials Header */}
         <div className="text-left mb-16 flex justify-between items-center">
           <div>
-            <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Testimonials</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+            <p className={`text-sm uppercase tracking-widest mb-2 transition-colors duration-300
+              ${isLightThemeActive ? 'text-gray-500' : 'text-white-500'}
+            `}>Testimonials</p>
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight transition-colors duration-300
+              ${isLightThemeActive ? 'text-gray-900' : 'text-white-900'}
+            `}>
               Don't take our word for it!<br />
               Hear it from our partners.
             </h2>
@@ -104,31 +115,39 @@ export default function Testimonials() {
           {/* Arrow indicating scroll */}
           <div className="hidden md:block">
             <ArrowRight
-              className="h-12 w-24 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
-              onClick={scrollRight} // Added onClick handler
+              className={`h-12 w-24 transition-colors cursor-pointer
+                ${isLightThemeActive ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-600'}
+              `}
+              onClick={scrollRight}
             />
           </div>
         </div>
       </div>
 
       {/* Testimonial Cards Container - Horizontal Scroll */}
-      <div className="overflow-x-auto no-scrollbar" ref={scrollContainerRef}> {/* Added ref */}
+      <div className="overflow-x-auto no-scrollbar" ref={scrollContainerRef}>
         <div className="flex snap-x snap-mandatory pb-4 space-x-6 lg:space-x-8 pl-8 pr-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="testimonial-card flex-shrink-0 w-[calc(100%-4rem)] md:w-[calc(50%-2rem)] lg:w-[calc(31%-1rem)] snap-start 
-                         relative bg-white border border-gray-200 rounded-xl p-8 shadow-xl min-h-[300px] md:min-h-[350px] lg:min-h-[400px]
-                         transition-all duration-300 ease-in-out cursor-pointer group hover:shadow-2xl hover:border-blue-300"
+              className={`testimonial-card flex-shrink-0 w-[calc(100%-4rem)] md:w-[calc(50%-2rem)] lg:w-[calc(31%-1rem)] snap-start
+                relative rounded-xl p-8 shadow-xl min-h-[300px] md:min-h-[350px] lg:min-h-[400px]
+                transition-all duration-300 ease-in-out cursor-pointer group hover:shadow-2xl
+                ${isLightThemeActive
+                  ? 'bg-gray-50 border border-gray-200 hover:border-blue-400'
+                  : 'bg-white border border-gray-200 hover:border-blue-300'}
+              `}
             >
               {/* Content */}
               <div className="relative z-10 flex flex-col h-full justify-between">
                 {/* Star Rating and Quote */}
                 <div className="mb-6 flex-grow">
                   <div className="mb-4">
-                    <StarRating rating={4.5} />
+                    <StarRating rating={4.5} isLightThemeActive={isLightThemeActive} />
                   </div>
-                  <blockquote className="text-lg leading-relaxed text-gray-700">
+                  <blockquote className={`text-lg leading-relaxed transition-colors duration-300
+                    ${isLightThemeActive ? 'text-gray-700' : 'text-gray-700'}
+                  `}>
                     {testimonial.quote}
                   </blockquote>
                 </div>
@@ -138,14 +157,20 @@ export default function Testimonials() {
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-gray-300 transition-colors duration-300"
+                    className={`w-14 h-14 rounded-full object-cover border-2 transition-colors duration-300
+                      ${isLightThemeActive ? 'border-gray-400' : 'border-gray-300'}
+                    `}
                     onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/56x56/cccccc/333333?text=User"; }}
                   />
                   <div>
-                    <p className="font-semibold text-gray-900 text-lg transition-colors duration-300">
+                    <p className={`font-semibold text-lg transition-colors duration-300
+                      ${isLightThemeActive ? 'text-gray-900' : 'text-gray-900'}
+                    `}>
                       {testimonial.author}
                     </p>
-                    <p className="text-gray-500 text-sm transition-colors duration-300">
+                    <p className={`text-sm transition-colors duration-300
+                      ${isLightThemeActive ? 'text-gray-600' : 'text-gray-500'}
+                    `}>
                       {testimonial.role}
                     </p>
                   </div>
@@ -175,4 +200,6 @@ export default function Testimonials() {
       `}</style>
     </section>
   );
-}
+});
+
+export default Testimonials;
