@@ -6,8 +6,8 @@ import Approach from "@/components/Approach";
 import Team from "@/components/Team";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import SocialImpact from "@/components/SocialImpact";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import CookieConsent from "@/components/CookieConsent";
 import SpecializationCards from "@/components/industires"
@@ -25,8 +25,8 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <SpecializationCards />
-      <FAQ />
       <SocialImpact />
+      <FAQ />      
       <Contact />
       <CookieConsent />
     </div>

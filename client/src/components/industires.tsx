@@ -66,9 +66,9 @@ const SpecializationCards = () => {
               className={`
                 relative rounded-xl overflow-hidden shadow-lg border border-gray-200
                 transition-all duration-500 ease-in-out
-                ${clickedCardId === card.id ? 'w-full lg:w-[65%] min-h-[500px] lg:min-h-[600px]' : 
+                ${clickedCardId === card.id ? 'w-full lg:w-[65%] min-h-[550px] lg:min-h-[650px]' : // Adjusted min-height for clicked card
                    clickedCardId ? 'w-[calc(33.33%-1rem)] lg:w-[calc(17.5%-1rem)] opacity-50' : 
-                   'w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] min-h-[300px] lg:min-h-[400px]'}
+                   'w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] min-h-[380px] lg:min-h-[480px]'} {/* Adjusted min-height for default cards */}
                 ${hoveredCardId === card.id && !clickedCardId ? 'group' : ''}
               `}
               onMouseEnter={() => setHoveredCardId(card.id)}
@@ -104,21 +104,16 @@ const SpecializationCards = () => {
                   {card.title}
                 </h3>
 
-                {/* Description - Only visible when clicked */}
-                <p className={`text-base leading-relaxed mt-4 transition-opacity duration-300
+                {/* Description - Only visible when clicked, now with fancy styling and at the bottom */}
+                <p className={`font-serif italic text-xl leading-relaxed mt-auto mb-4 transition-opacity duration-300
                   ${clickedCardId === card.id ? 'opacity-100 block' : 'opacity-0 hidden'}
                 `}>
                   {card.description}
                 </p>
 
-                {/* User icon/name - Always visible */}
+                {/* User name and role - No image */}
                 <div className="flex items-center space-x-3 mt-auto pt-4">
-                    <img
-                        src={card.image} // Using card image for user icon as per reference
-                        alt={card.author}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-white"
-                        onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/48x48/cccccc/333333?text=User"; }}
-                    />
+                    {/* Removed img tag for user icon */}
                     <div>
                         <p className="font-semibold text-lg">{card.author}</p>
                         <p className="text-sm opacity-75">{card.role}</p>

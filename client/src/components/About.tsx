@@ -57,7 +57,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="text-3xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="text-2xl md:text-2xl leading-relaxed text-gray-300">
               <p ref={textRef} className="mb-8">
                 {words.map((word, index) => (
                   <span key={index} className="word-animate inline-block mr-2">
@@ -68,7 +68,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="w-full aspect-video max-w-2xl mx-0">
+          <div className="w-full aspect-video max-w-2xl mx-auto">
             <iframe
               className="w-full h-full rounded-xl"
               src="https://www.youtube.com/embed/hZOeL1FAVII?si=R6G85xZ8C-j5QDci"
