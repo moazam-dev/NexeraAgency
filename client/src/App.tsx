@@ -6,11 +6,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 import CookieConsent from "@/components/CookieConsent";
+import WebDevelopmentPage from "@/pages/WebPage"; // Import your new page component
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/web-development" component={WebDevelopmentPage} /> {/* Add this line for the new page */}
       <Route component={NotFound} />
     </Switch>
   );

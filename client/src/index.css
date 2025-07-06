@@ -83,6 +83,14 @@
                 var(--primary-dark);
   }
   
+.hero-bg-image {
+  background-image: url('https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
   .gradient-text {
     background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-green) 100%);
     -webkit-background-clip: text;
