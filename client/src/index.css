@@ -281,17 +281,18 @@
   }
 
   /* Massive Animated Typography */
-  .massive-text {
-    font-size: clamp(4rem, 12vw, 8rem);
-    font-weight: 900;
-    line-height: 0.9;
-    background: linear-gradient(135deg, var(--accent-green), var(--accent-teal), #3b82f6, var(--accent-green));
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-flow 4s ease-in-out infinite;
-  }
+.massive-text {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  color: rgb(200, 0, 0);
+  background: none;
+  background-size: initial;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: initial;
+  background-clip: unset;
+  animation: none;
+}
 
   @keyframes gradient-flow {
     0%, 100% { 
