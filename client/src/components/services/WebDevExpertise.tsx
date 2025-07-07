@@ -1,90 +1,81 @@
-import { motion } from "framer-motion";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import React from 'react';
 
-export default function Expertise() {
-  const { ref, isInView } = useScrollAnimation();
+// Ensure your tailwind.config.js has the 'gradient-text' utility defined.
+// Example:
+// plugins: [
+//   function({ addUtilities }) {
+//     const newUtilities = {
+//       '.gradient-text': {
+//         'background-image': 'linear-gradient(to right, #00C6FF, #0072FF)', // Adjust these colors for desired neon gradient
+//         '-webkit-background-clip': 'text',
+//         'background-clip': 'text',
+//         'color': 'transparent',
+//       },
+//     }
+//     addUtilities(newUtilities, ['responsive', 'hover'])
+//   }
+// ],
 
+const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit new theme
   return (
-    <section id="expertise" className="py-20 bg-white" ref={ref}>
-      <div className="container mx-auto px-6">
-        {/* Section Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            Expertise That <span className="gradient-text">Delivers</span>
-          </h2>
-        </motion.div>
-        
-        {/* Row 1: Text Left, Image Right */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col lg:flex-row items-center gap-12 mb-20"
-        >
-          {/* Text Content */}
-          <div className="lg:w-1/2 space-y-6">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Crafting Bespoke Digital Experiences
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We don't just build websites; we engineer custom web applications and platforms 
-              meticulously tailored to your unique business needs. From complex enterprise solutions 
-              to innovative SaaS products, our development focuses on scalability, robust performance, 
-              and future-proof architecture, ensuring your digital presence is not just functional, 
-              but a true asset.
-            </p>
-          </div>
-          
-          {/* Image */}
-          <div className="lg:w-1/2">
-            <div className="expertise-image-container rounded-xl overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/17483870/pexels-photo-17483870.png?auto=compress&cs=tinysrgb&w=800&h=600"
-                alt="Abstract neural networks and digital technology"
-                className="expertise-image w-full h-80 object-cover"
-              />
-            </div>
-          </div>
-        </motion.div>
-        
-        {/* Row 2: Image Left, Text Right */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-12"
-        >
-          {/* Text Content */}
-          <div className="lg:w-1/2 space-y-6">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Intuitive Interfaces & Powerful Integrations
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Beyond the backend, we prioritize the front-end, designing and developing highly 
-              intuitive user interfaces (UI) and engaging user experiences (UX) that captivate 
-              your audience. We seamlessly integrate essential third-party services, APIs, and 
-              databases, creating a cohesive digital ecosystem that streamlines operations and 
-              enhances overall functionality for both you and your users.
-            </p>
-          </div>
-          
-          {/* Image */}
-          <div className="lg:w-1/2">
-            <div className="expertise-image-container rounded-xl overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
-                alt="Responsive design on multiple devices"
-                className="expertise-image w-full h-80 object-cover"
-              />
-            </div>
-          </div>
-        </motion.div>
+    <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
+      {/* Centered Heading for the entire section - Changed content and added gradient */}
+      <div className="text-center mb-16 px-6 max-w-4xl">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          Crafting <span className="gradient-text">Digital Excellence</span>
+        </h2>
       </div>
-    </section>
+
+      {/* Main grid container - Layout maintained exactly as provided */}
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
+        {/* Top Left Section: New Content for Digital Innovation */}
+        <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
+          <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
+            Unleashing Next-Gen Technologies
+          </h3>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
+            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+          </p>
+        </div>
+
+        {/* Top Right Section: Image - Technological / Neon */}
+        <div className="flex items-center justify-center overflow-hidden">
+          <img
+            src="/1.jpeg" // Image: Neon abstract monitor screen
+            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
+            className="w-full h-full object-cover" // Layout maintained
+            onError={(e) => {
+              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
+              e.currentTarget.alt = "Image failed to load";
+            }}
+          />
+        </div>
+
+        {/* Bottom Left Section: Image - Technological / Neon */}
+        <div className="flex items-center justify-center overflow-hidden">
+          <img
+            src="2.jpg" // Image: Face with digital overlay
+            alt="Human face with digital data overlay, representing AI and seamless experiences"
+            className="w-full h-full object-cover" // Layout maintained
+            onError={(e) => {
+              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
+              e.currentTarget.alt = "Image failed to load";
+            }}
+          />
+        </div>
+
+        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
+          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
+            Seamless AI-Driven Experiences
+          </h3> */}
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
+            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default DigitalFrontiersSection; // Exporting with new name

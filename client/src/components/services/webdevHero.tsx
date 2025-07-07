@@ -15,7 +15,7 @@ export default function Hero() {
         }
 
         .massive-text {
-          font-size: clamp(2rem, 10vw, 5rem);
+          font-size: clamp(2rem, 10vw, 3rem);
           font-weight: 900;
           line-height: 1;
           color: white;
@@ -25,14 +25,14 @@ export default function Hero() {
           -webkit-text-fill-color: initial;
           background-clip: unset;
           animation: none;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
 
         /* Styles for the button directly */
         .hero-button {
           background: linear-gradient(135deg, var(--accent-green), var(--accent-teal), var(--accent-blue)); /* Default gradient background */
           color: white; /* Default white text */
-          padding: 15px 30px;
+          padding: 10px 20px;
           border-radius: 9999px;
           border: none;
           font-weight: 600;
@@ -77,7 +77,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-block text-white text-sm px-4 py-2 rounded-full mb-6 font-medium web-dev-label border border-white border-opacity-30"
+              className="inline-block text-white text-sm px-4 py-2 rounded-full mb-3 font-medium web-dev-label border border-white border-opacity-30"
             >
               WEB DEVELOPMENT
             </motion.div>
@@ -92,10 +92,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-lg md:text-xl lg:text-2xl text-white mb-10 max-w-3xl leading-relaxed"
+              className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craft bespoke digital experiences that drive engagement and deliver measurable results,
-              powered by cutting-edge technology and creative design.
+              We craf digital experiences that drive engagement<br />
+              powered by cutting-edge technology and creativity.
             </motion.p>
 
             <motion.div
