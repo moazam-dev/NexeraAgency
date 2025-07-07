@@ -85,7 +85,7 @@ export default function Home() {
       <InteractiveHero />
       <About />
       <Services />
-      <Approach />
+      <Approach isLightThemeActive={isLightThemeActive}/>
       <Team />
       <Portfolio isLightThemeActive={isLightThemeActive}/>
       {/* Testimonials section: Attach ref and pass the theme state */}

@@ -167,7 +167,7 @@ export default function ApproachBackground() {
       </div>
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-gray-50/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black-50/20 to-transparent text-white"></div>
     </div>
   );
 }

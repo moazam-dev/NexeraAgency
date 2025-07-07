@@ -93,7 +93,7 @@ export default function Approach() {
   }, []);
 
   return (
-    <section id="approach" className="py-32 px-6 bg-gray-100 text-black relative overflow-hidden">
+    <section id="approach" className="py-32 px-6 bg-black text-white relative overflow-hidden">
       {/* Dynamic Abstract Background */}
       <ApproachBackground />
       
@@ -102,7 +102,7 @@ export default function Approach() {
           <span className="inline-block bg-black text-white px-6 py-2 rounded-full text-sm font-semibold mb-8 tracking-wide">
             TECHNOLOGY
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-black mb-4">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-4">
             Our approach
           </h2>
         </div>

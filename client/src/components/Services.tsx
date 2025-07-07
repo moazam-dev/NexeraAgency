@@ -1,12 +1,12 @@
 import { useState } from "react";
-
+import { useLocation } from 'wouter';
 type Service = {
   title: string;
   imageUrl: string;
   hoverText: string;
 };
 
-const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
+const NewServiceCard = ({ title, imageUrl, hoverText , onClick}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -15,14 +15,14 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img
+      <img 
         src={imageUrl}
         alt={title}
         className={`absolute top-0 left-0 w-full h-full object-cover transition-all duration-300 ${
           isHovered ? "blur-sm scale-105" : "blur-0 scale-100"
         }`}
       />
-      <div
+      <div 
         className={`absolute bottom-4 z-20 text-white font-bold text-xl transition-all duration-300 ${
           isHovered ? "opacity-0 -translate-y-6" : "opacity-100"
         }`}
@@ -36,14 +36,14 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
         </p>
       )}
 
-      <div className="absolute inset-0 z-10 transition-all duration-300 bg-black/70"></div>
+      <div className="absolute inset-0 z-10 transition-all duration-300 bg-black/70" onClick={onClick}></div>
     </div>
   );
 };
 
 const ServicesSection = () => {
   const [showAll, setShowAll] = useState(false);
-
+  const [, navigate] = useLocation();
   const services: Service[] = [
     {
       title: "Web Development",
@@ -133,6 +133,7 @@ const ServicesSection = () => {
             title={service.title}
             imageUrl={service.imageUrl}
             hoverText={service.hoverText}
+            onClick={()=>navigate("/web-development")}
           />
         ))}
       </div>
