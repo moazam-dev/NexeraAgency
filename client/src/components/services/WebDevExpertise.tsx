@@ -41,7 +41,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
+            src={"../1.jpeg"} // Image: Neon abstract monitor screen
             alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
@@ -54,7 +54,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
+            src="../2.jpg" // Image: Face with digital overlay
             alt="Human face with digital data overlay, representing AI and seamless experiences"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {

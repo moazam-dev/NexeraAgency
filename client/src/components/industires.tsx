@@ -97,7 +97,7 @@ const SpecializationCards = ({ isLightThemeActive }) => { // Accept the prop
               >
                 {/* Overlay changes based on light theme */}
                 <div className={`absolute inset-0
-                  ${currentThemeActive ? 'bg-white/40' : 'bg-black/50'}
+                
                 `}></div>
               </div>
 

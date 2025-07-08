@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Plus, Minus, FileText, MessageSquare, Key, Route, Calendar, BarChart3, Users, MessageCircle, CheckSquare, Search, Target, Code, Palette, Monitor } from "lucide-react";
-import ApproachBackground from "./ApproachBackground";
+import ApproachBackground from "./ApproachBackground"; // Assuming this component handles its own theme or is theme-agnostic
 
 const approaches = [
   {
@@ -69,7 +69,7 @@ const approaches = [
   }
 ];
 
-export default function Approach() {
+export default function Approach({ isLightThemeActive }) {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -93,16 +93,29 @@ export default function Approach() {
   }, []);
 
   return (
-    <section id="approach" className="py-32 px-6 bg-black text-white relative overflow-hidden">
+    <section 
+      id="approach" 
+      className={`py-32 px-6 relative overflow-hidden transition-colors duration-500 ${
+        isLightThemeActive ? 'bg-white text-gray-900' : 'bg-black text-white'
+      }`}
+    >
       {/* Dynamic Abstract Background */}
-      <ApproachBackground />
+      <ApproachBackground /> 
       
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-24">
-          <span className="inline-block bg-black text-white px-6 py-2 rounded-full text-sm font-semibold mb-8 tracking-wide">
+          <span 
+            className={`inline-block px-6 py-2 rounded-full text-sm font-semibold mb-8 tracking-wide transition-colors duration-500 ${
+              isLightThemeActive ? 'bg-gray-100 text-gray-800' : 'bg-black text-white'
+            }`}
+          >
             TECHNOLOGY
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-4">
+          <h2 
+            className={`text-5xl md:text-6xl lg:text-7xl font-black mb-4 transition-colors duration-500 ${
+              isLightThemeActive ? 'text-gray-900' : 'text-white'
+            }`}
+          >
             Our approach
           </h2>
         </div>
@@ -118,22 +131,32 @@ export default function Approach() {
                 marginBottom: index < approaches.length - 1 ? '24px' : '0'
               }}
             >
-              <div className="accordion-bar bg-white rounded-2xl shadow-lg border border-gray-200 relative overflow-hidden backdrop-blur-sm">
+              <div 
+                className={`accordion-bar rounded-2xl shadow-lg border relative overflow-hidden backdrop-blur-sm transition-colors duration-500 ${
+                  isLightThemeActive ? 'bg-white border-gray-200' : 'bg-white border-gray-200' // Keeping white for accordion bars in both themes
+                }`}
+              >
                 {/* Gradient Tab */}
-                <div className="gradient-tab"></div>
+                <div className="gradient-tab"></div> 
                 
                 {/* Bar Header */}
                 <div 
-                  className="bar-header cursor-pointer px-8 py-8 flex justify-between items-center hover:bg-gray-50 transition-all duration-300"
+                  className={`bar-header cursor-pointer px-8 py-8 flex justify-between items-center transition-all duration-300 ${
+                    isLightThemeActive ? 'hover:bg-gray-50' : 'hover:bg-gray-50' // Hover effect
+                  }`}
                   onClick={() => toggleAccordion(index)}
                 >
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  <h3 
+                    className={`text-2xl md:text-3xl font-bold transition-colors duration-500 ${
+                      isLightThemeActive ? 'text-gray-900' : 'text-gray-900' // Keeping text dark for contrast on white accordion bar
+                    }`}
+                  >
                     {approach.title}
                   </h3>
                   <div className="transition-transform duration-300" style={{
                     transform: openAccordion === index ? 'rotate(45deg)' : 'rotate(0deg)'
                   }}>
-                    <Plus className="h-7 w-7 text-gray-600" />
+                    <Plus className="h-7 w-7 text-gray-600" /> {/* Icon color remains consistent */}
                   </div>
                 </div>
                 
@@ -148,7 +171,11 @@ export default function Approach() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                       {/* Left Column - Project Structure */}
                       <div className="space-y-6">
-                        <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div 
+                          className={`rounded-xl p-6 border transition-colors duration-500 ${
+                            isLightThemeActive ? 'bg-gray-50 border-gray-200' : 'bg-gray-50 border-gray-200' // Already light, keep as is
+                          }`}
+                        >
                           <div className="flex items-center mb-4">
                             <FileText className="h-5 w-5 text-gray-700 mr-2" />
                             <h4 className="font-bold text-lg text-gray-900">New project</h4>
@@ -165,12 +192,28 @@ export default function Approach() {
                           </div>
                           
                           {/* Preview Window */}
-                          <div className="mt-4 bg-gray-900 rounded-lg p-4 text-center">
+                          <div 
+                            className={`mt-4 rounded-lg p-4 text-center transition-colors duration-500 ${
+                              isLightThemeActive ? 'bg-gray-100' : 'bg-gray-900'
+                            }`}
+                          >
                             <div className="text-[var(--accent-teal)] text-sm font-mono">Brief</div>
                             <div className="mt-2 space-y-1">
-                              <div className="h-1 bg-gray-700 rounded w-3/4 mx-auto"></div>
-                              <div className="h-1 bg-gray-700 rounded w-1/2 mx-auto"></div>
-                              <div className="h-1 bg-gray-700 rounded w-2/3 mx-auto"></div>
+                              <div 
+                                className={`h-1 rounded w-3/4 mx-auto transition-colors duration-500 ${
+                                  isLightThemeActive ? 'bg-gray-300' : 'bg-gray-700'
+                                }`}
+                              ></div>
+                              <div 
+                                className={`h-1 rounded w-1/2 mx-auto transition-colors duration-500 ${
+                                  isLightThemeActive ? 'bg-gray-300' : 'bg-gray-700'
+                                }`}
+                              ></div>
+                              <div 
+                                className={`h-1 rounded w-2/3 mx-auto transition-colors duration-500 ${
+                                  isLightThemeActive ? 'bg-gray-300' : 'bg-gray-700'
+                                }`}
+                              ></div>
                             </div>
                           </div>
                         </div>
@@ -205,7 +248,13 @@ export default function Approach() {
                           ))}
                         </div>
                         
-                        <Button className="bg-gradient-to-r from-gray-900 to-black text-white px-8 py-4 rounded-full font-bold w-full hover:from-black hover:to-gray-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+                        <Button 
+                          className={`px-8 py-4 rounded-full font-bold w-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 ${
+                            isLightThemeActive 
+                              ? 'bg-gray-800 text-white hover:bg-gray-900' 
+                              : 'bg-gradient-to-r from-gray-900 to-black text-white hover:from-black hover:to-gray-900'
+                          }`}
+                        >
                           BOOK A FREE STRATEGY CALL
                         </Button>
                       </div>

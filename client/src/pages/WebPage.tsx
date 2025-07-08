@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 
 export default function Home() {
+  const isLightThemeActive =false
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />
@@ -19,7 +20,7 @@ export default function Home() {
       <WebDevelopmentServices />
       <WebDevelopmentWhyNexera />
       <WebDevTechStack />
-      <FAQ />      
+      <FAQ isLightThemeActive={isLightThemeActive}/>      
       <Contact />
     </div>
   );

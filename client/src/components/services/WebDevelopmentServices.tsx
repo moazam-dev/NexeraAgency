@@ -1,6 +1,38 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion } from "framer-motion";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+// Placeholder for useScrollAnimation hook.
+// You should replace this with your actual hook implementation from "@/hooks/useScrollAnimation".
+const useScrollAnimation = () => {
+  const ref = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  return { ref, isInView };
+};
+
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -68,7 +100,7 @@ export default function WebDevelopmentServices() {
             Our Web <span className="gradient-text">Experties</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
+            From the visible aesthetics to the intricate backend logic, our comprehensive web development
             services cover every aspect of your digital presence.
           </p>
         </motion.div>
@@ -81,12 +113,12 @@ export default function WebDevelopmentServices() {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`service-card group cursor-pointer overflow-hidden relative h-96 ${
+              className={`service-card group cursor-pointer overflow-hidden relative min-h-[384px] rounded-xl ${ // Changed h-96 to min-h-[384px] and added rounded-xl
                 service.isSpecial ? 'masked-card' : ''
               }`}
             >
               {/* Background Image - Smoothly zooms and blurs on hover */}
-              <div 
+              <div
                 className="service-card-image absolute inset-0 bg-cover bg-center transition-all duration-1000 group-hover:scale-110 group-hover:blur-sm"
                 style={{ backgroundImage: `url(${service.image})` }}
               ></div>
@@ -101,19 +133,17 @@ export default function WebDevelopmentServices() {
                   <h3 className="service-card-title text-xl font-bold mb-3">
                     {service.title}
                   </h3>
-                  
-                  {/* Description - Appears smoothly from the right on hover */}
-                  <p className="service-card-description text-sm text-white/90 leading-relaxed opacity-0 max-h-0 overflow-hidden 
-                            transition-all duration-1000 group-hover:opacity-100 group-hover:max-h-32 
-                            transform translate-x-10 group-hover:translate-x-0">
+
+                  {/* Description - Now always visible */}
+                  <p className="service-card-description text-sm text-white/90 leading-relaxed transition-all duration-1000">
                     {service.description}
                   </p>
                 </div>
 
-                {/* Button - Now always visible, left-aligned, smaller, and with a unique hover effect */}
-                <button className="service-card-button bg-teal-500 text-white px-4 py-2 rounded-full font-semibold text-sm 
-                                transition-all duration-300 self-start w-fit
-                                hover:bg-white hover:text-teal-500 hover:scale-105 hover:shadow-lg"> {/* Smaller padding, w-fit for minimum width, unique hover effect */}
+                {/* Button - Always visible, left-aligned, smaller, and with a unique hover effect */}
+                <button className="service-card-button bg-teal-500 text-white px-4 py-2 rounded-full font-semibold text-sm
+                                   transition-all duration-300 self-start w-fit
+                                   hover:bg-white hover:text-teal-500 hover:scale-105 hover:shadow-lg">
                   Get In Touch
                 </button>
               </div>
