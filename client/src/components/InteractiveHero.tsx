@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useMousePosition } from "@/hooks/useMousePosition";
+import { useMousePosition } from "@/hooks/useMousePosition"; // Assuming this hook is correctly implemented
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 const words = ["Excellence", "Innovation", "Solution"];
@@ -136,7 +136,8 @@ export default function InteractiveHero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-5xl md:text-6xl lg:text-8xl font-black leading-[0.8] tracking-wide mb-6 italic"
         >
-          If (Client): <br /><span className=" italic text-1xl">return</span>
+          If (Client): <br />
+          <span className="italic text-1xl">return</span>
           <br />
           <AnimatePresence mode="wait">
             <motion.span
@@ -160,25 +161,23 @@ export default function InteractiveHero() {
         >
           Building powerful solutions through <br className="hidden sm:inline" />
           high-performing{" "}
-          {/* --- SPAN FOR "digital innovation." - Hover effect removed --- */}
           <span className="bg-[#2e2e2e] text-white italic px-2 py-0 rounded-full inline-block">
             digital innovation.
           </span>
-          {/* --- END OF SPAN MODIFICATION --- */}
         </motion.p>
 
-        {/* --- START OF THE MODIFIED BUTTON CODE --- */}
         <motion.button
-          // Added transition-all and direct hover:bg-gradient styles
+          onClick={() => {
+            window.location.href =
+              "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ25Lkfhfy-PWdh1A0QqCqR4tfvQfbaz3mvxCOmGdjTv2qRRWXzwwDx2GxJQn6kEko2e_Nu52RLJ";
+          }}
           className="relative flex items-center justify-center px-6 py-3 md:px-10 md:py-4 bg-white rounded-full text-lg md:text-xl font-bold overflow-hidden group transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-[var(--accent-green)] hover:to-[var(--accent-teal)]"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {/* Text: Dark initially, white on hover */}
           <span className="relative z-20 mr-3 md:mr-4 font-['Bebas_Neue'] text-lg md:text-xl tracking-wider text-[#2e2e2e] group-hover:text-white transition-colors duration-300">
             FREE STRATEGY CALL
           </span>
-          {/* Icon Container: Black circle initially, transparent on hover, icon inside remains white */}
           <div className="relative z-20 w-10 h-10 md:w-12 md:h-12 bg-black rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-transparent">
             <motion.div
               className="flex items-center justify-center"
@@ -189,11 +188,7 @@ export default function InteractiveHero() {
               <FaRegCalendarAlt className="text-white text-xl md:text-2xl" />
             </motion.div>
           </div>
-
-          {/* The absolute overlay div is now REMOVED as the main button handles the gradient */}
         </motion.button>
-        {/* --- END OF THE MODIFIED BUTTON CODE --- */}
-
       </div>
     </section>
   );

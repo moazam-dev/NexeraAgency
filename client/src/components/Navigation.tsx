@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Menu, X } from "lucide-react";
 
+// Assuming your logo is in public/logo.svg or similar
+import NexeraLogo from "/public/nexera-logo.svg"; // Adjust path as needed
+
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,9 +33,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="bg-white text-black px-4 py-2 rounded-full font-bold text-xl">
-              Nexera
-            </div>
+            {/* Replaced text with image logo */}
+            <img 
+              src="/logo1.png"// Use .src if you're importing directly from public or using next/image
+              alt="Nexera Logo" 
+              className="h-10 w-auto" // Adjust height as needed for your logo
+            />
           </div>
           
           {/* Desktop Navigation */}
