@@ -168,9 +168,10 @@ export default function InteractiveHero() {
 
         <motion.button
           onClick={() => {
-            window.location.href =
-              "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ25Lkfhfy-PWdh1A0QqCqR4tfvQfbaz3mvxCOmGdjTv2qRRWXzwwDx2GxJQn6kEko2e_Nu52RLJ";
-          }}
+            window.open(
+              "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ25Lkfhfy-PWdh1A0QqCqR4tfvQfbaz3mvxCOmGdjTv2qRRWXzwwDx2GxJQn6kEko2e_Nu52RLJ",
+              "_blank"
+            );}}
           className="relative flex items-center justify-center px-6 py-3 md:px-10 md:py-4 bg-white rounded-full text-lg md:text-xl font-bold overflow-hidden group transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-[var(--accent-green)] hover:to-[var(--accent-teal)]"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

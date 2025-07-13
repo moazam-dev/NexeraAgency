@@ -37,7 +37,7 @@ export default function Navigation() {
             <img 
               src="/logo1.png"// Use .src if you're importing directly from public or using next/image
               alt="Nexera Logo" 
-              className="h-10 w-auto" // Adjust height as needed for your logo
+              className="h-8 w-auto" // Adjust height as needed for your logo
             />
           </div>
           
