@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from "@/components/MainPage/Navigation";
-import Hero from "@/components/services/Web/webdevHero";
-import WebDevWhyWeb from "@/components/services/Web/WebDevWhyWeb";
-import Expertise from "@/components/services/Web/WebDevExpertise";
-import WebDevelopmentServices from "@/components/services/Web/WebDevelopmentServices";
-import WebDevelopmentWhyNexera from "@/components/services/Web/WebDevelopmentWhyNexera";
-import WebDevTechStack from '@/components/services/Web/WebDevTechStack';
+import Hero from "@/components/services/MobileApp/AppdevHero";
+import WebDevWhyWeb from "@/components/services/MobileApp/AppDevWhyWeb";
+import Expertise from "@/components/services/MobileApp/AppDevExpertise";
+import WebDevelopmentServices from "@/components/services/MobileApp/AppDevelopmentServices";
+import WebDevelopmentWhyNexera from "@/components/services/MobileApp/AppDevelopmentWhyNexera";
+import WebDevTechStack from '@/components/services/MobileApp/AppDevTechStack';
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
 

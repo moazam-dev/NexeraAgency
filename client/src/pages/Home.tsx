@@ -1,16 +1,16 @@
-import Navigation from "@/components/Navigation";
-import InteractiveHero from "@/components/InteractiveHero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Approach from "@/components/Approach";
-import Team from "@/components/Team";
-import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
-import SocialImpact from "@/components/SocialImpact";
-import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
-import CookieConsent from "@/components/CookieConsent";
-import SpecializationCards from "@/components/industires"
+import Navigation from "@/components/MainPage/Navigation";
+import InteractiveHero from "@/components/MainPage/InteractiveHero";
+import About from "@/components/MainPage/About";
+import Services from "@/components/MainPage/Services";
+import Approach from "@/components/MainPage/Approach";
+import Team from "@/components/MainPage/Team";
+import Portfolio from "@/components/MainPage/Portfolio";
+import Testimonials from "@/components/MainPage/Testimonials";
+import SocialImpact from "@/components/MainPage/SocialImpact";
+import FAQ from "@/components/MainPage/FAQ";
+import Contact from "@/components/MainPage/Contact";
+import CookieConsent from "@/components/MainPage/CookieConsent";
+import SpecializationCards from "@/components/MainPage/industires"
 
 
 export default function Home() {
