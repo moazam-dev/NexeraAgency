@@ -8,39 +8,39 @@ export default function Team() {
 
   const teamMembers = [
     {
-      name: "Dmytro Zabolotnyi",
+      name: "Daniel Vance",
       role: "Senior Graphic Designer",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/Senior-Graphic-Designer.png",
       bio: "Leading our creative vision with over 10 years of experience in digital design and brand strategy. Known for innovative approaches to visual storytelling."
     },
     {
-      name: "Kate Terekhovskaya",
+      name: "Katie Evans",
       role: "Middle PPC Specialist",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/Middle-PPC-Specialist.png",
       bio: "She's the heart of our PPC team, always ready to lend her expertise and knowledge. Approachable and kind, she makes complex campaigns seem effortless."
     },
     {
-      name: "Vladyslav Chornenkyi",
+      name: "Leo Vance",
       role: "Senior PPC Specialist",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/Senior-PPC-Specialist.png",
       bio: "Data-driven PPC expert with expertise in digital campaigns and growth strategies. Specializes in maximizing ROI through strategic optimization."
     },
     {
-      name: "Yevhen Subota",
+      name: "Eugene Croft",
       role: "Technical Lead",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/Technical-Lead.png",
       bio: "Full-stack developer specializing in React, Node.js, and cloud architecture solutions. Passionate about creating scalable technical solutions."
     },
     {
-      name: "Anna Kovalenko",
+      name: "Anna Sterling",
       role: "UX Designer",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/UX-Designer.png",
       bio: "Passionate about creating intuitive user experiences through research-driven design approaches. Believes in the power of user-centered design."
     },
     {
-      name: "Maksym Petrov",
+      name: "Maxwell Pierce",
       role: "Project Manager",
-      image: "/api/placeholder/280/350",
+      imageUrl: "/Project-Manager.png",
       bio: "Ensuring smooth project delivery through agile methodologies and team coordination. Expert at bringing teams together to achieve common goals."
     }
   ];
@@ -101,7 +101,13 @@ export default function Team() {
                 <div className="relative w-72 h-96 rounded-2xl overflow-hidden bg-gray-800 cursor-pointer group">
                   {/* Grayscale Portrait */}
                   <div className="w-full h-full bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 flex items-center justify-center relative filter grayscale">
-                    <div className="text-gray-300 text-center">
+                    {/* Team Member Image */}
+                    <img
+                      src={member.imageUrl}
+                      alt={member.name}
+                      className="absolute inset-0 w-full h-full object-cover object-center z-0"
+                    />
+                    <div className="text-gray-300 text-center z-10 relative">
                       <div className="text-lg mb-2 font-semibold">{member.name}</div>
                       <div className="text-sm opacity-75">{member.role}</div>
                     </div>

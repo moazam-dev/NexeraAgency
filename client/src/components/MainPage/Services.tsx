@@ -47,63 +47,65 @@ const ServicesSection = () => {
   const services: Service[] = [
     {
       title: "Web Development",
-      imageUrl: "https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl: "/web.jpg",
       hoverText: "Crafting stunning and responsive websites.",
     },
-    {
+     {
       title: "Mobile App Development",
-      imageUrl: "https://images.pexels.com/photos/6078128/pexels-photo-6078128.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl: "/app.jpg",
       hoverText: "Building apps for iOS and Android platforms.",
     },
     {
-      title: "UI/UX Design",
-      imageUrl: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Designing seamless and beautiful user experiences.",
-    },
-    {
-      title: "Digital Marketing",
-      imageUrl: "https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Boosting your reach with smart strategies.",
-    },
-    {
-      title: "SEO Optimization",
-      imageUrl: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Improving rankings and driving organic traffic.",
-    },
-    {
-      title: "Cloud Services",
-      imageUrl: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Deploying secure and scalable cloud setups.",
-    },
-    {
       title: "Brand Identity",
-      imageUrl: "https://images.pexels.com/photos/3527537/pexels-photo-3527537.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl: "/brandid.jpg",
       hoverText: "Creating memorable brand experiences.",
     },
     {
+      title: "Maintenance & Support",
+      imageUrl: "/mainsup.jpg",
+      hoverText: "Keeping your systems secure and up-to-date.",
+    },
+     {
       title: "E-Commerce Solutions",
-      imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl: "/ecom.jpg",
       hoverText: "Custom online store development.",
+    },
+   
+    {
+      title: "WordPress",
+      imageUrl: "/wordp.jpg",
+      hoverText: "Professional WordPress website development and customization.",
+    },
+    {
+      title: "Shopify",
+      imageUrl: "/shopify.jpg",
+      hoverText: "Building and optimizing Shopify stores for your business.",
+    },
+    {
+      title: "Creative Designing",
+      imageUrl: "/cretdes.jpg",
+      hoverText: "Innovative graphic and creative design solutions.",
     },
     {
       title: "Content Creation",
-      imageUrl: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl: "/contcrea.jpg",
       hoverText: "Crafting content that connects and converts.",
     },
     {
-      title: "Analytics & Insights",
-      imageUrl: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Making data-driven decisions with confidence.",
+      title: "UI/UX Design",
+      imageUrl: "/uxui.jpg",
+      hoverText: "Designing seamless and beautiful user experiences.",
+    },
+   
+    {
+      title: "Video Editing",
+      imageUrl: "/vedioed.jpg",
+      hoverText: "Professional video editing for all your needs.",
     },
     {
-      title: "Maintenance & Support",
-      imageUrl: "https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Keeping your systems secure and up-to-date.",
-    },
-    {
-      title: "AI Integration",
-      imageUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800",
-      hoverText: "Automating workflows using AI and ML tools.",
+      title: "Digital Marketing",
+      imageUrl: "/mark.jpg",
+      hoverText: "Boosting your reach with smart strategies.",
     },
   ];
 
