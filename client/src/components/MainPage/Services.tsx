@@ -36,7 +36,7 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
         </p>
       )}
 
-      <div className="absolute inset-0 z-10 transition-all duration-300 bg-black/70"></div>
+      <div className="absolute inset-0 z-10 transition-all duration-300 bg-black/40"></div>
     </div>
   );
 };

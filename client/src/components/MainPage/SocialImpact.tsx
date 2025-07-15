@@ -32,21 +32,21 @@ export default function SocialImpact() {
     },
     {
       id: 2,
-      image: "https://images.pexels.com/photos/6646869/pexels-photo-6646869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Two individuals helping community
+      image: "/2mengiv.jpg", // Two individuals helping community
       alt: "Two individuals helping community",
       position: { top: "12%", right: "1%" },
       delay: 0.4
     },
     {
       id: 3,
-      image: "https://images.pexels.com/photos/1036858/pexels-photo-1036858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // White tote bag with custom design
+      image: "/bag.jpg", // White tote bag with custom design
       alt: "White tote bag with custom design",
       position: { bottom: "15%", left: "1%" },
       delay: 0.6
     },
     {
       id: 4,
-      image: "https://images.pexels.com/photos/6588636/pexels-photo-6588636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Gift box with products and packing
+      image: "foodbox.jpg", 
       alt: "Gift box with products and packing",
       position: { bottom: "10%", right: "8%" },
       delay: 0.8

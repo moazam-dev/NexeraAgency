@@ -15,7 +15,7 @@ const DigitalFrontiersSection: React.FC = () => {
   const fallbackSrc = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
   
   const topRightImage = useImageFallback("/firstapp.jpg", fallbackSrc);
-  const bottomLeftImage = useImageFallback("/apiapp.png", fallbackSrc);
+  const bottomLeftImage = useImageFallback("/apiapp.jpg", fallbackSrc);
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
@@ -34,7 +34,7 @@ const DigitalFrontiersSection: React.FC = () => {
             Building Powerful Mobile Experiences
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We create custom mobile applications for iOS and Android, focusing on performance, reliability, and seamless user experiences. Our team leverages the latest frameworks and native technologies to deliver apps that engage users and drive business growth.
+           We build custom mobile applications for both iOS and Android platforms, tailored to your unique business needs. Our focus is on delivering high-performance, reliable apps that provide a smooth and intuitive user experience. Using the latest frameworks and native technologies, we design and develop mobile solutions that not only engage users but also support long-term business growth.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const DigitalFrontiersSection: React.FC = () => {
         {/* Bottom Right Section: App Development Content */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            From concept to launch, we handle every aspect of app development: strategy, UI/UX design, coding, testing, and deployment. We also integrate essential features like push notifications, payments, analytics, and third-party APIs to ensure your app stands out in the marketplace.
+           From concept to launch, we manage every stage of mobile app development — including strategy, UI/UX design, coding, testing, and deployment. Our process is end-to-end and detail-driven. We also integrate essential features such as push notifications, secure payment systems, real-time analytics, and third-party APIs to enhance functionality and user engagement. The result is a polished, feature-rich app that performs reliably and stands out in today’s competitive marketplace, while remaining scalable, secure, and ready to grow with your business.
           </p>
         </div>
       </div>
