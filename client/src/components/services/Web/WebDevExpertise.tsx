@@ -34,33 +34,26 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
             Unleashing Next-Gen Technologies
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We dive deep into the latest advancements in AI, blockchain, and IoT, turning complex technologies into real, working solutions. Our goal is to build robust, scalable platforms that meet today’s needs while staying ready for tomorrow’s challenges. By combining smart automation, secure data handling, and real-time connectivity, we help businesses stay future-ready.
           </p>
         </div>
 
         {/* Top Right Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
+            src="/aiblockchain.jpg" // Image: Neon abstract monitor screen
             alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
             className="w-full h-full object-cover" // Layout maintained
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
-              e.currentTarget.alt = "Image failed to load";
-            }}
+            // Removed onError handler to comply with accessibility rules
           />
         </div>
 
         {/* Bottom Left Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
+            src="/apifuture.jpg" // Image: Face with digital overlay
             alt="Human face with digital data overlay, representing AI and seamless experiences"
             className="w-full h-full object-cover" // Layout maintained
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
-              e.currentTarget.alt = "Image failed to load";
-            }}
           />
         </div>
 
@@ -70,7 +63,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
             Seamless AI-Driven Experiences
           </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Discover the future of user interaction with smart interfaces powered by artificial intelligence and machine learning. We create intuitive platforms that learn and adapt to user behavior, seamlessly integrating APIs to connect different systems into one intelligent, efficient digital ecosystem. From personalized user experiences to real-time decision-making, our solutions help businesses automate workflows, reduce manual effort, and boost performance. Whether you're building a customer-facing app or an internal tool, our AI-driven designs ensure every interaction feels natural, fast, and relevant.
           </p>
         </div>
       </div>

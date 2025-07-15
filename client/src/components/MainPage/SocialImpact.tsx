@@ -25,7 +25,7 @@ export default function SocialImpact() {
   const imageCards = [
     {
       id: 1,
-      image: "https://images.pexels.com/photos/6646845/pexels-photo-6646845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Group photo of charity participants
+      image: "/consult.jpg", // Group photo of charity participants
       alt: "Group photo of charity participants",
       position: { top: "15%", left: "-4%" },
       delay: 0.2
@@ -85,7 +85,7 @@ export default function SocialImpact() {
 
         {/* Floating image cards */}
         {imageCards.map((card) => (
-          <div
+          <figure
             key={card.id}
             className={`floating-card absolute rounded-2xl overflow-hidden bg-gray-800/60 backdrop-blur-sm shadow-2xl transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{
@@ -103,24 +103,24 @@ export default function SocialImpact() {
                 src={card.image}
                 alt={card.alt}
                 className="w-64 h-48 object-cover rounded-t-2xl" // Use object-cover to maintain aspect ratio
-                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/256x192/cccccc/333333?text=Image+Error"; }} // Fallback for image loading errors
+                // Removed onError handler for accessibility compliance
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
 
             {/* Social interaction icons */}
-            <div className="absolute bottom-3 left-3 flex space-x-3">
-              <button className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors">
+            <nav aria-label="Social interactions" className="absolute bottom-3 left-3 flex space-x-3">
+              <button type="button" className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors" aria-label="Like">
                 <Heart className="h-4 w-4 text-white" />
               </button>
-              <button className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors">
+              <button type="button" className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors" aria-label="Comment">
                 <MessageCircle className="h-4 w-4 text-white" />
               </button>
-              <button className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors">
+              <button type="button" className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors" aria-label="Share">
                 <Send className="h-4 w-4 text-white" />
               </button>
-            </div>
-          </div>
+            </nav>
+          </figure>
         ))}
       </div>
 

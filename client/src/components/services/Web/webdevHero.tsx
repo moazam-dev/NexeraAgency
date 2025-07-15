@@ -94,8 +94,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craf digital experiences that drive engagement<br />
-              powered by cutting-edge technology and creativity.
+              We craft digital experiences that drive engagement<br />
+              Transforming ideas into engaging digital experiences through innovation and design
             </motion.p>
 
             <motion.div
