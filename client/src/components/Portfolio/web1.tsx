@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Link as LinkIcon, ChevronDown } from 'lucide-react';
-import finalBackgroundImage from '/p3.png'; // Using the image import
+import Navigation from "@/components/MainPage/Navigation";
+import FAQ from "@/components/MainPage/FAQ";
+import Contact from "@/components/MainPage/Contact";
+import Moackup1 from '/GoruM1.png';
+import Moackup2 from '/GoruM2.png';
 
 // --- Sample Data ---
 const project = {
@@ -35,6 +39,8 @@ const fadeIn = {
 const UniqueProjectPage: React.FC = () => {
     return (
         <div className="font-sans bg-black">
+            <Navigation />
+
             {/* --- Hero Section --- */}
             <motion.div
                 className="min-h-screen w-full relative flex flex-col items-center justify-center text-white"
@@ -89,24 +95,20 @@ const UniqueProjectPage: React.FC = () => {
 
             {/* --- THIRD SECTION: Full-Screen Background Image --- */}
             <div
-                className="h-screen w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${finalBackgroundImage})` }}
+                className="h-[2000px] w-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${Moackup1})` }}
             >
-                {/* This section is now just a full-screen background image, with no other content. */}
-                    <div className="absolute w-[58.8%] h-[25.2%] top-[66.2%] left-[25.3%] overflow-hidden rounded-lg">
-                        <iframe
-                            src="https://html.themexplosion.com/goru/index.html"
-                            title={project.title}
-                            className="h-full w-full"
-                            // This style now hides both vertical and horizontal scrollbars
-                            style={{
-                                width: 'calc(100% + 17px)',
-                                height: 'calc(100% + 17px)',
-                                border: 0
-                            }}
-                        ></iframe>
-                    </div>
             </div>
+
+            {/* --- FOURTH SECTION: Full-Screen Background Image --- */}
+            <div
+                className="h-[1300px] w-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${Moackup2})` }}
+            >
+            </div>
+
+            <FAQ />
+            <Contact />
         </div>
     );
 };
