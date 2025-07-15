@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from "react";
-import { Briefcase, Plus } from "lucide-react";
+import { Briefcase, Plus, ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Team() {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const teamMembers = [
     {
@@ -14,9 +15,9 @@ export default function Team() {
       bio: "Leading our creative vision with over 10 years of experience in digital design and brand strategy. Known for innovative approaches to visual storytelling."
     },
     {
-      name: "Katie Evans",
-      role: "Middle PPC Specialist",
-      imageUrl: "/Middle-PPC-Specialist.png",
+      name: "Anna Sterling",
+      role: "UX Designer",
+      imageUrl: "/UX-Designer.png",
       bio: "She's the heart of our PPC team, always ready to lend her expertise and knowledge. Approachable and kind, she makes complex campaigns seem effortless."
     },
     {
@@ -32,9 +33,9 @@ export default function Team() {
       bio: "Full-stack developer specializing in React, Node.js, and cloud architecture solutions. Passionate about creating scalable technical solutions."
     },
     {
-      name: "Anna Sterling",
-      role: "UX Designer",
-      imageUrl: "/UX-Designer.png",
+      name: "Katie Evans",
+      role: "Middle PPC Specialist",
+      imageUrl: "/Middle-PPC-Specialist.png",
       bio: "Passionate about creating intuitive user experiences through research-driven design approaches. Believes in the power of user-centered design."
     },
     {
@@ -62,30 +63,60 @@ export default function Team() {
     return () => observer.disconnect();
   }, []);
 
+  const scrollCards = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 300; // Adjust scroll amount as needed
+      if (direction === 'left') {
+        scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <section ref={sectionRef} className="py-20 px-6 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="inline-flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full mb-6">
-            <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full"></div>
-            <span className="text-sm font-medium tracking-wide">OUR TEAM</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
-            We've joined <span className="italic">forces</span> to turn<br />
-            bold ideas into reality
-          </h2>
-          
-          <button className="inline-flex items-center space-x-3 bg-gradient-to-r from-[var(--accent-green)] to-[var(--accent-teal)] px-6 py-3 rounded-full font-semibold text-black hover:scale-105 transition-transform duration-300">
-            <span>CAREER HUB</span>
-            <Briefcase className="h-5 w-5" />
-          </button>
+        {/* Header with Arrows */}
+        <div className={`mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="flex justify-between items-center"> {/* Added flex container for alignment */}
+            <div className="text-left"> {/* Kept text-left for the main content */}
+              <div className="inline-flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full mb-6">
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full"></div>
+                <span className="text-sm font-medium tracking-wide">OUR TEAM</span>
+              </div>
+
+              {/* Added mb-8 back for consistent spacing below the heading */}
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
+                We've joined <span className="italic">forces</span> to turn<br />
+                bold ideas into reality
+              </h2>
+            </div>
+
+            {/* Navigation Arrows */}
+              <div className="flex space-x-4">
+                <button
+                  onClick={() => scrollCards('left')}
+                  className="p-3 rounded-full text-white transition-transform duration-300 ease-out hover:scale-125 focus:outline-none"
+                  aria-label="Scroll left"
+                >
+                  <ArrowLeft className="h-6 w-6" />
+                </button>
+                <button
+                  onClick={() => scrollCards('right')}
+                  className="p-3 rounded-full text-white transition-transform duration-300 ease-out hover:scale-125 focus:outline-none"
+                  aria-label="Scroll right"
+                >
+                  <ArrowRight className="h-6 w-6" />
+                </button>
+              </div>
+          </div> {/* This closing div was missing */}
         </div>
 
         {/* Horizontally Scrollable Team Cards */}
         <div className="relative">
-          <div 
+          <div
+            ref={scrollContainerRef}
             className="flex space-x-6 overflow-x-auto pb-6 team-scroll"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
@@ -99,44 +130,38 @@ export default function Team() {
               >
                 {/* Main Card */}
                 <div className="relative w-72 h-96 rounded-2xl overflow-hidden bg-gray-800 cursor-pointer group">
-                  {/* Grayscale Portrait */}
-                  <div className="w-full h-full bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 flex items-center justify-center relative filter grayscale">
-                    {/* Team Member Image */}
-                    <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      className="absolute inset-0 w-full h-full object-cover object-center z-0"
-                    />
-                    <div className="text-gray-300 text-center z-10 relative">
-                      <div className="text-lg mb-2 font-semibold">{member.name}</div>
-                      <div className="text-sm opacity-75">{member.role}</div>
-                    </div>
-                    
-                    {/* Subtle overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  </div>
+                  {/* Image with Direct Grayscale/Brightness Transition */}
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className={`absolute inset-0 w-full h-full object-cover object-center z-0 transition-all duration-200 ease-out ${
+                      hoveredCard === index ? 'filter grayscale brightness-50' : 'filter-none'
+                    }`}
+                  />
 
-                  {/* Plus Icon */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-[var(--accent-teal)] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  {/* Plus Icon - Animates independently */}
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-[var(--accent-teal)] rounded-full flex items-center justify-center z-30 transition-transform duration-200 ease-out group-hover:scale-110 group-hover:rotate-90">
                     <Plus className="h-4 w-4 text-white" />
                   </div>
 
-                  {/* Name and Role at Bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/90 to-transparent">
+                  {/* Initial Name and Role at Bottom - Fades out */}
+                  <div className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-20 transition-opacity duration-150 ${
+                    hoveredCard === index ? 'opacity-0' : 'opacity-100'
+                  }`}>
                     <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
                     <p className="text-sm text-gray-300">{member.role}</p>
                   </div>
 
-                  {/* Hover Overlay Card */}
-                  <div className={`absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm rounded-t-2xl p-6 transition-all duration-500 ease-out transform ${
-                    hoveredCard === index 
-                      ? 'translate-y-0 opacity-100' 
-                      : 'translate-y-full opacity-0'
+                  {/* Dynamic Hover Content - This is the "Spotlight" Bio */}
+                  <div className={`absolute inset-0 flex items-center justify-center bg-white/95 backdrop-blur-sm p-6 rounded-2xl z-10 transition-all duration-200 ease-out ${
+                    hoveredCard === index
+                      ? 'opacity-100 scale-100'
+                      : 'opacity-0 scale-105 pointer-events-none'
                   }`}>
-                    <div className="text-black">
-                      <h4 className="font-bold text-lg mb-2">{member.name}</h4>
-                      <p className="text-sm text-gray-600 mb-3 font-medium">{member.role}</p>
-                      <p className="text-sm text-gray-800 leading-relaxed">{member.bio}</p>
+                    <div className="text-black text-center">
+                      <h4 className="font-bold text-xl mb-2">{member.name}</h4>
+                      <p className="text-base text-gray-600 mb-4 font-medium">{member.role}</p>
+                      <p className="text-sm text-gray-800 leading-relaxed max-w-xs mx-auto">{member.bio}</p>
                     </div>
                   </div>
                 </div>

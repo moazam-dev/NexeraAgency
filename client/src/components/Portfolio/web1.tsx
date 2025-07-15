@@ -93,7 +93,7 @@ const UniqueProjectPage: React.FC = () => {
                 style={{ backgroundImage: `url(${finalBackgroundImage})` }}
             >
                 {/* This section is now just a full-screen background image, with no other content. */}
-                    <div className="absolute w-[58.8%] h-[24.47%] top-[67%] left-[25.3%] overflow-hidden rounded-lg">
+                    <div className="absolute w-[58.8%] h-[25.2%] top-[66.2%] left-[25.3%] overflow-hidden rounded-lg">
                         <iframe
                             src="https://html.themexplosion.com/goru/index.html"
                             title={project.title}
