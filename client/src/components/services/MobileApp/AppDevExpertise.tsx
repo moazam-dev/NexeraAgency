@@ -16,34 +16,34 @@ import React from 'react';
 //   }
 // ],
 
-const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit new theme
+const DigitalFrontiersSection: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Leading <span className="gradient-text">App Development</span>
         </h2>
       </div>
 
       {/* Main grid container - Layout maintained exactly as provided */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
-        {/* Top Left Section: New Content for Digital Innovation */}
+        {/* Top Left Section: App Development Content */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            Building Powerful Mobile Experiences
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We create custom mobile applications for iOS and Android, focusing on performance, reliability, and seamless user experiences. Our team leverages the latest frameworks and native technologies to deliver apps that engage users and drive business growth.
           </p>
         </div>
 
-        {/* Top Right Section: Image - Technological / Neon */}
+        {/* Top Right Section: App Development Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/appdev1.jpg" // Image: Mobile app UI or team coding mobile app
+            alt="Mobile app development team working on UI"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -51,12 +51,12 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Left Section: Image - Technological / Neon */}
+        {/* Bottom Left Section: App Design Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/appdev2.jpg" // Image: App design wireframes or mobile devices
+            alt="Mobile app design wireframes and devices"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -64,13 +64,10 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        {/* Bottom Right Section: App Development Content */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            From concept to launch, we handle every aspect of app development: strategy, UI/UX design, coding, testing, and deployment. We also integrate essential features like push notifications, payments, analytics, and third-party APIs to ensure your app stands out in the marketplace.
           </p>
         </div>
       </div>

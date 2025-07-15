@@ -72,20 +72,20 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-20">
         <div className="flex items-center min-h-screen">
           <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
-            {/* Web Development Label */}
+            {/* App Development Label */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block text-white text-sm px-4 py-2 rounded-full mb-3 font-medium web-dev-label border border-white border-opacity-30"
             >
-              WEB DEVELOPMENT
+              APP DEVELOPMENT
             </motion.div>
 
             <h1
               className="massive-text mb-6 text-left"
             >
-              Building Your <br /> <span className="">Digital Legacy.</span>
+              Launch Your <br /> <span className="">Mobile Vision.</span>
             </h1>
 
             <motion.p
@@ -94,8 +94,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craf digital experiences that drive engagement<br />
-              powered by cutting-edge technology and creativity.
+              We craft mobile apps that inspire, engage, and grow your business.<br />
+              From concept to launch, our team delivers seamless experiences powered by innovation.
             </motion.p>
 
             <motion.div
@@ -110,7 +110,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="font-['Inter']">
-                  JOIN THE LEGACY
+                  START YOUR APP JOURNEY
                 </span>
                 <FaArrowRight />
               </motion.button>
