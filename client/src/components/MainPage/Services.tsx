@@ -1,19 +1,22 @@
-import { useState, useRef, useEffect } from "react"; // Import useRef and useEffect
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "wouter"; // Import the Link component for navigation
 
+// Updated Service type to include a navigation path
 type Service = {
   title: string;
   imageUrl: string;
   hoverText: string;
+  path: string; // The URL path for the service page
 };
 
-const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
+const NewServiceCard = ({ title, imageUrl, hoverText }: Omit<Service, 'path'>) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     // Main card container: Adds group for hover effects, subtle lift and scale, faster transition
     <div
       className={`relative overflow-hidden shadow-lg cursor-pointer bg-gray-800 flex flex-col items-center justify-end h-[300px] text-center rounded-none
-                  transition-all duration-150 ease-out group`} // Added 'group' class for hover effects
+               transition-all duration-150 ease-out group`} // Added 'group' class for hover effects
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ willChange: 'transform, box-shadow' }} // Hint for browser optimization
@@ -23,8 +26,8 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
         src={imageUrl}
         alt={title}
         className={`absolute top-0 left-0 w-full h-full object-cover
-                    transition-all duration-150 ease-out
-                    ${isHovered ? "scale-110 blur-sm grayscale-0" : "scale-100 blur-0 grayscale-[70%]"}`} // Increased scale, blur, and grayscale effect
+                   transition-all duration-150 ease-out
+                   ${isHovered ? "scale-110 blur-sm grayscale-0" : "scale-100 blur-0 grayscale-[70%]"}`} // Increased scale, blur, and grayscale effect
         style={{ willChange: 'transform, filter' }} // Hint for browser optimization
         // Fallback for images in case the URL is broken or image fails to load
         onError={(e) => {
@@ -35,7 +38,7 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
       {/* Overlay for darkening the image and ensuring text readability: Darkens more on hover, faster transition */}
       <div
         className={`absolute inset-0 z-10 transition-all duration-150 ease-out
-                    ${isHovered ? "bg-black/70" : "bg-black/30"}`} // Overlay darkens more on hover
+                   ${isHovered ? "bg-black/70" : "bg-black/30"}`} // Overlay darkens more on hover
         style={{ willChange: 'background-color' }} // Hint for browser optimization
       ></div>
 
@@ -44,8 +47,8 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
         {/* Title visibility controlled by hover state - slides up and fades out, faster transition */}
         <div
           className={`text-white font-bold text-xl mb-2 absolute
-                      transition-all duration-150 ease-out
-                      ${isHovered ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`} // Title slides up and disappears on hover
+                     transition-all duration-150 ease-out
+                     ${isHovered ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`} // Title slides up and disappears on hover
           style={{ willChange: 'opacity, transform' }} // Hint for browser optimization
         >
           {title}
@@ -54,8 +57,8 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
         {/* Hover text appears only on hover - slides up and fades in, faster transition */}
         <p
           className={`text-gray-300 text-sm px-2 text-center absolute
-                      transition-all duration-150 ease-out
-                      ${isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`} // Hover text slides up and appears on hover
+                     transition-all duration-150 ease-out
+                     ${isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`} // Hover text slides up and appears on hover
           style={{ willChange: 'opacity, transform' }} // Hint for browser optimization
         >
           {hoverText}
@@ -67,92 +70,99 @@ const NewServiceCard = ({ title, imageUrl, hoverText }: Service) => {
 
 const ServicesSection = () => {
   const [showAll, setShowAll] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null); // Create a ref for the section
-  const isInitialMount = useRef(true); // New ref to track initial mount
+  const sectionRef = useRef<HTMLElement>(null);
+  const isInitialMount = useRef(true);
 
-  // Effect to scroll to the section when showAll becomes false, but NOT on initial render
   useEffect(() => {
-    // If it's the initial mount, set the flag to false and don't scroll
     if (isInitialMount.current) {
       isInitialMount.current = false;
       return;
     }
-
-    // Only scroll if showAll becomes false (i.e., when "View Less Services" is clicked)
     if (!showAll && sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, [showAll]); // Dependency array ensures effect runs when showAll changes
+  }, [showAll]);
 
-  // Array of service objects with original image URLs
+  // Array of service objects with added 'path' for navigation
   const services: Service[] = [
     {
       title: "Web Development",
       imageUrl: "/web.jpg",
       hoverText: "Crafting stunning and responsive websites.",
+      path: "/web-development",
     },
     {
       title: "Mobile App Development",
       imageUrl: "/app.jpg",
       hoverText: "Building apps for iOS and Android platforms.",
+      path: "/app-development",
     },
     {
       title: "Brand Identity",
       imageUrl: "/brandid.jpg",
       hoverText: "Creating memorable brand experiences.",
+      path: "/brand-identity",
     },
     {
       title: "Maintenance & Support",
       imageUrl: "/mainsup.jpg",
       hoverText: "Keeping your systems secure and up-to-date.",
+      path: "/maintenance-support",
     },
     {
       title: "E-Commerce Solutions",
       imageUrl: "/ecom.jpg",
       hoverText: "Custom online store development.",
+      path: "/ecommerce-solutions",
     },
     {
       title: "WordPress",
       imageUrl: "/wordp.jpg",
       hoverText: "Professional WordPress website development and customization.",
+      path: "/wordpress-development",
     },
     {
       title: "Shopify",
       imageUrl: "/shopify.jpg",
       hoverText: "Building and optimizing Shopify stores for your business.",
+      path: "/shopify-development",
     },
     {
       title: "Creative Designing",
       imageUrl: "/cretdes.jpg",
       hoverText: "Innovative graphic and creative design solutions.",
+      path: "/creative-designing",
     },
     {
       title: "Content Creation",
       imageUrl: "/contcrea.jpg",
       hoverText: "Crafting content that connects and converts.",
+      path: "/content-creation",
     },
     {
       title: "UI/UX Design",
       imageUrl: "/uxui.jpg",
       hoverText: "Designing seamless and beautiful user experiences.",
+      path: "/ui-ux-design",
     },
     {
       title: "Video Editing",
       imageUrl: "/vedioed.jpg",
       hoverText: "Professional video editing for all your needs.",
+      path: "/video-editing",
     },
     {
       title: "Digital Marketing",
       imageUrl: "/mark.jpg",
       hoverText: "Boosting your reach with smart strategies.",
+      path: "/digital-marketing",
     },
   ];
 
-  // Determine which services to display based on the 'showAll' state
   const visibleServices = showAll ? services : services.slice(0, 4);
 
   return (
-    <section className="py-16 px-4 bg-black text-white font-sans" ref={sectionRef}> {/* Attach the ref here */}
+    <section className="py-16 px-4 bg-black text-white font-sans" ref={sectionRef}>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-4">
           SERVICES WE OFFER
@@ -170,13 +180,17 @@ const ServicesSection = () => {
       <div
         className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-700`}
       >
-        {visibleServices.map((service, index) => (
-          <NewServiceCard
-            key={index} // Using index as key is generally discouraged for dynamic lists, but okay for static lists
-            title={service.title}
-            imageUrl={service.imageUrl}
-            hoverText={service.hoverText}
-          />
+        {visibleServices.map((service) => (
+          // Each card is wrapped in a Link component to make it clickable
+          <Link key={service.path} href={service.path}>
+            <a className="block"> {/* The anchor tag is used for semantic navigation */}
+              <NewServiceCard
+                title={service.title}
+                imageUrl={service.imageUrl}
+                hoverText={service.hoverText}
+              />
+            </a>
+          </Link>
         ))}
       </div>
 

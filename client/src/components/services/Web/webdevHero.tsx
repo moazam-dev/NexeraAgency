@@ -14,6 +14,14 @@ export default function Hero() {
           --accent-blue: #3b82f6;
         }
 
+        .hero-bg-image {
+          background-image: url('/webbg.jpg');
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
+
         .massive-text {
           font-size: clamp(2rem, 10vw, 3rem);
           font-weight: 900;
@@ -95,7 +103,7 @@ export default function Hero() {
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
               We craft digital experiences that drive engagement<br />
-              Transforming ideas into engaging digital experiences through innovation and design
+              Transforming ideas into engaging digital experiences
             </motion.p>
 
             <motion.div

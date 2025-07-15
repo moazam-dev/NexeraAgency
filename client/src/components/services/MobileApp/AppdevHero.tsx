@@ -14,6 +14,14 @@ export default function Hero() {
           --accent-blue: #3b82f6;
         }
 
+        .hero-bg-image {
+          background-image: url('/appbg.jpg');
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
+
         .massive-text {
           font-size: clamp(2rem, 10vw, 3rem);
           font-weight: 900;
@@ -94,8 +102,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craft mobile apps that inspire, engage, and grow your business.<br />
-              From concept to launch, our team delivers seamless experiences powered by innovation.
+              From concept to launch, We craft mobile apps <br />
+              that inspire, engage, and grow your business.
+
             </motion.p>
 
             <motion.div
