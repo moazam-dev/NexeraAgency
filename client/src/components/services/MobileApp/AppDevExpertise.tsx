@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// Ensure your tailwind.config.js has the 'gradient-text' utility defined.
-// Example:
-// plugins: [
-//   function({ addUtilities }) {
-//     const newUtilities = {
-//       '.gradient-text': {
-//         'background-image': 'linear-gradient(to right, #00C6FF, #0072FF)', // Adjust these colors for desired neon gradient
-//         '-webkit-background-clip': 'text',
-//         'background-clip': 'text',
-//         'color': 'transparent',
-//       },
-//     }
-//     addUtilities(newUtilities, ['responsive', 'hover'])
-//   }
-// ],
+// Custom hook to handle image loading with fallback
+const useImageFallback = (src: string, fallbackSrc: string) => {
+  const [imgSrc, setImgSrc] = useState(src);
+  
+  const handleError = () => {
+    setImgSrc(fallbackSrc);
+  };
+  
+  return { imgSrc, handleError };
+};
 
 const DigitalFrontiersSection: React.FC = () => {
+  const fallbackSrc = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
+  
+  const topRightImage = useImageFallback("/firstapp.jpg", fallbackSrc);
+  const bottomLeftImage = useImageFallback("/apiapp.png", fallbackSrc);
+
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
-      {/* Centered Heading for the entire section - Changed content and added gradient */}
+      {/* Centered Heading for the entire section */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
           Leading <span className="gradient-text">App Development</span>
         </h2>
       </div>
 
-      {/* Main grid container - Layout maintained exactly as provided */}
+      {/* Main grid container */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
         {/* Top Left Section: App Development Content */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
@@ -41,26 +41,20 @@ const DigitalFrontiersSection: React.FC = () => {
         {/* Top Right Section: App Development Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/appdev1.jpg" // Image: Mobile app UI or team coding mobile app
+            src={topRightImage.imgSrc}
             alt="Mobile app development team working on UI"
             className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
-              e.currentTarget.alt = "Image failed to load";
-            }}
+            onError={topRightImage.handleError}
           />
         </div>
 
         {/* Bottom Left Section: App Design Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/appdev2.jpg" // Image: App design wireframes or mobile devices
+            src={bottomLeftImage.imgSrc}
             alt="Mobile app design wireframes and devices"
             className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
-              e.currentTarget.alt = "Image failed to load";
-            }}
+            onError={bottomLeftImage.handleError}
           />
         </div>
 
@@ -75,4 +69,4 @@ const DigitalFrontiersSection: React.FC = () => {
   );
 };
 
-export default DigitalFrontiersSection; // Exporting with new name
+export default DigitalFrontiersSection;

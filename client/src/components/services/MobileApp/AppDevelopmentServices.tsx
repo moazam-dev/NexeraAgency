@@ -9,33 +9,33 @@ export default function AppDevelopmentServices() {
     {
       title: "Custom Mobile App Development",
       description: "We build bespoke mobile applications tailored to your business goals, delivering seamless user experiences and robust functionality for both iOS and Android platforms.",
-      image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/custapp.png",
       isSpecial: true
     },
     {
       title: "Cross-Platform App Development",
       description: "Reach a wider audience with cross-platform apps using React Native or Flutter, ensuring consistent performance and appearance across all devices.",
-      image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: "/crssplat.jpg"
     },
     {
       title: "UI/UX Design for Mobile",
       description: "Our design team crafts intuitive, visually appealing interfaces that engage users and enhance retention, focusing on mobile-first principles.",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: "/uxuiapp.png"
     },
     {
       title: "App Maintenance & Support",
       description: "We provide ongoing updates, bug fixes, and performance optimization to keep your app secure, up-to-date, and running smoothly.",
-      image: "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: "/mainsupapp.png"
     },
     {
       title: "API & Third-Party Integrations",
       description: "Integrate your app with powerful APIs and third-party services to extend functionality, enable payments, notifications, analytics, and more.",
-      image: "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: "/apiintapp.jpg"
     },
     {
       title: "App Store Deployment",
       description: "We handle the entire submission process for the App Store and Google Play, ensuring your app meets all guidelines and reaches your users quickly.",
-      image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: "/iosapp.jpg"
     }
   ];
 
@@ -76,7 +76,8 @@ export default function AppDevelopmentServices() {
               ></div>
 
               {/* Overlay - Darker, always present gradient */}
-              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/85 to-black/60 transition-all duration-1000"></div>
+              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30 transition-all duration-1000"></div>
+
 
               {/* Content - Positioned at the top of the card */}
               <div className="service-card-content absolute top-0 left-0 w-full h-full p-6 text-white z-10 flex flex-col justify-between">

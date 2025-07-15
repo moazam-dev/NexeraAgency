@@ -25,7 +25,7 @@ export default function SocialImpact() {
   const imageCards = [
     {
       id: 1,
-      image: "https://images.pexels.com/photos/6646845/pexels-photo-6646845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Group photo of charity participants
+      image: "/consult.jpg", // Group photo of charity participants
       alt: "Group photo of charity participants",
       position: { top: "15%", left: "-4%" },
       delay: 0.2
