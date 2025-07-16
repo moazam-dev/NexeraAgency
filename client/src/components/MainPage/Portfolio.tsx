@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
+// Import the Link component from wouter
+import { Link } from "wouter";
 // Import an icon from react-icons
 import { FaArrowRight } from "react-icons/fa";
 
 type Project = {
-  image: string;
-  title: string;
-  description: string;
+  image: string;
+  title: string;
+  description: string;
+  path: string; // Added path for navigation
 };
 
 const projects: Project[] = [
@@ -13,16 +16,19 @@ const projects: Project[] = [
     image: "/Mockup-1.png",
     title: "Goru Ecommerce",
     description: "Crafting intuitive and beautiful user interfaces for modern applications.",
+    path: "/goru-ecommerce", // Path for Goru Ecommerce page
   },
   {
     image: "/Mockup-3.png",
     title: "The Sweet Slice",
     description: "Designing engaging and user-friendly mobile experiences for iOS and Android.",
+    path: "/sweet-slice-app", // Path for The Sweet Slice page
   },
   {
     image: "/Mockup-2.png",
     title: "Zivan agency",
     description: "Crafting intuitive and beautiful user interfaces for modern applications.",
+    path: "/zivan-agency", // Path for Zivan Agency page
   },
 ];
 
@@ -42,34 +48,37 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-6 place-items-center">
           {projects.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.03, y: -8 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className={`w-full max-w-sm flex flex-col text-center ${
-                index % 2 !== 0 ? "mt-12" : ""
-              }`}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-[440px] object-cover"
-              />
-              <h3 className="text-white text-xl font-bold mt-4">
-                {item.title}
-              </h3>
-              <p className="text-gray-300 text-sm mt-2">
-                {item.description}
-              </p>
-            </motion.div>
+            // Wrap the card with the Link component
+            <Link key={index} href={item.path}>
+              <motion.div
+                whileHover={{ scale: 1.03, y: -8 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                // Added cursor-pointer for better UX
+                className={`w-full max-w-sm flex flex-col text-center cursor-pointer ${
+                  index % 2 !== 0 ? "mt-12" : ""
+                }`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-[440px] object-cover"
+                />
+                <h3 className="text-white text-xl font-bold mt-4">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300 text-sm mt-2">
+                  {item.description}
+                </p>
+              </motion.div>
+            </Link>
           ))}
         </div>
 
-        {/* --- Updated Button Added Here --- */}
+        {/* --- Button --- */}
         <div className="text-center mt-20">
           <motion.button
-            className="flex items-center justify-center gap-3 px-10 py-5 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 mx-auto"
-            whileHover="hover" // Animate on hover
+            className="flex items-center justify-center gap-3 px-6 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 mx-auto"
+            whileHover="hover"
             initial="rest"
             animate="rest"
           >
@@ -77,7 +86,7 @@ export default function Portfolio() {
             <motion.div
               variants={{
                 rest: { x: 0 },
-                hover: { x: 8 }, // Move 8px to the right on hover
+                hover: { x: 8 },
               }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >

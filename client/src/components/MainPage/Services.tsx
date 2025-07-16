@@ -198,7 +198,7 @@ const ServicesSection = () => {
       <div className="mt-10 flex justify-center">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="flex items-center justify-center gap-3 px-10 py-5 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
+          className="flex items-center justify-center gap-3 px-6 py-3 mt-7 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
         >
           {showAll ? "View Less Services" : "View More Services"}
           <svg

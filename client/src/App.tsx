@@ -8,7 +8,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 // General Pages
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
-import WebProject from "@/components/Portfolio/web1";
+import GoruWeb from "@/components/Portfolio/goruWeb";
+import ZivanWeb from "@/components/Portfolio/zivanWeb";
+import sweetSliceApp from "@/components/Portfolio/sweetSliceApp";
 
 // UI Components
 import CookieConsent from "@/components/MainPage/CookieConsent";
@@ -32,7 +34,9 @@ function Router() {
     <Switch>
       {/* Core Routes */}
       <Route path="/" component={Home} />
-      <Route path="/web-project" component={WebProject} />
+      <Route path="/goru-ecommerce" component={GoruWeb} />
+      <Route path="/zivan-agency" component={ZivanWeb} />
+      <Route path="/sweet-slice-app" component={sweetSliceApp} />
 
       {/* Service Page Routes */}
       <Route path="/web-development" component={WebDevelopmentPage} />

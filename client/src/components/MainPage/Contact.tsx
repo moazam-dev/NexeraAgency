@@ -62,7 +62,7 @@ export default function Contact() {
                 <span className="block bg-gradient-to-br from-[var(--accent-green)] via-[var(--accent-teal)] to-blue-500 bg-clip-text text-transparent">
                   YOUR
                 </span>
-                <span className="block bg-gradient-to-br from-[var(--accent-green)] via-[var(--accent-teal)] to-blue-500 bg-clip-text text-transparent">
+                <span className=" bg-gradient-to-br from-[var(--accent-green)] via-[var(--accent-teal)] to-blue-500 bg-clip-text text-transparent">
                   PROJECT
                 </span>
               </h1>
