@@ -1,5 +1,6 @@
 import React from 'react';
-
+import msmain1 from "./msmain1.jpg";
+import msmain2 from "./msmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Maintenance Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/msmain1.jpg" // Image: Maintenance dashboard or support tools
+            src={msmain1}// Image: Maintenance dashboard or support tools
             alt="Maintenance dashboard and support tools, symbolizing maintenance and support expertise"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Security & Backups */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/msmain2.jpg" // Image: Security shield or backup process
+            src={msmain2}// Image: Security shield or backup process
             alt="Security shield and backup process, representing security and regular backups"
             className="w-full h-full object-cover"
             onError={(e) => {

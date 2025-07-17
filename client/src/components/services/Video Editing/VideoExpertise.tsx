@@ -1,5 +1,6 @@
 import React from 'react';
-
+import m1 from "./vidmain1.jpg";
+import m2 from "./vidmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Video Editing Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/vidmain1.jpg" // Image: Video editing timeline and tools
+            src={m1} // Image: Video editing timeline and tools
             alt="Video editing timeline and tools, representing creative post-production"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Video Collaboration */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="vidmain2.jpg" // Image: Team collaborating on video project
+            src={m2} // Image: Team collaborating on video project
             alt="Team collaborating on a video project, symbolizing creative teamwork"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {

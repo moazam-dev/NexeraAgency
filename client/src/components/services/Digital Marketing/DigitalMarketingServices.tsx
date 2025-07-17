@@ -1,44 +1,50 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import d1 from "./digital1.jpg";
+import d2 from "./digital2.jpg";
+import d3 from "./digital3.jpg";
+import d4 from "./digital4.jpg";
+import d5 from "./digital5.jpg";
+import d6 from "./digital6.jpg";
+
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
-
   const services = [
     {
       title: "Search Engine Optimization (SEO)",
       description: "Boost your website’s visibility and attract organic traffic with proven SEO strategies tailored to your business goals.",
-      image: "/digital1.jpg",
+      image: d1,
       isSpecial: true
     },
     {
       title: "Social Media Marketing",
       description: "Engage your audience and grow your brand across all major social platforms with creative campaigns and targeted content.",
-      image: "/digital2.jpg",
+      image: d2,
     },
     {
       title: "Pay-Per-Click (PPC) Advertising",
       description: "Drive instant results and maximize ROI with expertly managed Google Ads, Facebook Ads, and other paid campaigns.",
-      image: "/digital3.jpg",
+      image: d3,
     },
     {
       title: "Content Marketing",
       description: "Attract, inform, and convert your audience with high-quality blogs, articles, videos, and more, tailored to your brand.",
-      image: "/digital4.jpg",
+      image: d4,
     },
     {
       title: "Email Marketing",
       description: "Nurture leads and build customer loyalty with personalized, automated email campaigns that deliver real value.",
-      image: "/digital5.jpg",
+      image: d5,
     },
     {
       title: "Analytics & Conversion Optimization",
       description: "Track, analyze, and optimize your digital marketing performance to turn more visitors into loyal customers.",
-      image: "/digital5.jpg"
+      image: d6,
     }
   ];
-
+  
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">

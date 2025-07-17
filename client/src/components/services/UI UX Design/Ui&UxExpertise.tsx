@@ -1,5 +1,6 @@
 import React from 'react';
-
+import m1 from "./uxuimain1.jpg";
+import m2 from "./uxuimain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - UX/UI Design Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/uxuimain1.jpg" // Image: Modern UI wireframe or design workspace
+            src={m1} // Image: Modern UI wireframe or design workspace
             alt="Modern UI wireframe and design workspace, representing UX/UI creativity"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - UX/UI Collaboration */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="uxuimain2.jpg" // Image: Designers collaborating on interface sketches
+            src={m2} // Image: Designers collaborating on interface sketches
             alt="Team of designers collaborating on interface sketches and prototypes"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {

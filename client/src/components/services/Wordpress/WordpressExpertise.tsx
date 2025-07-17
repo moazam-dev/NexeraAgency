@@ -1,5 +1,6 @@
 import React from 'react';
-
+import main1 from "./wmain1.jpg";
+import main2 from "./wmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - WordPress Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/wmain1.jpg" // Image: WordPress dashboard or theme editor
+            src={main1} // Image: WordPress dashboard or theme editor
             alt="WordPress dashboard and theme editor, representing customization"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - WordPress Collaboration */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="wmain2.jpg" // Image: Team collaborating on WordPress project
+            src={main2} // Image: Team collaborating on WordPress project
             alt="Team collaborating on a WordPress project, symbolizing teamwork and expertise"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {

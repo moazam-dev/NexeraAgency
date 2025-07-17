@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import s1 from "./sho1.png";
+import s2 from "./sho2.jpg"; // Different extension
+import s3 from "./sho3.png";
+import s4 from "./sho4.jpg";
+import s5 from "./sho5.jpg";
+import s6 from "./sho6.jpg";
+import s7 from "./sho7.jpg";
+import s8 from "./sho8.png";
+import s9 from "./sho9.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,51 +18,51 @@ export default function WebDevelopmentServices() {
     {
       title: "Custom Shopify Store Design",
       description: "We create visually stunning, brand-aligned Shopify storefronts that engage visitors and drive conversions, tailored to your unique business goals.",
-      image: "/sho1.png",
+      image: s1,
       isSpecial: true
     },
     {
       title: "Shopify Theme Development",
       description: "From scratch or customization, we build responsive, high-performance Shopify themes that deliver seamless shopping experiences across all devices.",
-      image: "/sho2.jpg"
+      image: s2
     },
     {
       title: "App Integration & Automation",
       description: "Integrate essential Shopify apps, payment gateways, and marketing tools to automate operations and enhance your store’s capabilities.",
-      image: "/sho3.png"
+      image: s3
     },
     {
       title: "Product & Inventory Management",
       description: "Streamline your product uploads, categorization, and inventory tracking for efficient store management and a smooth customer experience.",
-      image: "/sho4.jpg"
+      image: s4
     },
     {
       title: "Shopify SEO & Conversion Optimization",
       description: "Boost your store’s visibility and sales with expert Shopify SEO, speed optimization, and conversion-focused enhancements.",
-      image: "/sho5.jpg"
+      image: s5
     },
     {
       title: "Migration to Shopify",
       description: "Seamlessly migrate your existing store from any platform to Shopify with zero data loss and minimal downtime.",
-      image: "/sho6.jpg"
+      image: s6
     },
     {
       title: "Ongoing Maintenance & Support",
       description: "Keep your Shopify store secure, up-to-date, and running smoothly with our proactive maintenance and expert support services.",
-      image: "/sho7.jpg"
+      image: s7
     },
     {
       title: "Shopify Store Redesign",
       description: "Revamp your existing Shopify store with a fresh, modern look and improved user experience to boost engagement and sales.",
-      image: "/sho8.png"
+      image: s8
     },
     {
       title: "Multi-Channel & International Setup",
       description: "Expand your reach by connecting your Shopify store to marketplaces, social platforms, and enabling multi-currency and multi-language support.",
-      image: "/sho9.jpg"
+      image: s9
     }
   ];
-
+  
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">

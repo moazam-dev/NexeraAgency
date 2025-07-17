@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import e1 from "./ecom1.jpg";
+import e2 from "./ecom2.jpg";
+import e3 from "./ecom3.jpg";
+import e4 from "./ecom4.jpg";
+import e5 from "./ecom5.jpg";
+import e6 from "./ecom6.jpg";
+import e7 from "./ecom7.jpg";
+import e8 from "./ecom8.jpg";
+import e9 from "./ecom9.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,51 +18,51 @@ export default function WebDevelopmentServices() {
     {
       title: "eCommerce Store Setup",
       description: "Launch your online store with a robust, scalable platform tailored to your brand and business goals.",
-      image: "/ecom1.jpg",
+      image: e1,
       isSpecial: true
     },
     {
       title: "Product & Inventory Management",
       description: "Easily manage products, categories, and inventory with intuitive tools that keep your store organized and up to date.",
-      image: "/ecom2.jpg",
+      image: e2
     },
     {
       title: "Payment Gateway Integration",
       description: "Offer secure, seamless payment options with support for all major gateways, including Stripe, PayPal, and more.",
-      image: "/ecom3.jpg",
+      image: e3
     },
     {
       title: "Shopping Cart & Checkout",
       description: "Deliver a frictionless shopping experience with optimized cart and checkout flows that boost conversions.",
-      image: "/ecom4.jpg",
+      image: e4
     },
     {
       title: "Mobile Commerce",
       description: "Reach customers on any device with responsive, mobile-first eCommerce solutions that drive sales everywhere.",
-      image: "/ecom5.jpg",
+      image: e5
     },
     {
       title: "Omnichannel Solutions",
       description: "Unify your brand across web, mobile, and marketplaces for a seamless customer experience and expanded reach.",
-      image: "/ecom6.jpg",
+      image: e6
     },
     {
       title: "Analytics & Conversion Optimization",
       description: "Track performance, analyze customer behavior, and optimize your store to maximize sales and growth.",
-      image: "/ecom7.jpg",
+      image: e7
     },
     {
       title: "Customer Support Tools",
       description: "Enhance customer satisfaction with integrated support tools like live chat, help desks, and automated responses.",
-      image: "/ecom8.jpg",
+      image: e8
     },
     {
       title: "Marketing Automation",
       description: "Boost engagement and repeat sales with automated email campaigns, abandoned cart recovery, and personalized offers.",
-      image: "/ecom9.jpg",
+      image: e9
     }
   ];
-
+  
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">

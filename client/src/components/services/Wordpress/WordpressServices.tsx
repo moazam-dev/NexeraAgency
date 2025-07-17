@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import w1 from "./w1.jpg";
+import w2 from "./w2.jpg";
+import w3 from "./w3.jpg";
+import w4 from "./w4.jpg";
+import w5 from "./w5.jpg";
+import w6 from "./w6.jpg";
+import w7 from "./w7.jpg";
+import w8 from "./w8.jpg";
+import w9 from "./w9.png";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,51 +18,51 @@ export default function WebDevelopmentServices() {
     {
       title: "Custom WordPress Themes",
       description: "We design and develop unique WordPress themes tailored to your brand, ensuring a visually stunning and fully responsive website that stands out.",
-      image: "/w1.jpg", // Tech image: person typing on laptop
+      image: w1, // Tech image: person typing on laptop
       isSpecial: true
     },
     {
       title: "WordPress E-Commerce",
       description: "Launch a powerful online store with WooCommerce and custom integrations. We build secure, scalable e-commerce solutions for seamless shopping experiences.",
-      image: "/w2.jpg"
+      image: w2
     },
     {
       title: "Plugin Development",
       description: "Extend your site's functionality with custom WordPress plugins built to your exact requirements, from booking systems to advanced integrations.",
-      image: "/w3.jpg"
+      image: w3
     },
     {
       title: "Performance Optimization",
       description: "We optimize your WordPress site for speed, reliability, and scalability, ensuring fast load times and a smooth user experience on any device.",
-      image: "/w4.jpg"
+      image: w4
     },
     {
       title: "Security & Maintenance",
       description: "Protect your WordPress site with robust security measures, regular updates, and ongoing maintenance to keep your data and users safe.",
-      image: "/w5.jpg"
+      image: w5
     },
     {
       title: "WordPress Migration",
       description: "Seamlessly migrate your website to WordPress or between hosts with zero downtime and complete data integrity.",
-      image: "/w6.jpg"
+      image: w6
     },
     {
       title: "Ongoing Support",
       description: "Enjoy peace of mind with our dedicated WordPress support, covering troubleshooting, updates, and technical assistance whenever you need it.",
-      image: "/w7.jpg"
+      image: w7
     },
     {
       title: "SEO for WordPress",
       description: "Boost your site's visibility with expert SEO strategies tailored for WordPress, including on-page optimization, schema, and performance enhancements.",
-      image: "/w8.jpg"
+      image: w8
     },
     {
       title: "Multilingual & Accessibility",
       description: "Reach a global audience with multilingual WordPress solutions and ensure your site is accessible to all users, meeting modern web standards.",
-      image: "/w9.png"
+      image: w9
     }
   ];
-
+  
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">

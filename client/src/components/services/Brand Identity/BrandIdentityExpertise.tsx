@@ -1,5 +1,6 @@
 import React from 'react';
-
+import bm1 from "./brandmain1.jpg";
+import bm2 from "./brandmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Brand Visuals */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/brandmain1.jpg" // Image: Vibrant brand moodboard or logo sketches
+            src={bm1} // Image: Vibrant brand moodboard or logo sketches
             alt="Brand moodboard with vibrant colors and logo sketches, symbolizing creative brand identity design"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Brand Experience */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/brandmain2.jpg" // Image: People interacting with branded materials
+            src={bm2}// Image: People interacting with branded materials
             alt="People engaging with branded materials, representing brand experience and connection"
             className="w-full h-full object-cover"
             onError={(e) => {

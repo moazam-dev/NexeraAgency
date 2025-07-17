@@ -1,5 +1,6 @@
 import React from 'react';
-
+import main1 from "./shomain1.jpg";
+import main2 from "./shomain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const ShopifyExpertiseSection: React.FC = () => {
         {/* Top Right Section: Image - Shopify store visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/shomain1.jpg"
+            src={main1}
             alt="Modern Shopify store interface on a digital device"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -54,7 +55,7 @@ const ShopifyExpertiseSection: React.FC = () => {
         {/* Bottom Left Section: Image - Shopify branding visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/shomain2.jpg"
+            src={main2}
             alt="Shopify branding and e-commerce visuals"
             className="w-full h-full object-cover"
             onError={(e) => {

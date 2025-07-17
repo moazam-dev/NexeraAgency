@@ -1,5 +1,6 @@
 import React from 'react';
-
+import main1 from "./creativemain1.jpg";
+import main2 from "./creativemain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -42,7 +43,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Creative Workspace */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/creativemain1.jpg" // Image: Creative workspace, sketching, or design tools
+            src={main1} // Image: Creative workspace, sketching, or design tools
             alt="Creative workspace with sketchbooks and design tools, symbolizing creative design process"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -55,7 +56,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Visual Design */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/creativemain2.jpg" // Image: Color palettes, digital art, or branding boards
+            src={main2} // Image: Color palettes, digital art, or branding boards
             alt="Color palettes and digital art, representing visual design and branding"
             className="w-full h-full object-cover"
             onError={(e) => {

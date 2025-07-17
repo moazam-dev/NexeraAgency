@@ -1,5 +1,6 @@
 import React from 'react';
-
+import m1 from "./digitalmain1.jpg";
+import m2 from "./digitalmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Digital Marketing Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/digitalmain1.jpg" // Image: Digital marketing dashboard or campaign planning
+            src={m1} // Image: Digital marketing dashboard or campaign planning
             alt="Digital marketing dashboard and campaign planning, symbolizing digital marketing expertise"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Analytics & Social */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/digitalmain2.jpg" // Image: Analytics dashboard or social media icons
+            src={m2} // Image: Analytics dashboard or social media icons
             alt="Analytics dashboard and social media icons, representing digital marketing analytics and social media"
             className="w-full h-full object-cover"
             onError={(e) => {

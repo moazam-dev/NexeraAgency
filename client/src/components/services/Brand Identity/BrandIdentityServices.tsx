@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import b1 from "./brand1.jpg";
+import b2 from "./brand2.jpg";
+import b3 from "./brand3.jpg";
+import b4 from "./brand4.jpg";
+import b5 from "./brand5.jpg";
+import b6 from "./brand6.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,33 +15,33 @@ export default function WebDevelopmentServices() {
     {
       title: "Brand Strategy & Positioning",
       description: "Define your brand’s purpose, values, audience, and unique market position to guide all branding efforts.",
-      image: "/brand1.jpg",
+      image: b1,
       isSpecial: true
     },
     {
       title: "Logo Design",
       description: "Create a memorable, versatile logo that captures the essence of your brand and makes a lasting impression.",
-      image: "/brand2.jpg"
+      image: b2
     },
     {
       title: "Visual Identity Systems",
       description: "Develop a cohesive visual language—color palettes, typography, iconography, and imagery—for consistent brand presentation.",
-      image: "/brand3.jpg"
+      image: b3
     },
     {
       title: "Brand Guidelines",
       description: "Comprehensive manuals to ensure your team and partners maintain visual and messaging consistency everywhere your brand appears.",
-      image: "/brand4.jpg"
+      image: b4
     },
     {
       title: "Brand Messaging & Voice",
       description: "Craft your brand’s tone, story, and key messages for clear, authentic, and impactful communication.",
-      image: "/brand5.jpg"
+      image: b5
     },
     {
       title: "Rebranding & Brand Refresh",
       description: "Revitalize your brand with a complete transformation or subtle updates to keep it relevant and engaging.",
-      image: "/brand6.jpg"
+      image: b6
     }
   ];
 

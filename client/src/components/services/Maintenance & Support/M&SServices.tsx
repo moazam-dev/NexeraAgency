@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import ms1 from "./ms1.jpg";
+import ms2 from "./ms2.jpg";
+import ms3 from "./ms3.jpg";
+import ms4 from "./ms4.jpg";
+import ms5 from "./ms5.jpg";
+import ms6 from "./ms6.jpg";
+import ms7 from "./ms7.jpg";
+import ms8 from "./ms8.jpg";
+import ms9 from "./ms9.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,48 +18,48 @@ export default function WebDevelopmentServices() {
     {
       title: "Proactive Monitoring",
       description: "Continuous monitoring of your website or application to detect and resolve issues before they impact your business.",
-      image: "/ms1.jpg",
+      image: ms1,
       isSpecial: true
     },
     {
       title: "Security Updates",
       description: "Regular security patches and updates to protect your digital assets from vulnerabilities and threats.",
-      image: "/ms2.jpg",
+      image: ms2,
     },
     {
       title: "Performance Optimization",
       description: "Ongoing tuning and improvements to ensure your site runs fast, efficiently, and delivers a great user experience.",
-      image: "/ms3.jpg",
+      image: ms3,
     },
     {
       title: "Regular Backups",
       description: "Automated and secure backups to safeguard your data and enable quick recovery in case of any issues.",
-      image: "/ms4.jpg",
+      image: ms4,
     },
     {
       title: "Troubleshooting & Bug Fixes",
       description: "Swift identification and resolution of technical issues, bugs, and errors to keep your site running smoothly.",
-      image: "/ms5.jpg",
+      image: ms5,
     },
     {
       title: "24/7 Technical Support",
       description: "Round-the-clock assistance from our expert team, ready to help you whenever you need it most.",
-      image: "/ms6.jpg",
+      image: ms6,
     },
     {
       title: "Uptime & Incident Response",
       description: "Immediate action and communication in the event of downtime or incidents, minimizing disruption to your business.",
-      image: "/ms7.jpg",
+      image: ms7,
     },
     {
       title: "Software Updates & Patch Management",
       description: "Keeping your software, plugins, and integrations up to date for security, compatibility, and performance.",
-      image: "/ms8.jpg",
+      image: ms8,
     },
     {
       title: "Scalability Planning",
       description: "Strategic planning and support to help your digital infrastructure grow and adapt as your business evolves.",
-      image: "/ms9.jpg",
+      image: ms9,
     }
   ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
-
+import ecmain1 from "./ecommain1.jpg";
+import ecmain2 from "./ecommain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
 // plugins: [
@@ -41,7 +42,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Right Section: Image - Ecommerce Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/ecommain1.jpg" // Image: Online store dashboard or shopping cart
+            src={ecmain1}// Image: Online store dashboard or shopping cart
             alt="Ecommerce dashboard and shopping cart, symbolizing ecommerce expertise"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -54,7 +55,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Product Management */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/ecommain2.jpg" // Image: Product management or inventory dashboard
+            src={ecmain2} // Image: Product management or inventory dashboard
             alt="Product management and inventory dashboard, representing ecommerce product management"
             className="w-full h-full object-cover"
             onError={(e) => {

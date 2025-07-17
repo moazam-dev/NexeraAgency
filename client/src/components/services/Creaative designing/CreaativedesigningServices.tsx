@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import cd2 from "./creative2.jpg";
+import cd3 from "./creative3.jpg";
+import cd4 from "./creative4.jpg";
+import cd5 from "./creative5.jpg";
+import cd6 from "./creative6.jpg";
+import cd1 from "./creative1.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -9,36 +15,35 @@ export default function WebDevelopmentServices() {
     {
       title: "Brand Identity Design",
       description: "We craft cohesive brand identities that capture your vision and set you apart with memorable visuals and consistent style.",
-      image:"/creative1.jpg",
+      image: cd1,
       isSpecial: true
     },
     {
       title: "Logo & Icon Design",
       description: "Our team creates distinctive logos and icons that make your brand instantly recognizable across all platforms.",
-      image: "/creative2.jpg"
+      image: cd2
     },
     {
       title: "UI/UX Design",
       description: "We design intuitive and visually engaging interfaces that deliver seamless user experiences for web and mobile applications.",
-      image: "/creative3.jpg"
+      image: cd3
     },
     {
       title: "Print & Digital Graphics",
       description: "From posters to social media graphics, we produce eye-catching designs that communicate your message effectively in any format.",
-      image: "/creative4.jpg"
+      image: cd4
     },
     {
       title: "Illustration & Artwork",
       description: "Custom illustrations and artwork that add personality and uniqueness to your brand, marketing, or product materials.",
-      image: "/creative5.jpg"
+      image: cd5
     },
     {
       title: "Packaging & Product Design",
       description: "We design attractive, functional packaging and product visuals that enhance shelf appeal and user experience.",
-      image: "/creative6.jpg"
+      image: cd6
     }
   ];
-
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">

@@ -1,60 +1,67 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import u1 from "./ux1.jpg";
+import u2 from "./ux2.jpg";
+import u3 from "./ux3.jpg";
+import u4 from "./ux4.jpg";
+import u5 from "./ux5.jpg";
+import u6 from "./ux6.jpg";
+import u7 from "./ux7.jpg";
+import u8 from "./ux8.jpg";
+import u9 from "./ux9.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
-
   const services = [
     {
       title: "User Research & Analysis",
       description: "We uncover user needs and behaviors through research, interviews, and analytics to inform every design decision and create meaningful experiences.",
-      image: "/ux1.jpg", // Tech image: person typing on laptop
+      image: u1,
       isSpecial: true
     },
     {
       title: "Wireframing & Prototyping",
       description: "We bring ideas to life with interactive wireframes and prototypes, allowing you to visualize and test user flows before development begins.",
-      image: "/ux2.jpg" // Tech image: shopping cart with digital elements
+      image: u2
     },
     {
       title: "UI Design Systems",
       description: "We create scalable design systems and style guides to ensure visual consistency and efficiency across all your digital products.",
-      image: "/ux3.jpg" // Tech image: data flow/server room
+      image: u3
     },
     {
       title: "Visual Interface Design",
       description: "We design visually stunning and brand-aligned interfaces that captivate users and communicate your message clearly.",
-      image: "/ux4.jpg" // Tech image: close-up of code on screen
+      image: u4
     },
     {
       title: "Interaction & Motion Design",
       description: "We craft engaging micro-interactions and animations that enhance usability and bring interfaces to life.",
-      image: "/ux5.jpg" // Tech image: circuit board
+      image: u5
     },
     {
       title: "Usability Testing",
       description: "We validate designs with real users, gathering feedback and insights to refine and optimize the user experience.",
-      image: "/ux6.jpg" // Tech image: team collaborating on digital project
+      image: u6
     },
     {
       title: "Accessibility Design",
       description: "We ensure your digital products are accessible to everyone, meeting standards and best practices for inclusive design.",
-      image: "/ux7.jpg" // Tech image: abstract data security
+      image: u7
     },
     {
       title: "Mobile & Responsive Design",
       description: "We design seamless experiences across all devices, ensuring your product looks and works great everywhere.",
-      image: "/ux8.jpg" // Tech image: abstract digital design on monitor
+      image: u8
     },
     {
       title: "UX Audits & Consulting",
       description: "We analyze your existing products and provide actionable recommendations to improve usability, engagement, and conversion.",
-      image: "/ux9.jpg" // Tech image: person with data overlay, responsive feel
+      image: u9
     }
   ];
-
-  return (
+    return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">
         {/* Section Heading */}
