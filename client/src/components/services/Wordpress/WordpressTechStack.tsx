@@ -17,21 +17,16 @@ import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 // Main Component
 export default function App() {
     const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
-        { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
-        { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+        { name: "WordPress Core", icon: <DiWordpress className="text-6xl text-blue-400" /> },
+        { name: "WooCommerce", icon: <FaReact className="text-6xl text-purple-500" /> },
+        { name: "Elementor", icon: <FaHtml5 className="text-6xl text-pink-500" /> },
+        { name: "Advanced Custom Fields", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
+        { name: "Yoast SEO", icon: <FaGitAlt className="text-6xl text-green-600" /> },
+        { name: "WPForms", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
+        { name: "WPML", icon: <SiTypescript className="text-6xl text-blue-600" /> },
+        { name: "Jetpack", icon: <FaAws className="text-6xl text-gray-700" /> },
+        { name: "UpdraftPlus", icon: <FaDocker className="text-6xl text-blue-700" /> },
+        { name: "Wordfence Security", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
     ];
 
     return (
@@ -47,10 +42,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">WordPress Toolkit</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We utilize the most trusted WordPress plugins, page builders, and security tools to deliver powerful, flexible, and secure WordPress websites tailored to your needs.
                         </p>
                     </motion.div>
 

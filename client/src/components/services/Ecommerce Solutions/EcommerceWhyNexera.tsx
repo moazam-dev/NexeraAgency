@@ -68,12 +68,12 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
 // Main Component
 export default function App() {
     const features = [
-        { icon: <ShieldCheck size={28} className="text-white" />, title: "Secure by Design", description: "In finance, precision and performance are paramount. We build secure web portals and mobile banking apps that allow seamless, 24/7 access to services. Our solutions integrate payment gateways and transaction tracking.", delay: 0.1 },
-        { icon: <Zap size={28} className="text-white" />, title: "Blazing Performance", description: "From real-time tracking systems to warehouse management apps, we create custom digital platforms that provide end-to-end visibility into your supply chain operations, improving efficiency and decision-making.", delay: 0.2 },
-        { icon: <Puzzle size={28} className="text-white" />, title: "Modular Architecture", description: "Digital solutions in healthcare must adhere to strict regulations like HIPAA and GDPR. We develop secure patient portals, telemedicine apps, and healthcare management systems that streamline operations.", delay: 0.3 },
-        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth-Driven", description: "In the competitive retail landscape, a fast, smooth, and responsive platform is essential for customer retention. We specialize in building custom e-commerce websites and mobile apps that integrate seamlessly.", delay: 0.4 },
-        { icon: <Paintbrush size={28} className="text-white" />, title: "Bespoke Aesthetics", description: "We build scalable Learning Management Systems (LMS) that offer interactive, customizable content and data-driven insights. Our platforms are ideal for schools, universities, and corporate training programs.", delay: 0.5 },
-        { icon: <Scaling size={28} className="text-white" />, title: "Scalable Systems", description: "We create robust and scalable systems that can handle high traffic and complex processes, ensuring your application remains stable and performant as your user base grows. Our architecture is built for the future.", delay: 0.6 },
+        { icon: <ShieldCheck size={28} className="text-white" />, title: "Proven eCommerce Strategy", description: "We develop tailored eCommerce strategies that align with your business goals, ensuring every store is optimized for growth, customer experience, and long-term success.", delay: 0.1 },
+        { icon: <Zap size={28} className="text-white" />, title: "Conversion-Focused Design", description: "Our team creates visually stunning, user-friendly interfaces that guide shoppers from discovery to checkout, maximizing sales and customer satisfaction.", delay: 0.2 },
+        { icon: <Puzzle size={28} className="text-white" />, title: "Omnichannel Integration", description: "We unify your brand across web, mobile, and marketplaces, delivering a seamless experience and expanding your reach to new audiences.", delay: 0.3 },
+        { icon: <TrendingUp size={28} className="text-white" />, title: "Scalable & Flexible Solutions", description: "Our eCommerce platforms are built to grow with your business, supporting increased traffic, new features, and evolving market demands.", delay: 0.4 },
+        { icon: <Paintbrush size={28} className="text-white" />, title: "Secure Payments & Trust", description: "We implement industry-leading security and payment solutions, giving your customers confidence and protecting your business at every step.", delay: 0.5 },
+        { icon: <Scaling size={28} className="text-white" />, title: "Data-Driven Growth", description: "We leverage analytics and best practices to optimize performance, boost conversions, and help your eCommerce brand thrive in a competitive landscape.", delay: 0.6 },
     ];
 
     return (
@@ -93,12 +93,12 @@ export default function App() {
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                         className="text-6xl leading-tight tracking-tight font-bold text-gray-900 text-left"
                     >
-                        Why Choose Us for {' '}
+                        Why Choose Nexera for {' '}
                         <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-                            Custom
+                            Ecommerce Solutions
                             <AnimatedUnderline />
                         </span>
-                        {' '}Web Development Services
+                        {' '}Services
                     </motion.h1>
                 </motion.div>
 
@@ -130,7 +130,7 @@ export default function App() {
                         whileHover={{ y: -2, boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)' }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Let’s Build Something Unforgettable
+                        Start Your eCommerce Growth
                         <ArrowRight className="inline-block ml-2 -mr-1 transition-transform duration-300 group-hover:translate-x-1" size={20} />
                     </motion.button>
                 </motion.div>

@@ -22,28 +22,28 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Shaping <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Iconic Brands</span>
         </h2>
       </div>
 
       {/* Main grid container - Layout maintained exactly as provided */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
-        {/* Top Left Section: New Content for Digital Innovation */}
+        {/* Top Left Section: Brand Identity Strategy */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            The Art & Science of Brand Identity
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We blend creative vision with strategic thinking to craft brand identities that are both visually stunning and deeply meaningful. Our process uncovers your unique story and translates it into a cohesive visual language that resonates with your audience and stands the test of time. From in-depth market research and competitor analysis to collaborative workshops.
           </p>
         </div>
 
-        {/* Top Right Section: Image - Technological / Neon */}
+        {/* Top Right Section: Image - Brand Visuals */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/brandmain1.jpg" // Image: Vibrant brand moodboard or logo sketches
+            alt="Brand moodboard with vibrant colors and logo sketches, symbolizing creative brand identity design"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -51,12 +51,12 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Left Section: Image - Technological / Neon */}
+        {/* Bottom Left Section: Image - Brand Experience */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/brandmain2.jpg" // Image: People interacting with branded materials
+            alt="People engaging with branded materials, representing brand experience and connection"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -64,13 +64,10 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        {/* Bottom Right Section: Brand Impact */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Our expertise ensures your brand identity is more than just a logo—it’s a complete experience. We create consistent, memorable visuals and messaging that foster trust, spark emotion, and set you apart in your industry. By aligning every touchpoint with your brand’s personality, we help you cultivate loyalty and recognition in a crowded marketplace. Our team is dedicated to ongoing support and evolution, so your brand remains relevant and powerful as your business grows. With every detail
           </p>
         </div>
       </div>

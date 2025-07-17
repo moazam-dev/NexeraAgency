@@ -19,8 +19,8 @@ export default function WebDevWhyWeb() {
           <FaBolt className={iconStyle} />
         </div>
       ),
-      title: "Blazing Fast Performance",
-      description: "Optimized code and advanced caching ensure your website loads in milliseconds, improving user retention and SEO."
+      title: "Maximum Uptime",
+      description: "Proactive maintenance ensures your website or application is always available, minimizing downtime and keeping your business running smoothly."
     },
     {
       icon: (
@@ -28,8 +28,8 @@ export default function WebDevWhyWeb() {
           <FaShieldHalved className={iconStyle} />
         </div>
       ),
-      title: "Robust Security Measures",
-      description: "Implementing industry-leading security protocols to protect your data and user information from cyber threats."
+      title: "Robust Security",
+      description: "Regular updates and security patches protect your digital assets from threats, giving you and your customers peace of mind."
     },
     {
       icon: (
@@ -37,8 +37,8 @@ export default function WebDevWhyWeb() {
           <FaLightbulb className={iconStyle} />
         </div>
       ),
-      title: "Intuitive User Experience",
-      description: "Crafting engaging and easy-to-navigate interfaces that keep your visitors coming back."
+      title: "Proactive Problem Solving",
+      description: "We identify and resolve issues before they impact your users, ensuring a seamless experience and reliable performance."
     },
     {
       icon: (
@@ -46,8 +46,8 @@ export default function WebDevWhyWeb() {
           <FaChartLine className={iconStyle} />
         </div>
       ),
-      title: "Future-Proof Scalability",
-      description: "Building adaptable solutions that grow with your business, effortlessly handling increased traffic and features."
+      title: "Business Continuity",
+      description: "With regular backups and 24/7 support, your business is protected against unexpected disruptions and can recover quickly from any challenge."
     }
   ];
 
@@ -63,7 +63,7 @@ export default function WebDevWhyWeb() {
               className="inline-block"
             >
               <span className="why-choose-tag text-sm font-semibold uppercase tracking-wide text-slate-800 bg-slate-100 px-4 py-2 rounded-full">
-                Why Webify Solutions?
+                Why Maintenance & Support?
               </span>
             </motion.div>
 
@@ -73,7 +73,7 @@ export default function WebDevWhyWeb() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
-              Empowering Your Digital Vision with Web Excellence
+              Peace of Mind for Your Digital Presence
             </motion.h2>
 
             <motion.div
@@ -83,16 +83,11 @@ export default function WebDevWhyWeb() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Webify Solutions, we blend innovative design with robust engineering to create 
-                websites that are not just visually stunning but also highly functional and user-centric. 
-                Our agile development process ensures transparency, flexibility, and a final product 
-                that exceeds your expectations.
+                Maintenance and support are the backbone of a reliable digital presence. With our expert team, you can rest easy knowing your website or application is monitored, updated, and protected around the clock. We focus on prevention, rapid response, and continuous improvement to keep your business online and thriving.
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Harnessing cutting-edge technologies and best practices, we are committed to building 
-                scalable, secure, and high-performing web solutions that drive growth and solidify 
-                your online presence. Partner with us to transform your ideas into powerful digital realities.
+                Our approach combines proactive care, security best practices, and responsive support to minimize risks and maximize uptime. Let us handle the technical details so you can focus on growing your business with confidence, knowing your digital assets are in safe hands.
               </p>
             </motion.div>
           </div>

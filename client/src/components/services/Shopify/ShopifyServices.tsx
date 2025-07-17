@@ -7,50 +7,50 @@ export default function WebDevelopmentServices() {
 
   const services = [
     {
-      title: "Custom Web Development",
-      description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Tech image: person typing on laptop
+      title: "Custom Shopify Store Design",
+      description: "We create visually stunning, brand-aligned Shopify storefronts that engage visitors and drive conversions, tailored to your unique business goals.",
+      image: "/sho1.png",
       isSpecial: true
     },
     {
-      title: "E-Commerce Development",
-      description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: shopping cart with digital elements
+      title: "Shopify Theme Development",
+      description: "From scratch or customization, we build responsive, high-performance Shopify themes that deliver seamless shopping experiences across all devices.",
+      image: "/sho2.jpg"
     },
     {
-      title: "Content Management Systems (CMS)",
-      description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: data flow/server room
+      title: "App Integration & Automation",
+      description: "Integrate essential Shopify apps, payment gateways, and marketing tools to automate operations and enhance your store’s capabilities.",
+      image: "/sho3.png"
     },
     {
-      title: "Front-end Development",
-      description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: close-up of code on screen
+      title: "Product & Inventory Management",
+      description: "Streamline your product uploads, categorization, and inventory tracking for efficient store management and a smooth customer experience.",
+      image: "/sho4.jpg"
     },
     {
-      title: "Back-end Development",
-      description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      image: "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: circuit board
+      title: "Shopify SEO & Conversion Optimization",
+      description: "Boost your store’s visibility and sales with expert Shopify SEO, speed optimization, and conversion-focused enhancements.",
+      image: "/sho5.jpg"
     },
     {
-      title: "Full-stack Development",
-      description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: team collaborating on digital project
+      title: "Migration to Shopify",
+      description: "Seamlessly migrate your existing store from any platform to Shopify with zero data loss and minimal downtime.",
+      image: "/sho6.jpg"
     },
     {
-      title: "Website Maintenance & Support",
-      description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract data security
+      title: "Ongoing Maintenance & Support",
+      description: "Keep your Shopify store secure, up-to-date, and running smoothly with our proactive maintenance and expert support services.",
+      image: "/sho7.jpg"
     },
     {
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      image: "https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract digital design on monitor
+      title: "Shopify Store Redesign",
+      description: "Revamp your existing Shopify store with a fresh, modern look and improved user experience to boost engagement and sales.",
+      image: "/sho8.png"
     },
     {
-      title: "Responsive Web Development",
-      description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      image: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: person with data overlay, responsive feel
+      title: "Multi-Channel & International Setup",
+      description: "Expand your reach by connecting your Shopify store to marketplaces, social platforms, and enabling multi-currency and multi-language support.",
+      image: "/sho9.jpg"
     }
   ];
 
@@ -65,11 +65,10 @@ export default function WebDevelopmentServices() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Web <span className="gradient-text">Experties</span>
+            Our Shopify <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Expertise</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
-            services cover every aspect of your digital presence.
+            We offer end-to-end Shopify store design and development services, from custom themes and app integrations to SEO, migration, and ongoing support. Let us help you build, grow, and optimize your Shopify business for lasting success.
           </p>
         </motion.div>
 

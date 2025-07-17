@@ -1,37 +1,36 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import {
-    FaReact,
-    FaNodeJs,
+    FaShopify,
     FaHtml5,
     FaCss3Alt,
     FaGitAlt,
     FaAws,
     FaDocker,
-    FaJsSquare
+    FaJsSquare,
+    FaStripe,
+    FaGoogle,
+    FaFacebook
 } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiWordpress, DiFirebase } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiMailchimp, SiZapier, SiGoogleanalytics, SiHotjar, SiTrustpilot, SiPaypal, SiMetabase } from 'react-icons/si';
 
 
 // Main Component
 export default function App() {
     const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
-        { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
-        { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+        { name: "Shopify", icon: <FaShopify className="text-6xl text-green-600" /> },
+        
+        { name: "Shopify CLI & Polaris", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
+        { name: "Mailchimp", icon: <SiMailchimp className="text-6xl text-yellow-600" /> },
+        { name: "Zapier Automation", icon: <SiZapier className="text-6xl text-orange-500" /> },
+        { name: "Google Analytics", icon: <SiGoogleanalytics className="text-6xl text-blue-500" /> },
+        { name: "Hotjar & Metabase", icon: <SiHotjar className="text-6xl text-red-500" /> },
+        { name: "Trustpilot", icon: <SiTrustpilot className="text-6xl text-green-700" /> },
+        { name: "Stripe & PayPal", icon: <FaStripe className="text-6xl text-indigo-500" /> },
+        { name: "Facebook & Google Shopping", icon: <FaFacebook className="text-6xl text-blue-600" /> },
+        { name: "AWS Hosting", icon: <FaAws className="text-6xl text-orange-400" /> },
+        
+        
     ];
 
     return (
@@ -47,10 +46,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Shopify Tech Tools</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We leverage the best Shopify tools, apps, and integrations to build high-performing, scalable, and conversion-driven online stores. Our expertise covers everything from custom Liquid development to advanced analytics, automation, and marketing integrations.
                         </p>
                     </motion.div>
 

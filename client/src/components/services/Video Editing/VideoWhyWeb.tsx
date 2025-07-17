@@ -19,8 +19,8 @@ export default function WebDevWhyWeb() {
           <FaBolt className={iconStyle} />
         </div>
       ),
-      title: "Blazing Fast Performance",
-      description: "Optimized code and advanced caching ensure your website loads in milliseconds, improving user retention and SEO."
+      title: "Captivating Storytelling",
+      description: "We transform your raw footage into engaging stories that connect with your audience and leave a lasting impression."
     },
     {
       icon: (
@@ -28,8 +28,8 @@ export default function WebDevWhyWeb() {
           <FaShieldHalved className={iconStyle} />
         </div>
       ),
-      title: "Robust Security Measures",
-      description: "Implementing industry-leading security protocols to protect your data and user information from cyber threats."
+      title: "Seamless Post-Production",
+      description: "From color grading to sound design, our post-production process ensures your videos are polished, professional, and ready for any platform."
     },
     {
       icon: (
@@ -37,8 +37,8 @@ export default function WebDevWhyWeb() {
           <FaLightbulb className={iconStyle} />
         </div>
       ),
-      title: "Intuitive User Experience",
-      description: "Crafting engaging and easy-to-navigate interfaces that keep your visitors coming back."
+      title: "Creative Visual Effects",
+      description: "We add motion graphics, animation, and effects to make your content stand out and keep viewers engaged."
     },
     {
       icon: (
@@ -46,8 +46,8 @@ export default function WebDevWhyWeb() {
           <FaChartLine className={iconStyle} />
         </div>
       ),
-      title: "Future-Proof Scalability",
-      description: "Building adaptable solutions that grow with your business, effortlessly handling increased traffic and features."
+      title: "Optimized for Every Channel",
+      description: "We deliver your videos in the perfect format for web, social media, or broadcast, maximizing reach and impact."
     }
   ];
 
@@ -63,7 +63,7 @@ export default function WebDevWhyWeb() {
               className="inline-block"
             >
               <span className="why-choose-tag text-sm font-semibold uppercase tracking-wide text-slate-800 bg-slate-100 px-4 py-2 rounded-full">
-                Why Webify Solutions?
+                Why Choose Our Video Editing?
               </span>
             </motion.div>
 
@@ -73,7 +73,7 @@ export default function WebDevWhyWeb() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
-              Empowering Your Digital Vision with Web Excellence
+              Elevate Your Brand with Professional Video Editing
             </motion.h2>
 
             <motion.div
@@ -83,16 +83,12 @@ export default function WebDevWhyWeb() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Webify Solutions, we blend innovative design with robust engineering to create 
-                websites that are not just visually stunning but also highly functional and user-centric. 
-                Our agile development process ensures transparency, flexibility, and a final product 
-                that exceeds your expectations.
+                Our video editing team brings your vision to life with cinematic cuts, dynamic pacing, and creative storytelling. We handle every aspect of the editing process, from organizing footage to delivering the final export.
               </p>
-              
               <p className="text-lg text-gray-600 leading-relaxed">
-                Harnessing cutting-edge technologies and best practices, we are committed to building 
-                scalable, secure, and high-performing web solutions that drive growth and solidify 
-                your online presence. Partner with us to transform your ideas into powerful digital realities.
+                Whether you need a promotional video, event recap, YouTube content, or social media reels, we ensure your message is clear, your visuals are stunning, and your audience is captivated.
+                Our editors adapt to your brand’s style and goals, delivering videos that fit your unique voice and vision.
+                We stay up-to-date with the latest trends and formats, so your content always feels fresh and relevant in a fast-moving digital world.
               </p>
             </motion.div>
           </div>

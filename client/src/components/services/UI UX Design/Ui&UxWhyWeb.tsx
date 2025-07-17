@@ -19,8 +19,8 @@ export default function WebDevWhyWeb() {
           <FaBolt className={iconStyle} />
         </div>
       ),
-      title: "Blazing Fast Performance",
-      description: "Optimized code and advanced caching ensure your website loads in milliseconds, improving user retention and SEO."
+      title: "User-Centered Design",
+      description: "We prioritize the needs and behaviors of your users, ensuring every interface is intuitive and enjoyable to use."
     },
     {
       icon: (
@@ -28,8 +28,8 @@ export default function WebDevWhyWeb() {
           <FaShieldHalved className={iconStyle} />
         </div>
       ),
-      title: "Robust Security Measures",
-      description: "Implementing industry-leading security protocols to protect your data and user information from cyber threats."
+      title: "Consistent Visual Language",
+      description: "Our designs maintain a cohesive look and feel, strengthening your brand identity and building user trust."
     },
     {
       icon: (
@@ -37,8 +37,8 @@ export default function WebDevWhyWeb() {
           <FaLightbulb className={iconStyle} />
         </div>
       ),
-      title: "Intuitive User Experience",
-      description: "Crafting engaging and easy-to-navigate interfaces that keep your visitors coming back."
+      title: "Accessibility for All",
+      description: "We create inclusive digital experiences that are accessible to everyone, regardless of ability or device."
     },
     {
       icon: (
@@ -46,8 +46,8 @@ export default function WebDevWhyWeb() {
           <FaChartLine className={iconStyle} />
         </div>
       ),
-      title: "Future-Proof Scalability",
-      description: "Building adaptable solutions that grow with your business, effortlessly handling increased traffic and features."
+      title: "Data-Driven Decisions",
+      description: "We leverage user research and analytics to inform design choices, optimizing every interaction for engagement and satisfaction."
     }
   ];
 
@@ -63,7 +63,7 @@ export default function WebDevWhyWeb() {
               className="inline-block"
             >
               <span className="why-choose-tag text-sm font-semibold uppercase tracking-wide text-slate-800 bg-slate-100 px-4 py-2 rounded-full">
-                Why Webify Solutions?
+                Why Exceptional UX/UI?
               </span>
             </motion.div>
 
@@ -73,7 +73,7 @@ export default function WebDevWhyWeb() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
-              Empowering Your Digital Vision with Web Excellence
+              Transforming Ideas into Seamless User Experiences
             </motion.h2>
 
             <motion.div
@@ -83,16 +83,11 @@ export default function WebDevWhyWeb() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Webify Solutions, we blend innovative design with robust engineering to create 
-                websites that are not just visually stunning but also highly functional and user-centric. 
-                Our agile development process ensures transparency, flexibility, and a final product 
-                that exceeds your expectations.
+                Great UX/UI design is the foundation of every successful digital product. We focus on creating interfaces that are not only beautiful, but also intuitive and easy to use. Our process is rooted in empathy, research, and a deep understanding of your users’ needs.
+                Thoughtful design choices can turn casual visitors into loyal users and brand advocates.
               </p>
-              
               <p className="text-lg text-gray-600 leading-relaxed">
-                Harnessing cutting-edge technologies and best practices, we are committed to building 
-                scalable, secure, and high-performing web solutions that drive growth and solidify 
-                your online presence. Partner with us to transform your ideas into powerful digital realities.
+                From wireframes to high-fidelity prototypes, we ensure every detail is purposeful and every interaction feels natural. Let us help you turn your vision into a delightful experience that keeps users coming back.
               </p>
             </motion.div>
           </div>

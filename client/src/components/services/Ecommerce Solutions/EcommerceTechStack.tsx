@@ -8,30 +8,27 @@ import {
     FaGitAlt,
     FaAws,
     FaDocker,
-    FaJsSquare
+    FaJsSquare,
+    FaShopify,
+    FaStripe,
+    FaPaypal,
+    FaMailchimp
 } from 'react-icons/fa';
 import { DiMongodb, DiMysql, DiWordpress, DiFirebase } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiNextdotjs, SiWoocommerce, SiMagento, SiBigcommerce, SiGoogleanalytics } from 'react-icons/si';
 
 
 // Main Component
 export default function App() {
     const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
-        { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
-        { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+        { name: "Shopify", icon: <FaShopify className="text-6xl text-green-600" /> },
+        { name: "WooCommerce", icon: <SiWoocommerce className="text-6xl text-purple-700" /> },
+        { name: "Magento", icon: <SiMagento className="text-6xl text-orange-600" /> },
+        { name: "BigCommerce", icon: <SiBigcommerce className="text-6xl text-blue-700" /> },
+        { name: "Stripe", icon: <FaStripe className="text-6xl text-indigo-500" /> },
+        { name: "PayPal", icon: <FaPaypal className="text-6xl text-blue-500" /> },
+        { name: "Mailchimp", icon: <FaMailchimp className="text-6xl text-yellow-500" /> },
+        { name: "Google Analytics", icon: <SiGoogleanalytics className="text-6xl text-orange-500" /> },
     ];
 
     return (
@@ -47,10 +44,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Ecommerce Toolkit</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We use industry-leading ecommerce platforms, payment gateways, and marketing tools to build, optimize, and grow your online store with confidence.
                         </p>
                     </motion.div>
 

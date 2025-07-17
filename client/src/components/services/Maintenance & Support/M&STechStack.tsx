@@ -8,30 +8,25 @@ import {
     FaGitAlt,
     FaAws,
     FaDocker,
-    FaJsSquare
+    FaJsSquare,
+    FaWordpress
 } from 'react-icons/fa';
 import { DiMongodb, DiMysql, DiWordpress, DiFirebase } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiNextdotjs, SiCloudflare, SiNewrelic, SiDatadog, SiSentry, SiPingdom } from 'react-icons/si';
 
 
 // Main Component
 export default function App() {
     const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
+        { name: "Pingdom", icon: <SiPingdom className="text-6xl text-yellow-500" /> },
+        { name: "Sentry", icon: <SiSentry className="text-6xl text-purple-700" /> },
+        { name: "Datadog", icon: <SiDatadog className="text-6xl text-indigo-600" /> },
+        { name: "New Relic", icon: <SiNewrelic className="text-6xl text-green-700" /> },
+        { name: "Cloudflare", icon: <SiCloudflare className="text-6xl text-orange-500" /> },
         { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
         { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
+       
     ];
 
     return (
@@ -47,10 +42,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Support Toolkit</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We use industry-leading tools for monitoring, security, backups, and support to keep your digital assets safe, reliable, and always available.
                         </p>
                     </motion.div>
 

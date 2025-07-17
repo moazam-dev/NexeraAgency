@@ -68,12 +68,12 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
 // Main Component
 export default function App() {
     const features = [
-        { icon: <ShieldCheck size={28} className="text-white" />, title: "Secure by Design", description: "In finance, precision and performance are paramount. We build secure web portals and mobile banking apps that allow seamless, 24/7 access to services. Our solutions integrate payment gateways and transaction tracking.", delay: 0.1 },
-        { icon: <Zap size={28} className="text-white" />, title: "Blazing Performance", description: "From real-time tracking systems to warehouse management apps, we create custom digital platforms that provide end-to-end visibility into your supply chain operations, improving efficiency and decision-making.", delay: 0.2 },
-        { icon: <Puzzle size={28} className="text-white" />, title: "Modular Architecture", description: "Digital solutions in healthcare must adhere to strict regulations like HIPAA and GDPR. We develop secure patient portals, telemedicine apps, and healthcare management systems that streamline operations.", delay: 0.3 },
-        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth-Driven", description: "In the competitive retail landscape, a fast, smooth, and responsive platform is essential for customer retention. We specialize in building custom e-commerce websites and mobile apps that integrate seamlessly.", delay: 0.4 },
-        { icon: <Paintbrush size={28} className="text-white" />, title: "Bespoke Aesthetics", description: "We build scalable Learning Management Systems (LMS) that offer interactive, customizable content and data-driven insights. Our platforms are ideal for schools, universities, and corporate training programs.", delay: 0.5 },
-        { icon: <Scaling size={28} className="text-white" />, title: "Scalable Systems", description: "We create robust and scalable systems that can handle high traffic and complex processes, ensuring your application remains stable and performant as your user base grows. Our architecture is built for the future.", delay: 0.6 },
+        { icon: <ShieldCheck size={28} className="text-white" />, title: "Visionary Concepts", description: "We turn imagination into reality, delivering creative solutions that break boundaries and set new standards for visual excellence. Our team thrives on bold ideas and innovative thinking, ensuring your brand is always ahead of the curve.", delay: 0.1 },
+        { icon: <Zap size={28} className="text-white" />, title: "Impactful Storytelling", description: "Every design tells a story. We craft visuals that communicate your brand’s message with clarity, emotion, and purpose, forging deep connections with your audience and leaving a memorable impression.", delay: 0.2 },
+        { icon: <Puzzle size={28} className="text-white" />, title: "Seamless Brand Experience", description: "Our creative approach ensures consistency and harmony across every touchpoint, from digital to print, so your brand always feels unified, professional, and instantly recognizable.", delay: 0.3 },
+        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth Through Creativity", description: "We believe that great design drives growth. Our solutions are crafted to inspire engagement, build loyalty, and elevate your brand’s presence in a competitive world.", delay: 0.4 },
+        { icon: <Paintbrush size={28} className="text-white" />, title: "Distinctive Visual Identity", description: "Stand out with a visual identity that is uniquely yours. We blend artistry and strategy to create designs that are not only beautiful but also meaningful and effective.", delay: 0.5 },
+        { icon: <Scaling size={28} className="text-white" />, title: "Future-Ready Innovation", description: "Our creative process is always evolving. We embrace new trends, tools, and technologies to ensure your brand remains fresh, relevant, and ready for what’s next.", delay: 0.6 },
     ];
 
     return (
@@ -93,12 +93,12 @@ export default function App() {
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                         className="text-6xl leading-tight tracking-tight font-bold text-gray-900 text-left"
                     >
-                        Why Choose Us for {' '}
+                        Why Choose Nexera for {' '}
                         <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-                            Custom
+                            Creative Design
                             <AnimatedUnderline />
                         </span>
-                        {' '}Web Development Services
+                        {' '}Services
                     </motion.h1>
                 </motion.div>
 
@@ -130,7 +130,7 @@ export default function App() {
                         whileHover={{ y: -2, boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)' }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Let’s Build Something Unforgettable
+                        Start Your Creative Journey
                         <ArrowRight className="inline-block ml-2 -mr-1 transition-transform duration-300 group-hover:translate-x-1" size={20} />
                     </motion.button>
                 </motion.div>

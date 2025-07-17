@@ -1,37 +1,31 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import {
-    FaReact,
-    FaNodeJs,
-    FaHtml5,
-    FaCss3Alt,
-    FaGitAlt,
-    FaAws,
-    FaDocker,
-    FaJsSquare
+    FaFigma,
+    FaPenNib,
+    FaPalette,
+    FaWordpress,
+    FaShopify,
+    FaCamera,
+    FaVideo,
+    FaLightbulb
 } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiWordpress, DiFirebase } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
-
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiCanva } from 'react-icons/si';
 
 // Main Component
 export default function App() {
-    const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
-        { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
-        { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+    const brandToolkit = [
+        { name: "Figma", icon: <FaFigma className="text-6xl text-purple-600" /> },
+        { name: "Photoshop", icon: <SiAdobephotoshop className="text-6xl text-blue-500" /> },
+        { name: "Illustrator", icon: <SiAdobeillustrator className="text-6xl text-orange-500" /> },
+        { name: "InDesign", icon: <SiAdobeindesign className="text-6xl text-pink-500" /> },
+        { name: "Brand Strategy", icon: <FaLightbulb className="text-6xl text-yellow-500" /> },
+        { name: "Logo Design", icon: <FaPenNib className="text-6xl text-gray-800" /> },
+        { name: "Color Theory", icon: <FaPalette className="text-6xl text-teal-500" /> },
+        { name: "Photography", icon: <FaCamera className="text-6xl text-gray-600" /> },
+        { name: "Videography", icon: <FaVideo className="text-6xl text-red-600" /> },
+        { name: "Canva", icon: <SiCanva className="text-6xl text-cyan-500" /> },
+        
     ];
 
     return (
@@ -47,10 +41,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Branding Toolkit</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We use a powerful suite of industry-leading tools and creative processes to build memorable and impactful brand identities.
                         </p>
                     </motion.div>
 
@@ -64,17 +58,17 @@ export default function App() {
                             visible: { transition: { staggerChildren: 0.05 } }
                         }}
                     >
-                        {techStack.map((tech) => (
+                        {brandToolkit.map((tool) => (
                             <motion.div
-                                key={tech.name}
+                                key={tool.name}
                                 variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}
                                 className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
                             >
                                 <div className="mb-4">
-                                    {tech.icon}
+                                    {tool.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 text-center">
-                                    {tech.name}
+                                    {tool.name}
                                 </h3>
                             </motion.div>
                         ))}

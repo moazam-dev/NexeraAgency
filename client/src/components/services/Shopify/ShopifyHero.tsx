@@ -72,20 +72,20 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-20">
         <div className="flex items-center min-h-screen">
           <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
-            {/* Web Development Label */}
+            {/* Shopify Store Design & Development Label */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block text-white text-sm px-4 py-2 rounded-full mb-3 font-medium web-dev-label border border-white border-opacity-30"
             >
-              WEB DEVELOPMENT
+              SHOPIFY EXPERTS
             </motion.div>
 
             <h1
               className="massive-text mb-6 text-left"
             >
-              Building Your <br /> <span className="">Digital Legacy.</span>
+              Transform Your <br /> <span className="">Shopify Storefront</span>
             </h1>
 
             <motion.p
@@ -94,8 +94,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craf digital experiences that drive engagement<br />
-              powered by cutting-edge technology and creativity.
+              We design and develop high-converting Shopify stores that captivate your audience and drive sales. From custom themes to seamless integrations, our team ensures your online business stands out and delivers an exceptional shopping experience.
             </motion.p>
 
             <motion.div
@@ -110,7 +109,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="font-['Inter']">
-                  JOIN THE LEGACY
+                  START YOUR SHOPIFY JOURNEY
                 </span>
                 <FaArrowRight />
               </motion.button>

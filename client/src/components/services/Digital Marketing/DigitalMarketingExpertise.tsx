@@ -22,28 +22,28 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Elevating <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Digital Marketing</span>
         </h2>
       </div>
 
       {/* Main grid container - Layout maintained exactly as provided */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
-        {/* Top Left Section: New Content for Digital Innovation */}
+        {/* Top Left Section: Digital Strategy & Campaigns */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            Strategic Campaigns & Growth
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We develop data-driven digital marketing strategies that drive measurable results. Our team specializes in SEO, social media marketing, and content creation—ensuring your brand reaches the right audience at the right time. From campaign planning to execution, we help you grow your online presence and achieve your business goals.
           </p>
         </div>
 
-        {/* Top Right Section: Image - Technological / Neon */}
+        {/* Top Right Section: Image - Digital Marketing Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/digitalmain1.jpg" // Image: Digital marketing dashboard or campaign planning
+            alt="Digital marketing dashboard and campaign planning, symbolizing digital marketing expertise"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -51,12 +51,12 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Left Section: Image - Technological / Neon */}
+        {/* Bottom Left Section: Image - Analytics & Social */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/digitalmain2.jpg" // Image: Analytics dashboard or social media icons
+            alt="Analytics dashboard and social media icons, representing digital marketing analytics and social media"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -64,13 +64,11 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        {/* Bottom Right Section: Analytics & Optimization */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Our expertise covers paid advertising, analytics, and ongoing optimization. We leverage the latest tools and trends to maximize ROI, track performance, and refine strategies for continuous growth. Let us help you build a powerful digital presence that converts visitors into loyal customers.
+            Through detailed reporting and transparent communication, we keep you informed every step of the way. Our team is dedicated to staying ahead of digital trends, ensuring your marketing efforts are always innovative, effective, and tailored to your unique goals.
           </p>
         </div>
       </div>

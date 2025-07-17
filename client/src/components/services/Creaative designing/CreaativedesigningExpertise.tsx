@@ -22,28 +22,29 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Inspiring <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500"> Creative Design</span>
         </h2>
       </div>
 
       {/* Main grid container - Layout maintained exactly as provided */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
-        {/* Top Left Section: New Content for Digital Innovation */}
+        {/* Top Left Section: Creative Strategy & Visual Storytelling */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            Creative Strategy & Visual Storytelling
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We blend imagination with strategy to create designs that not only look stunning but also communicate your brand’s story and values. Our team specializes in crafting unique visual identities, engaging graphics, and compelling layouts that capture attention and leave a lasting impression.
+            We believe that every design should evoke emotion and spark curiosity.
           </p>
         </div>
 
-        {/* Top Right Section: Image - Technological / Neon */}
+        {/* Top Right Section: Image - Creative Workspace */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/creativemain1.jpg" // Image: Creative workspace, sketching, or design tools
+            alt="Creative workspace with sketchbooks and design tools, symbolizing creative design process"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -51,12 +52,12 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Left Section: Image - Technological / Neon */}
+        {/* Bottom Left Section: Image - Visual Design */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/creativemain2.jpg" // Image: Color palettes, digital art, or branding boards
+            alt="Color palettes and digital art, representing visual design and branding"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -64,13 +65,11 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        {/* Bottom Right Section: UI/UX & Illustration */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Our expertise covers everything from UI/UX design and illustration to branding and creative problem-solving. We deliver visually cohesive and user-friendly solutions that elevate your brand and engage your audience across every platform.
+            With a passion for innovation and attention to detail, we ensure every project is both beautiful and functional. Let us help you transform your vision into designs that inspire, connect, and make a lasting impact.
           </p>
         </div>
       </div>

@@ -19,8 +19,8 @@ export default function WebDevWhyWeb() {
           <FaBolt className={iconStyle} />
         </div>
       ),
-      title: "Blazing Fast Performance",
-      description: "Optimized code and advanced caching ensure your website loads in milliseconds, improving user retention and SEO."
+      title: "Wider Market Reach",
+      description: "eCommerce solutions break down geographical barriers, allowing your business to reach customers anywhere, anytime, and expand your brand’s presence globally."
     },
     {
       icon: (
@@ -28,8 +28,8 @@ export default function WebDevWhyWeb() {
           <FaShieldHalved className={iconStyle} />
         </div>
       ),
-      title: "Robust Security Measures",
-      description: "Implementing industry-leading security protocols to protect your data and user information from cyber threats."
+      title: "Seamless Shopping Experience",
+      description: "Deliver a smooth, intuitive, and enjoyable shopping journey that keeps customers coming back and increases your conversion rates."
     },
     {
       icon: (
@@ -37,8 +37,8 @@ export default function WebDevWhyWeb() {
           <FaLightbulb className={iconStyle} />
         </div>
       ),
-      title: "Intuitive User Experience",
-      description: "Crafting engaging and easy-to-navigate interfaces that keep your visitors coming back."
+      title: "Conversion Optimization",
+      description: "Leverage data-driven insights and best practices to turn more visitors into loyal buyers and maximize your store’s performance."
     },
     {
       icon: (
@@ -46,8 +46,8 @@ export default function WebDevWhyWeb() {
           <FaChartLine className={iconStyle} />
         </div>
       ),
-      title: "Future-Proof Scalability",
-      description: "Building adaptable solutions that grow with your business, effortlessly handling increased traffic and features."
+      title: "Secure & Scalable Growth",
+      description: "Our eCommerce solutions ensure safe transactions and are built to scale with your business, supporting growth and adapting to new opportunities."
     }
   ];
 
@@ -63,7 +63,7 @@ export default function WebDevWhyWeb() {
               className="inline-block"
             >
               <span className="why-choose-tag text-sm font-semibold uppercase tracking-wide text-slate-800 bg-slate-100 px-4 py-2 rounded-full">
-                Why Webify Solutions?
+                Why Ecommerce Solutions?
               </span>
             </motion.div>
 
@@ -73,7 +73,7 @@ export default function WebDevWhyWeb() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
-              Empowering Your Digital Vision with Web Excellence
+              Unlocking Growth in the Online Marketplace
             </motion.h2>
 
             <motion.div
@@ -83,16 +83,11 @@ export default function WebDevWhyWeb() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Webify Solutions, we blend innovative design with robust engineering to create 
-                websites that are not just visually stunning but also highly functional and user-centric. 
-                Our agile development process ensures transparency, flexibility, and a final product 
-                that exceeds your expectations.
+                eCommerce solutions empower your business to thrive in the digital age. With a robust online store, you can reach new audiences, streamline operations, and deliver exceptional customer experiences. Our approach combines technology, strategy, and creativity to help you stand out and succeed in a competitive market.
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Harnessing cutting-edge technologies and best practices, we are committed to building 
-                scalable, secure, and high-performing web solutions that drive growth and solidify 
-                your online presence. Partner with us to transform your ideas into powerful digital realities.
+                From seamless product management to secure payments and scalable infrastructure, we provide everything you need to grow your online business. Let us help you transform your vision into a thriving eCommerce brand that delights customers and drives results.
               </p>
             </motion.div>
           </div>

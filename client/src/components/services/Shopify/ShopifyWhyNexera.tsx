@@ -68,12 +68,12 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
 // Main Component
 export default function App() {
     const features = [
-        { icon: <ShieldCheck size={28} className="text-white" />, title: "Secure by Design", description: "In finance, precision and performance are paramount. We build secure web portals and mobile banking apps that allow seamless, 24/7 access to services. Our solutions integrate payment gateways and transaction tracking.", delay: 0.1 },
-        { icon: <Zap size={28} className="text-white" />, title: "Blazing Performance", description: "From real-time tracking systems to warehouse management apps, we create custom digital platforms that provide end-to-end visibility into your supply chain operations, improving efficiency and decision-making.", delay: 0.2 },
-        { icon: <Puzzle size={28} className="text-white" />, title: "Modular Architecture", description: "Digital solutions in healthcare must adhere to strict regulations like HIPAA and GDPR. We develop secure patient portals, telemedicine apps, and healthcare management systems that streamline operations.", delay: 0.3 },
-        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth-Driven", description: "In the competitive retail landscape, a fast, smooth, and responsive platform is essential for customer retention. We specialize in building custom e-commerce websites and mobile apps that integrate seamlessly.", delay: 0.4 },
-        { icon: <Paintbrush size={28} className="text-white" />, title: "Bespoke Aesthetics", description: "We build scalable Learning Management Systems (LMS) that offer interactive, customizable content and data-driven insights. Our platforms are ideal for schools, universities, and corporate training programs.", delay: 0.5 },
-        { icon: <Scaling size={28} className="text-white" />, title: "Scalable Systems", description: "We create robust and scalable systems that can handle high traffic and complex processes, ensuring your application remains stable and performant as your user base grows. Our architecture is built for the future.", delay: 0.6 },
+        { icon: <ShieldCheck size={28} className="text-white" />, title: "Shopify Certified Experts", description: "Our team consists of certified Shopify professionals with years of experience in designing, developing, and optimizing high-performing Shopify stores for businesses of all sizes.", delay: 0.1 },
+        { icon: <Zap size={28} className="text-white" />, title: "Custom Storefront Design", description: "We create visually stunning, brand-aligned Shopify storefronts that captivate your audience and drive conversions, ensuring your store stands out in a crowded marketplace.", delay: 0.2 },
+        { icon: <Puzzle size={28} className="text-white" />, title: "Seamless Integrations", description: "From payment gateways to marketing tools and third-party apps, we integrate the essential features your business needs for smooth operations and growth.", delay: 0.3 },
+        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth-Focused Solutions", description: "Our strategies are designed to help your Shopify store scale, with ongoing optimization, SEO, and conversion rate improvements that fuel your business growth.", delay: 0.4 },
+        { icon: <Paintbrush size={28} className="text-white" />, title: "Mobile-First & Responsive", description: "Every Shopify store we build is fully responsive and mobile-optimized, delivering a seamless shopping experience across all devices and platforms.", delay: 0.5 },
+        { icon: <Scaling size={28} className="text-white" />, title: "Reliable Support & Maintenance", description: "We provide ongoing support, regular updates, and proactive maintenance to keep your Shopify store secure, up-to-date, and running smoothly at all times.", delay: 0.6 },
     ];
 
     return (
@@ -95,10 +95,10 @@ export default function App() {
                     >
                         Why Choose Us for {' '}
                         <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-                            Custom
+                            Shopify
                             <AnimatedUnderline />
                         </span>
-                        {' '}Web Development Services
+                        {' '}Store Design & Development
                     </motion.h1>
                 </motion.div>
 
@@ -130,7 +130,7 @@ export default function App() {
                         whileHover={{ y: -2, boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)' }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Let’s Build Something Unforgettable
+                        Start Your Shopify Project
                         <ArrowRight className="inline-block ml-2 -mr-1 transition-transform duration-300 group-hover:translate-x-1" size={20} />
                     </motion.button>
                 </motion.div>

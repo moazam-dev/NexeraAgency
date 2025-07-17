@@ -7,50 +7,50 @@ export default function WebDevelopmentServices() {
 
   const services = [
     {
-      title: "Custom Web Development",
-      description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Tech image: person typing on laptop
+      title: "Proactive Monitoring",
+      description: "Continuous monitoring of your website or application to detect and resolve issues before they impact your business.",
+      image: "/ms1.jpg",
       isSpecial: true
     },
     {
-      title: "E-Commerce Development",
-      description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: shopping cart with digital elements
+      title: "Security Updates",
+      description: "Regular security patches and updates to protect your digital assets from vulnerabilities and threats.",
+      image: "/ms2.jpg",
     },
     {
-      title: "Content Management Systems (CMS)",
-      description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: data flow/server room
+      title: "Performance Optimization",
+      description: "Ongoing tuning and improvements to ensure your site runs fast, efficiently, and delivers a great user experience.",
+      image: "/ms3.jpg",
     },
     {
-      title: "Front-end Development",
-      description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: close-up of code on screen
+      title: "Regular Backups",
+      description: "Automated and secure backups to safeguard your data and enable quick recovery in case of any issues.",
+      image: "/ms4.jpg",
     },
     {
-      title: "Back-end Development",
-      description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      image: "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: circuit board
+      title: "Troubleshooting & Bug Fixes",
+      description: "Swift identification and resolution of technical issues, bugs, and errors to keep your site running smoothly.",
+      image: "/ms5.jpg",
     },
     {
-      title: "Full-stack Development",
-      description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: team collaborating on digital project
+      title: "24/7 Technical Support",
+      description: "Round-the-clock assistance from our expert team, ready to help you whenever you need it most.",
+      image: "/ms6.jpg",
     },
     {
-      title: "Website Maintenance & Support",
-      description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract data security
+      title: "Uptime & Incident Response",
+      description: "Immediate action and communication in the event of downtime or incidents, minimizing disruption to your business.",
+      image: "/ms7.jpg",
     },
     {
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      image: "https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract digital design on monitor
+      title: "Software Updates & Patch Management",
+      description: "Keeping your software, plugins, and integrations up to date for security, compatibility, and performance.",
+      image: "/ms8.jpg",
     },
     {
-      title: "Responsive Web Development",
-      description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      image: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: person with data overlay, responsive feel
+      title: "Scalability Planning",
+      description: "Strategic planning and support to help your digital infrastructure grow and adapt as your business evolves.",
+      image: "/ms9.jpg",
     }
   ];
 
@@ -65,11 +65,10 @@ export default function WebDevelopmentServices() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Web <span className="gradient-text">Experties</span>
+            Our <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Maintenance & Support Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
-            services cover every aspect of your digital presence.
+            We provide comprehensive maintenance and support services to keep your digital assets secure, up-to-date, and running at peak performance. From proactive monitoring and regular backups to 24/7 technical support, our team ensures your website or application is always reliable and ready for growth.
           </p>
         </motion.div>
 

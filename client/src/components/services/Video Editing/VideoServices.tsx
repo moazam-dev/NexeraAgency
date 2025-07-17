@@ -7,50 +7,50 @@ export default function WebDevelopmentServices() {
 
   const services = [
     {
-      title: "Custom Web Development",
-      description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Tech image: person typing on laptop
+      title: "Cinematic Video Editing",
+      description: "Transforming raw footage into compelling cinematic stories with seamless transitions, pacing, and creative vision.",
+      image: "/vid1.jpg", // Tech image: person typing on laptop
       isSpecial: true
     },
     {
-      title: "E-Commerce Development",
-      description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: shopping cart with digital elements
+      title: "Social Media Video Production",
+      description: "Crafting dynamic, shareable content tailored for every platform—perfect for brand awareness, engagement, and viral impact.",
+      image: "/vid2.jpg" // Tech image: shopping cart with digital elements
     },
     {
-      title: "Content Management Systems (CMS)",
-      description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: data flow/server room
+      title: "Color Grading & Correction",
+      description: "Enhancing the mood and style of your videos with professional color grading and correction for a polished, cinematic look.",
+      image: "/vid3.jpg" // Tech image: data flow/server room
     },
     {
-      title: "Front-end Development",
-      description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: close-up of code on screen
+      title: "Sound Design & Mixing",
+      description: "Immersing your audience with crisp audio, sound effects, and perfectly balanced music for a complete sensory experience.",
+      image: "/vid4.jpg" // Tech image: close-up of code on screen
     },
     {
-      title: "Back-end Development",
-      description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      image: "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: circuit board
+      title: "Motion Graphics & Animation",
+      description: "Adding energy and clarity to your message with custom motion graphics, animated titles, and visual effects.",
+      image: "/vid5.jpg" // Tech image: circuit board
     },
     {
-      title: "Full-stack Development",
-      description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: team collaborating on digital project
+      title: "Corporate & Event Videos",
+      description: "Professional editing for corporate promos, interviews, and event highlights that showcase your brand and story.",
+      image: "/vid6.jpg" // Tech image: team collaborating on digital project
     },
     {
-      title: "Website Maintenance & Support",
-      description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract data security
+      title: "YouTube & Content Creator Support",
+      description: "Helping creators grow their channels with engaging edits, intros, outros, and content repurposing for maximum reach.",
+      image: "/vid7.jpg" // Tech image: abstract data security
     },
     {
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      image: "https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract digital design on monitor
+      title: "Promotional & Ad Videos",
+      description: "Editing high-impact promotional videos and ads that drive conversions and leave a lasting impression.",
+      image: "/vid8.jpg" // Tech image: abstract digital design on monitor
     },
     {
-      title: "Responsive Web Development",
-      description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      image: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: person with data overlay, responsive feel
+      title: "Reels, Shorts & Vertical Video",
+      description: "Optimizing your content for mobile-first audiences with fast-paced, vertical edits for Instagram, TikTok, and more.",
+      image: "/vid9.jpg" // Tech image: person with data overlay, responsive feel
     }
   ];
 
@@ -65,11 +65,10 @@ export default function WebDevelopmentServices() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Web <span className="gradient-text">Experties</span>
+            Our Video <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Expertise</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
-            services cover every aspect of your digital presence.
+            From cinematic storytelling to social-ready content, our video editing services cover every aspect of post-production to make your message unforgettable.
           </p>
         </motion.div>
 

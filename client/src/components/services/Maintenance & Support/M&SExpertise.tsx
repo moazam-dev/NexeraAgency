@@ -22,28 +22,28 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Reliable <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Maintenance & Support</span>
         </h2>
       </div>
 
       {/* Main grid container - Layout maintained exactly as provided */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full">
-        {/* Top Left Section: New Content for Digital Innovation */}
+        {/* Top Left Section: Maintenance Strategy & Proactive Care */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            Proactive Care & Optimization
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We keep your digital assets running smoothly with proactive monitoring, regular updates, and performance optimization. Our team ensures your website or application is always secure, up-to-date, and operating at peak efficiency. From bug fixes to speed improvements, we handle it all so you can focus on your business.
           </p>
         </div>
 
-        {/* Top Right Section: Image - Technological / Neon */}
+        {/* Top Right Section: Image - Maintenance Visual */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/msmain1.jpg" // Image: Maintenance dashboard or support tools
+            alt="Maintenance dashboard and support tools, symbolizing maintenance and support expertise"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -51,12 +51,12 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Left Section: Image - Technological / Neon */}
+        {/* Bottom Left Section: Image - Security & Backups */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
-            className="w-full h-full object-cover" // Layout maintained
+            src="/msmain2.jpg" // Image: Security shield or backup process
+            alt="Security shield and backup process, representing security and regular backups"
+            className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
               e.currentTarget.alt = "Image failed to load";
@@ -64,13 +64,11 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
           />
         </div>
 
-        {/* Bottom Right Section: New Content for AI-Driven Experiences */}
+        {/* Bottom Right Section: Ongoing Support */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Our maintenance and support services include troubleshooting, security patches, regular backups, and 24/7 technical assistance. We’re dedicated to minimizing downtime, preventing issues before they arise, and providing fast, reliable help whenever you need it. Trust us to protect your investment and keep your digital presence strong.
+            With our team by your side, you gain peace of mind knowing your systems are monitored and maintained by experts. We help you scale confidently, adapt to new challenges, and ensure your digital assets continue to deliver value as your business grows.
           </p>
         </div>
       </div>

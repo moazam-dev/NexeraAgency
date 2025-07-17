@@ -68,12 +68,12 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
 // Main Component
 export default function App() {
     const features = [
-        { icon: <ShieldCheck size={28} className="text-white" />, title: "Secure by Design", description: "In finance, precision and performance are paramount. We build secure web portals and mobile banking apps that allow seamless, 24/7 access to services. Our solutions integrate payment gateways and transaction tracking.", delay: 0.1 },
-        { icon: <Zap size={28} className="text-white" />, title: "Blazing Performance", description: "From real-time tracking systems to warehouse management apps, we create custom digital platforms that provide end-to-end visibility into your supply chain operations, improving efficiency and decision-making.", delay: 0.2 },
-        { icon: <Puzzle size={28} className="text-white" />, title: "Modular Architecture", description: "Digital solutions in healthcare must adhere to strict regulations like HIPAA and GDPR. We develop secure patient portals, telemedicine apps, and healthcare management systems that streamline operations.", delay: 0.3 },
-        { icon: <TrendingUp size={28} className="text-white" />, title: "Growth-Driven", description: "In the competitive retail landscape, a fast, smooth, and responsive platform is essential for customer retention. We specialize in building custom e-commerce websites and mobile apps that integrate seamlessly.", delay: 0.4 },
-        { icon: <Paintbrush size={28} className="text-white" />, title: "Bespoke Aesthetics", description: "We build scalable Learning Management Systems (LMS) that offer interactive, customizable content and data-driven insights. Our platforms are ideal for schools, universities, and corporate training programs.", delay: 0.5 },
-        { icon: <Scaling size={28} className="text-white" />, title: "Scalable Systems", description: "We create robust and scalable systems that can handle high traffic and complex processes, ensuring your application remains stable and performant as your user base grows. Our architecture is built for the future.", delay: 0.6 },
+        { icon: <ShieldCheck size={28} className="text-white" />, title: "Expert Strategy & Planning", description: "We craft tailored digital marketing strategies that align with your business goals, ensuring every campaign is targeted, effective, and results-driven. Our expertise helps you navigate the ever-changing digital landscape with confidence.", delay: 0.1 },
+        { icon: <Zap size={28} className="text-white" />, title: "Engaging Campaigns", description: "Our creative team develops compelling campaigns that capture attention, spark engagement, and build lasting relationships with your audience across all digital channels.", delay: 0.2 },
+        { icon: <Puzzle size={28} className="text-white" />, title: "Integrated Multi-Channel Approach", description: "We unify your brand’s presence across social media, search, email, and more, ensuring a seamless and consistent experience that maximizes your reach and impact.", delay: 0.3 },
+        { icon: <TrendingUp size={28} className="text-white" />, title: "Data-Driven Results", description: "We leverage advanced analytics and reporting to track performance, optimize campaigns, and deliver measurable growth for your business.", delay: 0.4 },
+        { icon: <Paintbrush size={28} className="text-white" />, title: "Creative Content & Storytelling", description: "Our content specialists craft stories and visuals that resonate with your audience, strengthen your brand, and drive meaningful action.", delay: 0.5 },
+        { icon: <Scaling size={28} className="text-white" />, title: "Continuous Optimization", description: "We believe in ongoing improvement. Our team constantly refines strategies and tactics to keep your brand ahead in the fast-paced digital world.", delay: 0.6 },
     ];
 
     return (
@@ -93,12 +93,12 @@ export default function App() {
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                         className="text-6xl leading-tight tracking-tight font-bold text-gray-900 text-left"
                     >
-                        Why Choose Us for {' '}
+                        Why Choose Nexera for {' '}
                         <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-                            Custom
+                            Digital Marketing
                             <AnimatedUnderline />
                         </span>
-                        {' '}Web Development Services
+                        {' '}Services
                     </motion.h1>
                 </motion.div>
 
@@ -130,7 +130,7 @@ export default function App() {
                         whileHover={{ y: -2, boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)' }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Let’s Build Something Unforgettable
+                        Start Your Digital Growth
                         <ArrowRight className="inline-block ml-2 -mr-1 transition-transform duration-300 group-hover:translate-x-1" size={20} />
                     </motion.button>
                 </motion.div>

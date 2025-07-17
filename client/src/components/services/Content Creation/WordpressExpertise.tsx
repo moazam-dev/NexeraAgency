@@ -22,7 +22,7 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">Digital Excellence</span>
+          Crafting <span className="gradient-text">shhsh</span>
         </h2>
       </div>
 

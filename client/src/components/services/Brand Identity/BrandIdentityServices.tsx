@@ -7,50 +7,35 @@ export default function WebDevelopmentServices() {
 
   const services = [
     {
-      title: "Custom Web Development",
-      description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Tech image: person typing on laptop
+      title: "Brand Strategy & Positioning",
+      description: "Define your brand’s purpose, values, audience, and unique market position to guide all branding efforts.",
+      image: "/brand1.jpg",
       isSpecial: true
     },
     {
-      title: "E-Commerce Development",
-      description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: shopping cart with digital elements
+      title: "Logo Design",
+      description: "Create a memorable, versatile logo that captures the essence of your brand and makes a lasting impression.",
+      image: "/brand2.jpg"
     },
     {
-      title: "Content Management Systems (CMS)",
-      description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: data flow/server room
+      title: "Visual Identity Systems",
+      description: "Develop a cohesive visual language—color palettes, typography, iconography, and imagery—for consistent brand presentation.",
+      image: "/brand3.jpg"
     },
     {
-      title: "Front-end Development",
-      description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: close-up of code on screen
+      title: "Brand Guidelines",
+      description: "Comprehensive manuals to ensure your team and partners maintain visual and messaging consistency everywhere your brand appears.",
+      image: "/brand4.jpg"
     },
     {
-      title: "Back-end Development",
-      description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      image: "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: circuit board
+      title: "Brand Messaging & Voice",
+      description: "Craft your brand’s tone, story, and key messages for clear, authentic, and impactful communication.",
+      image: "/brand5.jpg"
     },
     {
-      title: "Full-stack Development",
-      description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: team collaborating on digital project
-    },
-    {
-      title: "Website Maintenance & Support",
-      description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract data security
-    },
-    {
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      image: "https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract digital design on monitor
-    },
-    {
-      title: "Responsive Web Development",
-      description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      image: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: person with data overlay, responsive feel
+      title: "Rebranding & Brand Refresh",
+      description: "Revitalize your brand with a complete transformation or subtle updates to keep it relevant and engaging.",
+      image: "/brand6.jpg"
     }
   ];
 
@@ -65,11 +50,10 @@ export default function WebDevelopmentServices() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Web <span className="gradient-text">Experties</span>
+            Comprehensive <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Brand Identity Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
-            services cover every aspect of your digital presence.
+            From strategy and naming to design, messaging, and packaging, our brand identity services help you build a brand that is authentic, memorable, and consistent across every touchpoint.
           </p>
         </motion.div>
 

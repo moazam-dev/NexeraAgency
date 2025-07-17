@@ -7,50 +7,35 @@ export default function WebDevelopmentServices() {
 
   const services = [
     {
-      title: "Custom Web Development",
-      description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Tech image: person typing on laptop
+      title: "Search Engine Optimization (SEO)",
+      description: "Boost your website’s visibility and attract organic traffic with proven SEO strategies tailored to your business goals.",
+      image: "/digital1.jpg",
       isSpecial: true
     },
     {
-      title: "E-Commerce Development",
-      description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: shopping cart with digital elements
+      title: "Social Media Marketing",
+      description: "Engage your audience and grow your brand across all major social platforms with creative campaigns and targeted content.",
+      image: "/digital2.jpg",
     },
     {
-      title: "Content Management Systems (CMS)",
-      description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: data flow/server room
+      title: "Pay-Per-Click (PPC) Advertising",
+      description: "Drive instant results and maximize ROI with expertly managed Google Ads, Facebook Ads, and other paid campaigns.",
+      image: "/digital3.jpg",
     },
     {
-      title: "Front-end Development",
-      description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: close-up of code on screen
+      title: "Content Marketing",
+      description: "Attract, inform, and convert your audience with high-quality blogs, articles, videos, and more, tailored to your brand.",
+      image: "/digital4.jpg",
     },
     {
-      title: "Back-end Development",
-      description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      image: "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: circuit board
+      title: "Email Marketing",
+      description: "Nurture leads and build customer loyalty with personalized, automated email campaigns that deliver real value.",
+      image: "/digital5.jpg",
     },
     {
-      title: "Full-stack Development",
-      description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: team collaborating on digital project
-    },
-    {
-      title: "Website Maintenance & Support",
-      description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract data security
-    },
-    {
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      image: "https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: abstract digital design on monitor
-    },
-    {
-      title: "Responsive Web Development",
-      description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      image: "https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Tech image: person with data overlay, responsive feel
+      title: "Analytics & Conversion Optimization",
+      description: "Track, analyze, and optimize your digital marketing performance to turn more visitors into loyal customers.",
+      image: "/digital5.jpg"
     }
   ];
 
@@ -65,11 +50,10 @@ export default function WebDevelopmentServices() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Web <span className="gradient-text">Experties</span>
+            Our Digital Marketing <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From the visible aesthetics to the intricate backend logic, our comprehensive web development 
-            services cover every aspect of your digital presence.
+            From brand awareness to lead generation, our digital marketing services help you connect, engage, and grow your audience across every digital channel.
           </p>
         </motion.div>
 
@@ -99,14 +83,35 @@ export default function WebDevelopmentServices() {
                 <div> {/* Container for title and description */}
                   {/* Title - Stays constant on top */}
                   <h3 className="service-card-title text-xl font-bold mb-3">
-                    {service.title}
+                    {/* Digital marketing specific service titles */}
+                    {[
+                      "Search Engine Optimization (SEO)",
+                      "Pay-Per-Click (PPC) Advertising",
+                      "Social Media Marketing",
+                      "Content Marketing",
+                      "Email Marketing Campaigns",
+                      "Influencer & Affiliate Marketing",
+                      "Analytics & Conversion Tracking",
+                      "Online Reputation Management",
+                      "Marketing Automation"
+                    ][index]}
                   </h3>
-                  
                   {/* Description - Appears smoothly from the right on hover */}
                   <p className="service-card-description text-sm text-white/90 leading-relaxed opacity-0 max-h-0 overflow-hidden 
                             transition-all duration-1000 group-hover:opacity-100 group-hover:max-h-32 
                             transform translate-x-10 group-hover:translate-x-0">
-                    {service.description}
+                    {/* Digital marketing specific service descriptions */}
+                    {[
+                      "Boost your website’s visibility and rankings with proven SEO strategies tailored to your business.",
+                      "Drive targeted traffic and maximize ROI with expertly managed Google Ads and paid campaigns.",
+                      "Grow your brand and engage your audience across all major social platforms with creative campaigns.",
+                      "Attract, inform, and convert with compelling blog posts, videos, and multimedia content.",
+                      "Nurture leads and increase retention with personalized, automated email marketing solutions.",
+                      "Expand your reach and credibility through strategic influencer partnerships and affiliate programs.",
+                      "Track, analyze, and optimize every campaign with advanced analytics and conversion tracking.",
+                      "Protect and enhance your brand’s reputation with proactive online review and feedback management.",
+                      "Streamline your marketing with automation tools for lead nurturing, segmentation, and more."
+                    ][index]}
                   </p>
                 </div>
 
