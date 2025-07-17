@@ -1,7 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-
+import cusweb from "./cusweb.jpg";
+import ecom from "./ecomweb.jpg";
+import cms  from "./cmsweb.jpg";
+import front from "./froendwed.jpg";
+import back from "./backendweb.jpg";
+import full from "./fullweb.jpg";
+import main from './mainsup.jpg';
+import des from "./desweb.jpg";
+import res from './respoweb.jpg';
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
 
@@ -9,48 +17,48 @@ export default function WebDevelopmentServices() {
     {
       title: "Custom Web Development",
       description: "We develop tailored web solutions designed specifically for your unique business needs, combining innovative technology with user-centric design.",
-      imageUrl: "/cusweb.jpg", // Tech image: person typing on laptop
+      imageUrl: cusweb, // Tech image: person typing on laptop
       isSpecial: true
     },
     {
       title: "E-Commerce Development",
       description: "We develop powerful and secure e-commerce websites that enable businesses to sell products and services seamlessly online. Our expertise spans across various e-commerce platforms.",
-      imageUrl: "/ecomweb.jpg" // Tech image: shopping cart with digital elements
+      imageUrl: ecom // Tech image: shopping cart with digital elements
     },
     {
       title: "Content Management Systems (CMS)",
       description: "Building flexible content management platforms that empower you to easily update and manage your website content with intuitive interfaces.",
-      imageUrl: "/cmsweb.jpg" // Tech image: data flow/server room
+      imageUrl: cms // Tech image: data flow/server room
     },
     {
       title: "Front-end Development",
       description: "Crafting engaging user interfaces and seamless interactive experiences that bring your brand to life in the browser with modern frameworks.",
-      imageUrl: "/froendwed.jpg" // Tech image: close-up of code on screen
+      imageUrl: front // Tech image: close-up of code on screen
     },
     {
       title: "Back-end Development",
       description: "Building robust server-side architecture and databases that power your applications with reliability, security, and scalability.",
-      imageUrl: "/backendweb.jpg" // Tech image: circuit board
+      imageUrl: back// Tech image: circuit board
     },
     {
       title: "Full-stack Development",
       description: "Comprehensive end-to-end solutions combining both front-end and back-end expertise for complete web applications and platforms.",
-      imageUrl: "/fullweb.jpg" // Tech image: team collaborating on digital project
+      imageUrl: full // Tech image: team collaborating on digital project
     },
     {
       title: "Website Maintenance & Support",
       description: "Ongoing technical support, security updates, and performance optimization to keep your website running smoothly and securely.",
-      imageUrl: "/mainsup.jpg" // Tech image: abstract data security
+      imageUrl: main// Tech image: abstract data security
     },
     {
       title: "Web Design",
       description: "Creating visually stunning and user-friendly designs that effectively communicate your brand message and engage visitors across all devices.",
-      imageUrl: "/desweb.jpg" // Tech image: abstract digital design on monitor
+      imageUrl: des // Tech image: abstract digital design on monitor
     },
     {
       title: "Responsive Web Development",
       description: "Ensuring your website looks and functions perfectly across all devices, from desktop computers to tablets and mobile phones.",
-      imageUrl: "/respoweb.jpg" // Tech image: person with data overlay, responsive feel
+      imageUrl: res// Tech image: person with data overlay, responsive feel
     }
   ];
 

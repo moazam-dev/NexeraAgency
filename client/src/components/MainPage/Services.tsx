@@ -3,7 +3,7 @@ import { Link } from "wouter"; // Import the Link component for navigation
 import web from "../web.jpg";
 import app from "../app.jpg";
 import brand from "../brandid.jpg";
-import maintain from "../mainsup.jpg";
+import maintain from "../mainsupapp.png";
 import ecommerce from "../ecom.jpg";
 import wordpress from "../wordp.jpg";
 import shopify from "../shopify.jpg";

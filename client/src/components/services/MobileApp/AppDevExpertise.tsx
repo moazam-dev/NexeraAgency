@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import app1 from "./firstapp.jpg";
+import app2 from "./apiapp.jpg";
 // Custom hook to handle image loading with fallback
 const useImageFallback = (src: string, fallbackSrc: string) => {
   const [imgSrc, setImgSrc] = useState(src);
@@ -14,8 +15,8 @@ const useImageFallback = (src: string, fallbackSrc: string) => {
 const DigitalFrontiersSection: React.FC = () => {
   const fallbackSrc = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
   
-  const topRightImage = useImageFallback("/firstapp.jpg", fallbackSrc);
-  const bottomLeftImage = useImageFallback("/apiapp.jpg", fallbackSrc);
+  const topRightImage = useImageFallback(app1,fallbackSrc);
+  const bottomLeftImage = useImageFallback(app2,fallbackSrc);
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">

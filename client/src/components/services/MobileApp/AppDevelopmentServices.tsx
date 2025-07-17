@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-
+import cust from "./custapp.png";
+import cp from "./crssplat.jpg";
+import uiuxapp from "./uxuiapp.png";
+import apiintapp from "./apiintapp.jpg";
+import iosapp from "./iosapp.jpg";
 export default function AppDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
 
@@ -9,13 +13,13 @@ export default function AppDevelopmentServices() {
     {
       title: "Custom Mobile App Development",
       description: "We build bespoke mobile applications tailored to your business goals, delivering seamless user experiences and robust functionality for both iOS and Android platforms.",
-      image: "/custapp.png",
+      image:cust,
       isSpecial: true
     },
     {
       title: "Cross-Platform App Development",
       description: "Reach a wider audience with cross-platform apps using React Native or Flutter, ensuring consistent performance and appearance across all devices.",
-      image: "/crssplat.jpg"
+      image: cp
     },
     {
       title: "UI/UX Design for Mobile",
@@ -25,17 +29,17 @@ export default function AppDevelopmentServices() {
     {
       title: "App Maintenance & Support",
       description: "We provide ongoing updates, bug fixes, and performance optimization to keep your app secure, up-to-date, and running smoothly.",
-      image: "/mainsupapp.png"
+      image: uiuxapp
     },
     {
       title: "API & Third-Party Integrations",
       description: "Integrate your app with powerful APIs and third-party services to extend functionality, enable payments, notifications, analytics, and more.",
-      image: "/apiintapp.jpg"
+      image: apiintapp
     },
     {
       title: "App Store Deployment",
       description: "We handle the entire submission process for the App Store and Google Play, ensuring your app meets all guidelines and reaches your users quickly.",
-      image: "/iosapp.jpg"
+      image: iosapp
     }
   ];
 

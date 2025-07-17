@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import React from 'react';
-
+import bg from "./webbg.jpg";
 export default function Hero() {
   return (
     <section className="hero-bg-image min-h-screen flex items-center relative overflow-hidden">
@@ -15,7 +15,7 @@ export default function Hero() {
         }
 
         .hero-bg-image {
-          background-image: url('/webbg.jpg');
+          background: url(${bg});
           background-size: cover;
           background-position: center center;
           background-attachment: fixed;

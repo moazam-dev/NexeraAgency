@@ -1,6 +1,9 @@
 import { Heart, MessageCircle, Send } from "lucide-react";
 import { useEffect, useState } from "react";
-
+import cunsult from "../consult.jpg";
+import meg from "../2mengiv.jpg";
+import bag from "../bag.jpg";
+import food from "../foodbox.jpg";
 export default function SocialImpact() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -25,28 +28,28 @@ export default function SocialImpact() {
   const imageCards = [
     {
       id: 1,
-      image: "/consult.jpg", // Group photo of charity participants
+      image: cunsult, // Group photo of charity participants
       alt: "Group photo of charity participants",
       position: { top: "15%", left: "-4%" },
       delay: 0.2
     },
     {
       id: 2,
-      image: "/2mengiv.jpg", // Two individuals helping community
+      image: meg, // Two individuals helping community
       alt: "Two individuals helping community",
       position: { top: "12%", right: "1%" },
       delay: 0.4
     },
     {
       id: 3,
-      image: "/bag.jpg", // White tote bag with custom design
+      image: bag, // White tote bag with custom design
       alt: "White tote bag with custom design",
       position: { bottom: "15%", left: "1%" },
       delay: 0.6
     },
     {
       id: 4,
-      image: "foodbox.jpg", 
+      image: food, 
       alt: "Gift box with products and packing",
       position: { bottom: "10%", right: "8%" },
       delay: 0.8

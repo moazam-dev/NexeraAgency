@@ -1,5 +1,6 @@
 import React from 'react';
-
+import main1 from "./webmain1.jpg";
+import main2 from "./webmain2.jpg";
 const DigitalFrontiersSection: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
@@ -25,7 +26,7 @@ const DigitalFrontiersSection: React.FC = () => {
         {/* Top Right Section: Web Development Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/webmain1.jpg"
+            src={main1}
             alt="A screen displaying clean, well-structured code for a web application"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -38,7 +39,7 @@ const DigitalFrontiersSection: React.FC = () => {
         {/* Bottom Left Section: Responsive Design Image */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="webmain2.jpg"
+            src={main2}
             alt="A website shown on multiple devices (desktop, tablet, and mobile) to demonstrate responsive design"
             className="w-full h-full object-cover"
             onError={(e) => {
