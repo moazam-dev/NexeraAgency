@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect}from 'react';
 
 // MainPage components
 import Navigation from "@/components/MainPage/Navigation";
@@ -15,6 +15,9 @@ import TechStack from '@/components/services/Digital Marketing/DigitalMarketingT
 
 // Renamed the function to be more descriptive
 export default function DigitalMarketingPage() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />

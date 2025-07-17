@@ -1,11 +1,12 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { Github, Link as LinkIcon, ChevronDown } from 'lucide-react';
 import Navigation from "@/components/MainPage/Navigation";
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
-import Moackup1 from '/GoruM1.png';
-import Moackup2 from '/GoruM2.png';
+import Moackup1 from '../GoruM1.png';
+import Moackup2 from '../GoruM2.png';
+import hero from "../Portfolio/p1.png";
 
 // --- Sample Data ---
 const project = {
@@ -17,7 +18,7 @@ const project = {
     role: "Product Designer & Lead Developer",
     liveUrl: "#",
     repoUrl: "#",
-    heroImage: "/p1.png",
+    heroImage: hero,
     caseStudy: {
         objective: "The primary goal was to challenge the conventional desktop paradigm. We aimed to design an OS that feels less like a tool and more like an extension of the creative mind, minimizing distractions and maximizing focus.",
         challenge: "The biggest hurdle was creating a universally intuitive gesture-based navigation system that was powerful for pro users but easy for newcomers to discover. Balancing minimalism with functionality required constant iteration and user testing.",
@@ -37,6 +38,9 @@ const fadeIn = {
 
 // --- The Main Component ---
 const UniqueProjectPage: React.FC = () => {
+    useEffect(()=>{
+        window.scroll(0,0);
+      },[])
     return (
         <div className="font-sans bg-black">
             <Navigation />
@@ -95,14 +99,14 @@ const UniqueProjectPage: React.FC = () => {
 
             {/* --- THIRD SECTION: Full-Screen Background Image --- */}
             <div
-                className="h-[2000px] w-full bg-cover bg-center"
+                className="bg-[#FEFEFE] bg-contain h-[500px] sm:h-[2000px] sm:w-full sm:bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${Moackup1})` }}
             >
             </div>
 
             {/* --- FOURTH SECTION: Full-Screen Background Image --- */}
             <div
-                className="h-[1300px] w-full bg-cover bg-center"
+                className="h-[600px] bg-cover sm:h-[1300px] sm:w-full sm:bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${Moackup2})` }}
             >
             </div>

@@ -1,13 +1,13 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { Github, Link as LinkIcon, ChevronDown } from 'lucide-react';
 import Navigation from "@/components/MainPage/Navigation";
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
-import Moackup1 from '/zivanM2.png';
-import Moackup2 from '/zivanM3.png';
+import Moackup1 from '../zivanM2.png';
+import Moackup2 from '../zivanM3.png';
 // STEP 1: Import the hero image file just like the others
-import ZivanHeroImage from '/zivanM11.png'; 
+import ZivanHeroImage from '../zivanM11.png'; 
 
 // --- Sample Data ---
 const project = {
@@ -40,6 +40,9 @@ const fadeIn = {
 
 // --- The Main Component ---
 const UniqueProjectPage: React.FC = () => {
+    useEffect(()=>{
+        window.scroll(0,0);
+      },[])
     return (
         <div className="font-sans bg-black">
             <Navigation />
@@ -98,14 +101,14 @@ const UniqueProjectPage: React.FC = () => {
 
             {/* --- THIRD SECTION: Full-Screen Background Image --- */}
             <div
-                className="h-[2000px] w-full bg-cover bg-center"
+                className="bg-[#FEFEFE] h-[500px] bg-contain sm:h-[2000px] sm:w-full sm:bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${Moackup1})` }}
             >
             </div>
 
             {/* --- FOURTH SECTION: Full-Screen Background Image --- */}
             <div
-                className="h-[1300px] w-full bg-cover bg-center"
+                className=" h-[500px] bg-[#DAD8D5]  sm:h-[1300px] sm:w-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${Moackup2})` }}
             >
             </div>

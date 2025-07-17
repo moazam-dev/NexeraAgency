@@ -134,7 +134,7 @@ export default function InteractiveHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-5xl md:text-6xl lg:text-8xl font-black leading-[0.8] tracking-wide mb-6 italic"
+          className="text-5xl md:text-6xl lg:text-[80px] mt-8 font-black leading-[0.8] tracking-wide mb-6 italic"
         >
           If (Client): <br />
           <span className="italic text-1xl">return</span>
@@ -172,11 +172,11 @@ export default function InteractiveHero() {
               "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ25Lkfhfy-PWdh1A0QqCqR4tfvQfbaz3mvxCOmGdjTv2qRRWXzwwDx2GxJQn6kEko2e_Nu52RLJ",
               "_blank"
             );}}
-          className="relative flex items-center justify-center px-6 py-3 md:px-10 md:py-4 bg-white rounded-full text-lg md:text-xl font-bold overflow-hidden group transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-[var(--accent-green)] hover:to-[var(--accent-teal)]"
+          className="relative flex items-center justify-center px-6 py-3  md:px-4 md:py-3 bg-white rounded-full text-lg md:text-xl font-bold overflow-hidden group transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-[var(--accent-green)] hover:to-[var(--accent-teal)] "
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="relative z-20 mr-3 md:mr-4 font-['Bebas_Neue'] text-lg md:text-xl tracking-wider text-[#2e2e2e] group-hover:text-white transition-colors duration-300">
+          <span className="relative z-20 mr-3 md:mr-4 font-['Bebas_Neue'] text-lg md:text-xl tracking-wider text-[#2e2e2e] group-hover:text-white transition-colors duration-300 ">
             FREE STRATEGY CALL
           </span>
           <div className="relative z-20 w-10 h-10 md:w-12 md:h-12 bg-black rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-transparent">

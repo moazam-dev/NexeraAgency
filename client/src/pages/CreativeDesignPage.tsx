@@ -12,9 +12,12 @@ import Expertise from "@/components/services/Creaative designing/Creaativedesign
 import Services from "@/components/services/Creaative designing/CreaativedesigningServices";
 import WhyNexera from "@/components/services/Creaative designing/CreaativedesigningWhyNexera";
 import TechStack from '@/components/services/Creaative designing/CreaativedesigningTechStack';
-
+import { useEffect } from 'react';
 // Renamed the function to be more descriptive
 export default function CreativeDesigningPage() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />

@@ -12,9 +12,13 @@ import Expertise from '@/components/services/Brand Identity/BrandIdentityExperti
 import WebDevelopmentServices from '@/components/services/Brand Identity/BrandIdentityServices';
 import WebDevelopmentWhyNexera from '@/components/services/Brand Identity/BrandIdentityWhyNexera';
 import WebDevTechStack from '@/components/services/Brand Identity/BrandIdentityTechStack';
-
+import { useEffect } from 'react';
 // Renamed the function to be more descriptive
 export default function BrandIdentityPage() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
+  
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />

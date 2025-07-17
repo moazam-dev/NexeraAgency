@@ -1,9 +1,10 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 
 // MainPage components
 import Navigation from "@/components/MainPage/Navigation";
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
+
 
 // Video Editing Service Components
 import Hero from "@/components/services/Video Editing/VideoHero";
@@ -15,6 +16,9 @@ import TechStack from '@/components/services/Video Editing/VideoTechStack';
 
 // Renamed the function to be more descriptive
 export default function VideoEditingPage() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />

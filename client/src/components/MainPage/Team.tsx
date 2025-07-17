@@ -1,5 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Briefcase, Plus, ArrowLeft, ArrowRight } from "lucide-react";
+import seniorGraphicDesigner from "../Senior-Graphic-Designer.png";
+import UiUxDesigner from "../UX-Designer.png";
+import PPC from "../Senior-PPC-Specialist.png";
+import techLead from "../Technical-Lead.png";
+import middlePPC from "../Middle-PPC-Specialist.png";
+import PM from "../Project-Manager.png"
 
 export default function Team() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,37 +17,37 @@ export default function Team() {
     {
       name: "Daniel Vance",
       role: "Senior Graphic Designer",
-      imageUrl: "/Senior-Graphic-Designer.png",
+      imageUrl: seniorGraphicDesigner,
       bio: "Leading our creative vision with over 10 years of experience in digital design and brand strategy. Known for innovative approaches to visual storytelling."
     },
     {
       name: "Anna Sterling",
       role: "UX Designer",
-      imageUrl: "/UX-Designer.png",
+      imageUrl: UiUxDesigner,
       bio: "She's the heart of our PPC team, always ready to lend her expertise and knowledge. Approachable and kind, she makes complex campaigns seem effortless."
     },
     {
       name: "Leo Vance",
       role: "Senior PPC Specialist",
-      imageUrl: "/Senior-PPC-Specialist.png",
+      imageUrl:PPC,
       bio: "Data-driven PPC expert with expertise in digital campaigns and growth strategies. Specializes in maximizing ROI through strategic optimization."
     },
     {
       name: "Eugene Croft",
       role: "Technical Lead",
-      imageUrl: "/Technical-Lead.png",
+      imageUrl: techLead,
       bio: "Full-stack developer specializing in React, Node.js, and cloud architecture solutions. Passionate about creating scalable technical solutions."
     },
     {
       name: "Katie Evans",
-      role: "Middle PPC Specialist",
-      imageUrl: "/Middle-PPC-Specialist.png",
+      role: "middle PPC Specialist",
+      imageUrl: middlePPC,
       bio: "Passionate about creating intuitive user experiences through research-driven design approaches. Believes in the power of user-centered design."
     },
     {
       name: "Maxwell Pierce",
       role: "Project Manager",
-      imageUrl: "/Project-Manager.png",
+      imageUrl: PM,
       bio: "Ensuring smooth project delivery through agile methodologies and team coordination. Expert at bringing teams together to achieve common goals."
     }
   ];

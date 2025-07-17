@@ -8,9 +8,13 @@ import WebDevelopmentWhyNexera from "@/components/services/Web/WebDevelopmentWhy
 import WebDevTechStack from '@/components/services/Web/WebDevTechStack';
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
-
+import { useEffect } from 'react';
 export default function Home() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
   return (
+
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />
       <Hero />

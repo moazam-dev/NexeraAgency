@@ -12,9 +12,12 @@ import Expertise from "@/components/services/MobileApp/AppDevExpertise";
 import AppDevelopmentServices from "@/components/services/MobileApp/AppDevelopmentServices";
 import AppDevelopmentWhyNexera from "@/components/services/MobileApp/AppDevelopmentWhyNexera";
 import AppDevTechStack from '@/components/services/MobileApp/AppDevTechStack';
-
+import {useEffect} from "react";
 // Renamed the function to be more descriptive
 export default function AppDevPage() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <Navigation />

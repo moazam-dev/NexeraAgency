@@ -1,11 +1,11 @@
-import React from 'react';
+import React  , {useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { Github, Link as LinkIcon, ChevronDown } from 'lucide-react';
 import Navigation from "@/components/MainPage/Navigation";
 import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
-import Moackup1 from '/GoruM1.png';
-import Moackup2 from '/GoruM2.png';
+import Moackup1 from '../GoruM1.png';
+import Moackup2 from '../GoruM2.png';
 
 // --- Sample Data ---
 const project = {
@@ -37,6 +37,9 @@ const fadeIn = {
 
 // --- The Main Component ---
 const UniqueProjectPage: React.FC = () => {
+    useEffect(()=>{
+        window.scroll(0,0);
+      },[])
     return (
         <div className="font-sans bg-black">
             <Navigation />

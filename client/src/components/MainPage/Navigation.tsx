@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Menu, X } from "lucide-react";
 
 // Assuming your logo is in public/logo.svg or similar
-import NexeraLogo from "/public/nexera-logo.svg"; // Adjust path as needed
+import NexeraLogo from "../MainPage/logo1.png"; // Adjust path as needed
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ export default function Navigation() {
           <div className="flex items-center">
             {/* Replaced text with image logo */}
             <img 
-              src="/logo1.png"// Use .src if you're importing directly from public or using next/image
+              src={NexeraLogo}//Use .src if you're importing directly from public or using next/image
               alt="Nexera Logo" 
               className="h-8 w-auto" // Adjust height as needed for your logo
             />

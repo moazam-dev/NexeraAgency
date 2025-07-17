@@ -1,0 +1,18 @@
+@media screen and (max-width:480px)  {
+    .laptop-screen{
+        width:100% !important;
+        height: 47% !important;
+        margin-top: 46% !important;
+        margin-left: -25px !important;
+        
+    }
+}
+@media screen and (min-width:481px) and  (max-width:1280px)  {
+    .laptop-screen{
+        width:99% !important;
+        height: 54% !important;
+        margin-top: 20% !important;
+        margin-left: -02px !important;
+    }
+}
+

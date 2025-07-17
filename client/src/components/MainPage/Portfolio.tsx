@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 // Import an icon from react-icons
 import { FaArrowRight } from "react-icons/fa";
-
+import m1 from "../Mockup-1.png";
+import m2 from "../Mockup-2.png";
+import m3 from "../Mockup-3.png";
 type Project = {
   image: string;
   title: string;
@@ -13,19 +15,19 @@ type Project = {
 
 const projects: Project[] = [
   {
-    image: "/Mockup-1.png",
+    image: m1,
     title: "Goru Ecommerce",
     description: "Crafting intuitive and beautiful user interfaces for modern applications.",
     path: "/goru-ecommerce", // Path for Goru Ecommerce page
   },
   {
-    image: "/Mockup-3.png",
+    image: m2,
     title: "The Sweet Slice",
     description: "Designing engaging and user-friendly mobile experiences for iOS and Android.",
     path: "/sweet-slice-app", // Path for The Sweet Slice page
   },
   {
-    image: "/Mockup-2.png",
+    image:m3,
     title: "Zivan agency",
     description: "Crafting intuitive and beautiful user interfaces for modern applications.",
     path: "/zivan-agency", // Path for Zivan Agency page

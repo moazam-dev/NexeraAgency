@@ -1,6 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "wouter"; // Import the Link component for navigation
-
+import web from "../web.jpg";
+import app from "../app.jpg";
+import brand from "../brandid.jpg";
+import maintain from "../mainsup.jpg";
+import ecommerce from "../ecom.jpg";
+import wordpress from "../wordp.jpg";
+import shopify from "../shopify.jpg";
+import creativeDesign from "../cretdes.jpg";
+import contentCreation from "../contcrea.jpg";
+import UiUx from "../uxui.jpg";
+import videoEditing from "../vedioed.jpg";
+import digitalMarketing from "../mark.jpg";
 // Updated Service type to include a navigation path
 type Service = {
   title: string;
@@ -87,73 +98,74 @@ const ServicesSection = () => {
   const services: Service[] = [
     {
       title: "Web Development",
-      imageUrl: "/web.jpg",
+      imageUrl: web,
       hoverText: "Crafting stunning and responsive websites.",
       path: "/web-development",
     },
     {
       title: "Mobile App Development",
-      imageUrl: "/app.jpg",
+      imageUrl: app,
       hoverText: "Building apps for iOS and Android platforms.",
       path: "/app-development",
     },
     {
       title: "Brand Identity",
-      imageUrl: "/brandid.jpg",
+      imageUrl: brand,
       hoverText: "Creating memorable brand experiences.",
       path: "/brand-identity",
     },
     {
       title: "Maintenance & Support",
-      imageUrl: "/mainsup.jpg",
+      imageUrl: maintain,
       hoverText: "Keeping your systems secure and up-to-date.",
       path: "/maintenance-support",
     },
     {
       title: "E-Commerce Solutions",
-      imageUrl: "/ecom.jpg",
+      imageUrl: ecommerce,
       hoverText: "Custom online store development.",
       path: "/ecommerce-solutions",
     },
     {
       title: "WordPress",
-      imageUrl: "/wordp.jpg",
+      imageUrl: wordpress,
       hoverText: "Professional WordPress website development and customization.",
       path: "/wordpress-development",
     },
     {
       title: "Shopify",
-      imageUrl: "/shopify.jpg",
+      imageUrl: shopify,
       hoverText: "Building and optimizing Shopify stores for your business.",
       path: "/shopify-development",
     },
+    
     {
       title: "Creative Designing",
-      imageUrl: "/cretdes.jpg",
+      imageUrl: creativeDesign,
       hoverText: "Innovative graphic and creative design solutions.",
       path: "/creative-designing",
     },
     {
       title: "Content Creation",
-      imageUrl: "/contcrea.jpg",
+      imageUrl: contentCreation,
       hoverText: "Crafting content that connects and converts.",
       path: "/content-creation",
     },
     {
       title: "UI/UX Design",
-      imageUrl: "/uxui.jpg",
+      imageUrl: UiUx,
       hoverText: "Designing seamless and beautiful user experiences.",
       path: "/ui-ux-design",
     },
     {
       title: "Video Editing",
-      imageUrl: "/vedioed.jpg",
+      imageUrl: videoEditing,
       hoverText: "Professional video editing for all your needs.",
       path: "/video-editing",
     },
     {
       title: "Digital Marketing",
-      imageUrl: "/mark.jpg",
+      imageUrl: digitalMarketing,
       hoverText: "Boosting your reach with smart strategies.",
       path: "/digital-marketing",
     },
