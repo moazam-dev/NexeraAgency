@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import React from 'react';
-import apphero from "./Appbg.jpg"
+import bg from "./Appbg.jpg"
 export default function Hero() {
   return (
     <section className="hero-bg-image min-h-screen flex items-center relative overflow-hidden">
@@ -15,12 +15,13 @@ export default function Hero() {
         }
 
         .hero-bg-image {
-          background-image: url(${apphero});
+          background: url(${bg});
           background-size: cover;
           background-position: center center;
           background-attachment: fixed;
           background-repeat: no-repeat;
         }
+
 
         .massive-text {
           font-size: clamp(2rem, 10vw, 3rem);

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import bg from "./ecommerceHero.jpg"; // Adjust the path as necessary
 import React from 'react';
 
 export default function Hero() {
@@ -14,6 +15,14 @@ export default function Hero() {
           --accent-blue: #3b82f6;
         }
 
+        .hero-bg-image {
+          background: url(${bg});
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
+        
         .massive-text {
           font-size: clamp(2rem, 10vw, 3rem);
           font-weight: 900;

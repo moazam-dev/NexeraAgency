@@ -1,5 +1,5 @@
 import React from 'react';
-import m1 from "./digitalmain1.jpg";
+import m1 from "./digitalmain1.png";
 import m2 from "./digitalmain2.jpg";
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:

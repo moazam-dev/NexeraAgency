@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import bg from "./brandhero1.jpg"; // Adjust the path as necessary
 import React from 'react';
 
 export default function Hero() {
@@ -12,6 +13,14 @@ export default function Hero() {
           --accent-green: #34d399;
           --accent-teal: #20c997;
           --accent-blue: #3b82f6;
+        }
+
+        .hero-bg-image {
+          background: url(${bg});
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
         }
 
         .massive-text {
@@ -94,7 +103,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craft unique brand identities that capture your vision and connect with your audience. Stand out with a memorable logo, cohesive visuals, and a story that resonates.
+              We craft unique brand identities that capture <br /> your vision and connect with your audience.
             </motion.p>
 
             <motion.div

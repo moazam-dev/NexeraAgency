@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa"
+import bg from "./shoopifyhero.jpg"
 import React from 'react';
 
 export default function Hero() {
@@ -12,6 +13,14 @@ export default function Hero() {
           --accent-green: #34d399;
           --accent-teal: #20c997;
           --accent-blue: #3b82f6;
+        }
+
+        .hero-bg-image {
+          background: url(${bg});
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
         }
 
         .massive-text {
@@ -94,7 +103,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We design and develop high-converting Shopify stores that captivate your audience and drive sales. From custom themes to seamless integrations, our team ensures your online business stands out and delivers an exceptional shopping experience.
+              We design and develop Shopify stores that captivate your audience and drive sales. From custom themes to seamless integrations, our team ensures your online business stands out.
             </motion.p>
 
             <motion.div

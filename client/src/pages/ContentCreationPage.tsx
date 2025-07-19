@@ -6,12 +6,12 @@ import FAQ from "@/components/MainPage/FAQ";
 import Contact from "@/components/MainPage/Contact";
 
 // MobileApp Service Components (Corrected local variable names)
-import Hero from "@/components/services/MobileApp/AppdevHero";
-import AppDevWhyWeb from "@/components/services/MobileApp/AppDevWhyWeb";
-import Expertise from "@/components/services/MobileApp/AppDevExpertise";
-import AppDevelopmentServices from "@/components/services/MobileApp/AppDevelopmentServices";
-import AppDevelopmentWhyNexera from "@/components/services/MobileApp/AppDevelopmentWhyNexera";
-import AppDevTechStack from '@/components/services/MobileApp/AppDevTechStack';
+import Hero from "@/components/services/Content Creation/ContentCreatonHero";
+import AppDevWhyWeb from "@/components/services/Content Creation/ContentCreationWhyWeb";
+import Expertise from "@/components/services/Content Creation/ContentCreationExpertise";
+import AppDevelopmentServices from "@/components/services/Content Creation/ContentCreationServices";
+import AppDevelopmentWhyNexera from "@/components/services/Content Creation/ContentCreationWhyNexera";
+import AppDevTechStack from '@/components/services/Content Creation/ContentCreationTechStack';
 import {useEffect} from "react";
 // Renamed the function to be more descriptive
 export default function AppDevPage() {

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import bg from "./ui&uxhero.jpg";
 import React from 'react';
 
 export default function Hero() {
@@ -12,6 +13,14 @@ export default function Hero() {
           --accent-green: #34d399;
           --accent-teal: #20c997;
           --accent-blue: #3b82f6;
+        }
+
+        .hero-bg-image {
+          background: url(${bg});
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
         }
 
         .massive-text {
@@ -85,7 +94,7 @@ export default function Hero() {
             <h1
               className="massive-text mb-6 text-left"
             >
-              Designing <br /> <span className="">Exceptional User Experiences.</span>
+              Designing Exceptional <br /> <span className="">User Experiences.</span>
             </h1>
 
             <motion.p
@@ -94,8 +103,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We create intuitive and visually stunning interfaces that delight users and drive engagement.<br />
-              Our UX/UI design process blends creativity with usability, ensuring every interaction feels effortless and meaningful.
+              We create intuitive and visually stunning <br /> interfaces that delight users and drive engagement.
             </motion.p>
 
             <motion.div

@@ -1,4 +1,4 @@
-import { Mail, Instagram, Send, Linkedin } from "lucide-react";
+import { Mail, Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function Contact() {
   const scrollToSection = (id: string) => {
@@ -17,9 +17,9 @@ export default function Contact() {
   ];
 
   const socialItems = [
-    { icon: Instagram, label: "INSTAGRAM", href: "#" },
-    { icon: Send, label: "TELEGRAM", href: "#" },
-    { icon: Linkedin, label: "LINKEDIN", href: "#" }
+    { icon: Instagram, label: "INSTAGRAM", href: "https://www.instagram.com/nexera.official/" },
+    { icon: Facebook, label: "FACEBOOK", href: "https://www.facebook.com/nexeraofficialpk/" },
+    { icon: Linkedin, label: "LINKEDIN", href: "https://www.linkedin.com/company/nexeraofficial/" }
   ];
 
   return (
@@ -110,6 +110,7 @@ export default function Contact() {
                   <a 
                     key={item.label}
                     href={item.href}
+                    target="_blank"
                     className="flex items-center space-x-3 text-white hover:text-[var(--accent-teal)] transition-colors duration-300 font-medium"
                   >
                     <div className="w-8 h-8 border border-gray-600 rounded-full flex items-center justify-center hover:border-[var(--accent-teal)] transition-colors">
