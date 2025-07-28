@@ -32,7 +32,7 @@ export default function Booking() {
           
           {/* --- Heading with gradient text --- */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-8">
-            Let’s talk about your <span className="bg-gradient-to-r from-[var(--accent-teal)] to-[var(--accent-green)] bg-clip-text text-transparent italic">next big move.</span>
+            Let’s talk about your <span className="relative inline-block pb-1 text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">next big move.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-500 mb-12">
             Schedule a free consultation call below. We're excited to learn about your project and discuss how we can help you achieve your goals.

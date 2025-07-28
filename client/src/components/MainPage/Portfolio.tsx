@@ -21,13 +21,13 @@ const projects: Project[] = [
     path: "/goru-ecommerce", // Path for Goru Ecommerce page
   },
   {
-    image: m2,
+    image: m3,
     title: "The Sweet Slice",
     description: "Designing engaging and user-friendly mobile experiences for iOS and Android.",
     path: "/sweet-slice-app", // Path for The Sweet Slice page
   },
   {
-    image:m3,
+    image:m2,
     title: "Zivan agency",
     description: "Crafting intuitive and beautiful user interfaces for modern applications.",
     path: "/zivan-agency", // Path for Zivan Agency page

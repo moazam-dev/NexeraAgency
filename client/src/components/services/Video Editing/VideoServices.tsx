@@ -1,15 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import v1 from "./vid1.jpg";
-import v2 from "./vid2.jpg";
-import v3 from "./vid3.jpg";
-import v4 from "./vid4.jpg";
-import v5 from "./vid5.jpg";
-import v6 from "./vid6.jpg";
-import v7 from "./vid7.jpg";
-import v8 from "./vid8.jpg";
-import v9 from "./vid9.jpg";
 
 export default function WebDevelopmentServices() {
   const { ref, isInView } = useScrollAnimation();
@@ -18,51 +9,51 @@ export default function WebDevelopmentServices() {
     {
       title: "Cinematic Video Editing",
       description: "Transforming raw footage into compelling cinematic stories with seamless transitions, pacing, and creative vision.",
-      image: v1,
+      image: "/vid1.jpg", // Tech image: person typing on laptop
       isSpecial: true
     },
     {
       title: "Social Media Video Production",
       description: "Crafting dynamic, shareable content tailored for every platform—perfect for brand awareness, engagement, and viral impact.",
-      image: v2
+      image: "/vid2.jpg" // Tech image: shopping cart with digital elements
     },
     {
       title: "Color Grading & Correction",
       description: "Enhancing the mood and style of your videos with professional color grading and correction for a polished, cinematic look.",
-      image: v3
+      image: "/vid3.jpg" // Tech image: data flow/server room
     },
     {
       title: "Sound Design & Mixing",
       description: "Immersing your audience with crisp audio, sound effects, and perfectly balanced music for a complete sensory experience.",
-      image: v4
+      image: "/vid4.jpg" // Tech image: close-up of code on screen
     },
     {
       title: "Motion Graphics & Animation",
       description: "Adding energy and clarity to your message with custom motion graphics, animated titles, and visual effects.",
-      image: v5
+      image: "/vid5.jpg" // Tech image: circuit board
     },
     {
       title: "Corporate & Event Videos",
       description: "Professional editing for corporate promos, interviews, and event highlights that showcase your brand and story.",
-      image: v6
+      image: "/vid6.jpg" // Tech image: team collaborating on digital project
     },
     {
       title: "YouTube & Content Creator Support",
       description: "Helping creators grow their channels with engaging edits, intros, outros, and content repurposing for maximum reach.",
-      image: v7
+      image: "/vid7.jpg" // Tech image: abstract data security
     },
     {
       title: "Promotional & Ad Videos",
       description: "Editing high-impact promotional videos and ads that drive conversions and leave a lasting impression.",
-      image: v8
+      image: "/vid8.jpg" // Tech image: abstract digital design on monitor
     },
     {
       title: "Reels, Shorts & Vertical Video",
       description: "Optimizing your content for mobile-first audiences with fast-paced, vertical edits for Instagram, TikTok, and more.",
-      image: v9
+      image: "/vid9.jpg" // Tech image: person with data overlay, responsive feel
     }
   ];
-  
+
   return (
     <section id="web-development-services" className="py-20 bg-white" ref={ref}>
       <div className="container mx-auto px-6">
@@ -100,7 +91,7 @@ export default function WebDevelopmentServices() {
               ></div>
 
               {/* Overlay - Darker, always present gradient */}
-              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/85 to-black/60 transition-all duration-1000"></div>
+              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/50 transition-all duration-1000"></div>
 
               {/* Content - Positioned at the top of the card */}
               <div className="service-card-content absolute top-0 left-0 w-full h-full p-6 text-white z-10 flex flex-col justify-between">

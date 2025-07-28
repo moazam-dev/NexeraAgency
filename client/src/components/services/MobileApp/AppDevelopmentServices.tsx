@@ -80,7 +80,7 @@ export default function AppDevelopmentServices() {
               ></div>
 
               {/* Overlay - Darker, always present gradient */}
-              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30 transition-all duration-1000"></div>
+              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/50 transition-all duration-1000"></div>
 
 
               {/* Content - Positioned at the top of the card */}

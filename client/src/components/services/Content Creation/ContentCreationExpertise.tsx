@@ -1,4 +1,7 @@
 import React from 'react';
+import ccmain1 from "./ccmain1.jpg";
+import ccmain2 from "./ccmain2.jpg";
+
 
 // Ensure your tailwind.config.js has the 'gradient-text' utility defined.
 // Example:
@@ -16,13 +19,13 @@ import React from 'react';
 //   }
 // ],
 
-const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit new theme
+const ContentCreationExpertise: React.FC = () => { // Renamed component to fit new theme
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans flex flex-col items-center justify-center py-20">
       {/* Centered Heading for the entire section - Changed content and added gradient */}
       <div className="text-center mb-16 px-6 max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          Crafting <span className="gradient-text">shhsh</span>
+          Crafting <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Content That Captivates</span>
         </h2>
       </div>
 
@@ -31,18 +34,18 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Top Left Section: New Content for Digital Innovation */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
           <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unleashing Next-Gen Technologies
+            Strategic Content Planning & Creation
           </h3>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            We dive deep into the latest advancements in AI, blockchain, and IoT, transforming complex ideas into tangible solutions. Our focus is on building robust and scalable platforms that not only meet today's demands but are engineered to adapt and thrive in tomorrow's evolving digital landscape, ensuring your business stays ahead.
+            We specialize in developing a comprehensive content strategy that aligns with your brand's voice and business goals. From engaging blog posts and articles to persuasive website copy, our focus is on creating high-quality, SEO-optimized content that resonates with your target audience and drives organic traffic.
           </p>
         </div>
 
         {/* Top Right Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="/1.jpeg" // Image: Neon abstract monitor screen
-            alt="Abstract digital screen with vibrant neon patterns, symbolizing technology"
+            src={ccmain1} // Image: Neon abstract monitor screen
+            alt="A team collaborating on a content strategy storyboard"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
@@ -54,8 +57,8 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
         {/* Bottom Left Section: Image - Technological / Neon */}
         <div className="flex items-center justify-center overflow-hidden">
           <img
-            src="2.jpg" // Image: Face with digital overlay
-            alt="Human face with digital data overlay, representing AI and seamless experiences"
+            src={ccmain2} // Image: Face with digital overlay
+            alt="A high-quality camera lens, symbolizing professional video and photo production"
             className="w-full h-full object-cover" // Layout maintained
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/600x400/E0E0E0/333333?text=Image+Error";
@@ -66,11 +69,9 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
 
         {/* Bottom Right Section: New Content for AI-Driven Experiences */}
         <div className="flex flex-col justify-center p-8 sm:p-12 md:p-16 lg:p-20">
-          {/* <h3 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
-            Seamless AI-Driven Experiences
-          </h3> */}
+           
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl">
-            Experience the future of user interaction with interfaces powered by artificial intelligence and machine learning. We design intuitive platforms that learn and adapt to user behavior, coupled with powerful API integrations that connect disparate systems, creating a unified and intelligent digital ecosystem for unparalleled efficiency.
+            Our team of creative professionals excels in visual storytelling. We produce high-impact videos, compelling infographics, and professional photography that bring your brand's narrative to life. We combine artistry with marketing expertise to create visuals that not only look great but also perform. We handle everything from pre-production planning to post-production editing, ensuring a polished final product. Our goal is to create immersive experiences that capture attention and drive engagement.
           </p>
         </div>
       </div>
@@ -78,4 +79,4 @@ const DigitalFrontiersSection: React.FC = () => { // Renamed component to fit ne
   );
 };
 
-export default DigitalFrontiersSection; // Exporting with new name
+export default ContentCreationExpertise; // Exporting with new name

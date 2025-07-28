@@ -96,11 +96,11 @@ export default function WebDevelopmentServices() {
               {/* Background Image - Smoothly zooms and blurs on hover */}
               <div 
                 className="service-card-image absolute inset-0 bg-cover bg-center transition-all duration-1000 group-hover:scale-110 group-hover:blur-sm"
-                style={{ backgroundImage: `url(${service.imageUrl || service.image})` }}
+                style={{ backgroundImage: `url(${service.imageUrl})` }}
               ></div>
 
               {/* Overlay - Lighter, adjusted gradient */}
-              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/75 via-black/50 to-transparent transition-all duration-1000"></div>
+              <div className="service-card-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/50 transition-all duration-1000"></div>
 
               {/* Content - Positioned at the top of the card */}
               <div className="service-card-content absolute top-0 left-0 w-full h-full p-6 text-white z-10 flex flex-col justify-between">

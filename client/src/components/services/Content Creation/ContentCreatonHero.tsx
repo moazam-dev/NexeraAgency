@@ -88,13 +88,13 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block text-white text-sm px-4 py-2 rounded-full mb-3 font-medium web-dev-label border border-white border-opacity-30"
             >
-              WEB DEVELOPMENT
+              CONTENT CREATION
             </motion.div>
 
             <h1
               className="massive-text mb-6 text-left"
             >
-              Building Your <br /> <span className="">Digital Legacy.</span>
+              Telling Your <br /> <span className="">Brand's Story.</span>
             </h1>
 
             <motion.p
@@ -103,8 +103,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl lg:text-xl text-white mb-6 max-w-3xl leading-relaxed"
             >
-              We craf digital experiences that drive engagement<br />
-              powered by cutting-edge technology and creativity.
+              We craft compelling narratives and create stunning visuals that captivate your audience and build a loyal community.
             </motion.p>
 
             <motion.div
@@ -119,7 +118,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="font-['Inter']">
-                  JOIN THE LEGACY
+                  TELL YOUR STORY
                 </span>
                 <FaArrowRight />
               </motion.button>

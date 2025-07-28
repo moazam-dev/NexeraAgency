@@ -1,42 +1,40 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import {
-    FaReact,
-    FaNodeJs,
-    FaHtml5,
-    FaCss3Alt,
-    FaGitAlt,
-    FaAws,
-    FaDocker,
-    FaJsSquare
+    FaWordpress,
+    FaYoutube,
+    FaInstagram,
+    FaTwitter,
+    FaFacebook,
+    FaCameraRetro,
+    FaPenNib,
+    FaFileVideo,
+    FaPaintBrush
 } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiWordpress, DiFirebase } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiAdobecreativecloud, SiCanva, SiHootsuite, SiGrammarly, SiGoogleanalytics } from 'react-icons/si';
 
 
 // Main Component
 export default function App() {
     const techStack = [
-        { name: "React", icon: <FaReact className="text-6xl text-blue-500" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-600" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-6xl text-blue-600" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-6xl text-gray-900" /> },
-        { name: "HTML5", icon: <FaHtml5 className="text-6xl text-orange-600" /> },
-        { name: "CSS3", icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-        { name: "JavaScript", icon: <FaJsSquare className="text-6xl text-yellow-500" /> },
-        { name: "MongoDB", icon: <DiMongodb className="text-6xl text-green-700" /> },
-        { name: "MySQL", icon: <DiMysql className="text-6xl text-blue-700" /> },
-        { name: "Git", icon: <FaGitAlt className="text-6xl text-orange-700" /> },
-        { name: "AWS", icon: <FaAws className="text-6xl text-orange-400" /> },
-        { name: "Docker", icon: <FaDocker className="text-6xl text-blue-700" /> },
-        { name: "WordPress", icon: <DiWordpress className="text-6xl text-blue-400" /> },
-        { name: "Firebase", icon: <DiFirebase className="text-6xl text-yellow-600" /> },
+        { name: "Adobe Creative Cloud", icon: <SiAdobecreativecloud className="text-6xl text-pink-500" /> },
+        { name: "Canva", icon: <SiCanva className="text-6xl text-cyan-500" /> },
+        { name: "Hootsuite", icon: <SiHootsuite className="text-6xl text-gray-900" /> },
+        { name: "Grammarly", icon: <SiGrammarly className="text-6xl text-green-500" /> },
+        { name: "Google Analytics", icon: <SiGoogleanalytics className="text-6xl text-orange-500" /> },
+        { name: "YouTube", icon: <FaYoutube className="text-6xl text-red-600" /> },
+        { name: "Instagram", icon: <FaInstagram className="text-6xl text-pink-600" /> },
+        { name: "Twitter", icon: <FaTwitter className="text-6xl text-blue-400" /> },
+        { name: "Facebook", icon: <FaFacebook className="text-6xl text-blue-700" /> },
+        { name: "Photography", icon: <FaCameraRetro className="text-6xl text-gray-700" /> },
+        { name: "Copywriting", icon: <FaPenNib className="text-6xl text-yellow-700" /> },
+        { name: "Video Editing", icon: <FaFileVideo className="text-6xl text-purple-700" /> },
+        { name: "Graphic Design", icon: <FaPaintBrush className="text-6xl text-green-700" /> },
     ];
 
     return (
         <div className="bg-white font-sans antialiased">
-            <section id="tech-stack" className="py-20 bg-white">
+            <section id="content-creation-tools" className="py-20 bg-white">
                 <div className="container mx-auto px-6">
                     {/* Section Heading */}
                     <motion.div
@@ -47,10 +45,10 @@ export default function App() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Tech Stack</span>
+                            Our <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">Content Creation Toolkit</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We leverage a diverse and robust set of technologies to build high-performance, scalable, and secure web applications.
+                            We utilize industry-leading tools and platforms to craft, edit, and distribute high-quality content across all digital channels.
                         </p>
                     </motion.div>
 
